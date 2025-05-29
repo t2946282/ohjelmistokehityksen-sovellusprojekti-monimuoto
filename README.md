@@ -64,7 +64,7 @@ Arviointi perustuu:
 
 Lisätehtäviä parempaan arvosanaan:
 
-- Qt-applikaatioon liittyviä lisäominaisuuksia (arvosanaa korottavat lisätehtävä on määritelty tarkemmin MS Word-dokumentissa). Katso [yleisohje ja arviointiperusteet \(docx\)](<https://unioulu.sharepoint.com/:w:/r/sites/Ohjelmistokehityksensovellusprojektitestialusta/Shared Documents/Tiedostot/vaatimukset_arvostelu_projektille.docx?d=wc4c36b5aff9c43d0bfcd137c89fbfb03&csf=1&web=1&e=ri44vB>)
+- Qt-applikaatioon liittyviä lisäominaisuuksia (arvosanaa korottavat lisätehtävä on määritelty tarkemmin kohdassa "Yleisohje ja arviointi"). Katso [**Yleisohje ja arviointi**](#pr_ohje)
 
 Extratehtäviä (erityisesti monimuoto-opiskelijat, joilla on jo Linux-kurssi käytynä). Nämä eivät korota arvosanaa:
 
