@@ -104,7 +104,7 @@ Esimerkiksi näillä työkaluilla:
 Katso näistä Teams-kanavan dokumenteista mallia teknisen määrittelydokumentin kaavioihin:
 
 - Ohjelmistokehityksen [materiaalit](<https://unioulu.sharepoint.com/:f:/r/sites/Ohjelmistokehityksensovellusprojektitestialusta/Shared%20Documents/3.%20Tiedostot%20ja%20yleiset%20oppimateriaalit/Ohjelmistokehityksen%20materiaalit?csf=1&web=1&e=T5e6e4>)
-- Valmiit esimerkkejä [määrittelyvaiheen kaavioista](<https://unioulu.sharepoint.com/:b:/r/sites/Ohjelmistokehityksensovellusprojektitestialusta/Shared%20Documents/3.%20Tiedostot%20ja%20yleiset%20oppimateriaalit/Ohjelmistokehityksen%20materiaalit/IN00CS90_Luku_5_Maarittelyvaihe.pdf?csf=1&web=1&e=TnPtge>)
+- Valmiita esimerkkejä [määrittelyvaiheen kaavioista](<https://unioulu.sharepoint.com/:b:/r/sites/Ohjelmistokehityksensovellusprojektitestialusta/Shared%20Documents/3.%20Tiedostot%20ja%20yleiset%20oppimateriaalit/Ohjelmistokehityksen%20materiaalit/IN00CS90_Luku_5_Maarittelyvaihe.pdf?csf=1&web=1&e=TnPtge>)
 - UML-mallinnuksen [kaavioesimerkit](<https://unioulu.sharepoint.com/:f:/r/sites/Ohjelmistokehityksensovellusprojektitestialusta/Shared%20Documents/3.%20Tiedostot%20ja%20yleiset%20oppimateriaalit/Ohjelmistokehityksen%20materiaalit/UML-mallinnus?csf=1&web=1&e=0UrXUt>)
 - Yleinen [esimerkkikuva järjestelmäarkkitehtuurista](./dl/arkkitehtuurikuva.png)
 
@@ -135,7 +135,7 @@ Viikkopalaverit pidetään ryhmän alikanavalla MS Teamssilla, niin ei tarvitse 
 - Tutustukaa arviointikriteereihin ja päättäkää mihin arvosanaan pyritään
 - Tarkista että olet kurssin Teams-kanavalla (pyydä opettajalta pääsy jos et ole). Käytä students.oamk.fi-sähköpostiosoitetta kun kirjaudut Teamssiin
 - Jokaisesta ryhmästä yksi luo kurssin Teams-kanavan **ALAISUUTEEN** (ei siis kokonaan uutta Teams-kanavaa) uuden YKSITYISEN alikanavan nimeltä:
-  - Ryhmä-xx-(O, L tai KMO), missä O-opiskelijoiden ryhmä 1:n kanava on nimeltään Ryhmä-01-O, O-opiskelijoiden ryhmä 2:n kanava on nimeltään on Ryhmä-02-O, jne. Katso [tästä kuvasta yleinen \(mutta nyt vanhentunut\) nimeämismalli](./dl/teams_ryhmat.png)
+  - Ryhmä-xx ryhmä 1:n kanava on nimeltään Ryhmä-01 ryhmä 2:n kanava on nimeltään on Ryhmä-02, jne. Katso [tästä kuvasta yleinen \(mutta nyt vanhentunut\) nimeämismalli](./dl/teams_ryhmat.png)
 - Kun ryhmän yksityinen Teams-kanava on luotu, lisää kanavalle ryhmän muut jäsenet. Lisää myös ohjaavat opettajat kanavan omistajaksi: Teemu Korpela ja Pekka Alaluukas
 - Github käyttöön (Pekan tekemän organisaation alle): [Pekan ohje](<https://unioulu.sharepoint.com/:b:/s/Ohjelmistokehityksensovellusprojektitestialusta/EZ_-C1pCL_dIsQ-WMkYrdE8BfpxDQDi9hyp2sYgYqDW-HA?e=4VrQ8A>)
 - Ryhmän jäsenet sopii alustavasti kuka tekee mitäkin toiminnallisuuksia (mutta ei niin, että vain yksi tekee koko Qt-työpöytäsovelluksen, että vain yksi tekee koko tietokannan jne.)
