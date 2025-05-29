@@ -129,9 +129,8 @@ Viikkopalaverit pidetään ryhmän alikanavalla MS Teamssilla, niin ei tarvitse 
 - Aloitusinfo
 - Luodaan ja numeroidaan neljän opiskelijan ryhmät
 - Jokainen opiskelija luo tunnuksen itselleen sivustolla
-  https://peatutor.com/project_app/register/tvt24spl 
-  TAI
-  https://peatutor.com/project_app/register/tvt24spo 
+  https://peatutor.com/project_app/register/tvt25kmo
+  (Luotuasi tunnuksen, saat sähköpostin, jossa on tunnuksesi ja salasanasi. Pidä ne tallessa)
 - Tutustukaa arviointikriteereihin ja päättäkää mihin arvosanaan pyritään
 - Tarkista että olet kurssin Teams-kanavalla (pyydä opettajalta pääsy jos et ole). Käytä students.oamk.fi-sähköpostiosoitetta kun kirjaudut Teamssiin
 - Jokaisesta ryhmästä yksi luo kurssin Teams-kanavan **ALAISUUTEEN** (ei siis kokonaan uutta Teams-kanavaa) uuden YKSITYISEN alikanavan nimeltä:
