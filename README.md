@@ -99,6 +99,7 @@ Esimerkiksi näillä työkaluilla:
 - Drawio: [https://www.drawio.com/](https://www.drawio.com/). Suora linkki: [https://app.diagrams.net/](https://app.diagrams.net/)
 - Lucidchart: [https://www.lucidchart.com](https://www.lucidchart.com)
 - Diagrameditor: [https://www.diagrameditor.com/](https://www.diagrameditor.com/)
+- PlantUML: [https://plantuml.com/](https://plantuml.com/)
 
 Katso näistä Teams-kanavan dokumenteista mallia teknisen määrittelydokumentin kaavioihin:
 
