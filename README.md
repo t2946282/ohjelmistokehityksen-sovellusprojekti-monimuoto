@@ -135,7 +135,7 @@ Viikkopalaverit pidetään ryhmän alikanavalla MS Teamssilla, niin ei tarvitse 
 - Tarkista että olet kurssin Teams-kanavalla (pyydä opettajalta pääsy jos et ole). Käytä students.oamk.fi-sähköpostiosoitetta kun kirjaudut Teamssiin
 - Jokaisesta ryhmästä yksi luo kurssin Teams-kanavan **ALAISUUTEEN** (ei siis kokonaan uutta Teams-kanavaa) uuden YKSITYISEN alikanavan nimeltä:
   - Ryhmä-xx-(O, L tai KMO), missä O-opiskelijoiden ryhmä 1:n kanava on nimeltään Ryhmä-01-O, O-opiskelijoiden ryhmä 2:n kanava on nimeltään on Ryhmä-02-O, jne. Katso [tästä kuvasta yleinen \(mutta nyt vanhentunut\) nimeämismalli](./dl/teams_ryhmat.png)
-- Kun ryhmän yksityinen Teams-kanava on luotu, lisää kanavalle ryhmän muut jäsenet. Lisää myös ohjaavat opettajat kanavan omistajaksi: Teemu Korpela, Pekka Alaluukas, Jukka Jauhiainen, Kari Jyrkkä, Teemu Leppänen ja Ville Majava
+- Kun ryhmän yksityinen Teams-kanava on luotu, lisää kanavalle ryhmän muut jäsenet. Lisää myös ohjaavat opettajat kanavan omistajaksi: Teemu Korpela ja Pekka Alaluukas
 - Github käyttöön (Pekan tekemän organisaation alle): [Pekan ohje](<https://unioulu.sharepoint.com/:b:/s/Ohjelmistokehityksensovellusprojektitestialusta/EZ_-C1pCL_dIsQ-WMkYrdE8BfpxDQDi9hyp2sYgYqDW-HA?e=4VrQ8A>)
 - Ryhmän jäsenet sopii alustavasti kuka tekee mitäkin toiminnallisuuksia (mutta ei niin, että vain yksi tekee koko Qt-työpöytäsovelluksen, että vain yksi tekee koko tietokannan jne.)
 - Aloittakaa tekemään projektidokumenttia (pitää tehdä yhdessä). Pohja löytyy Teamsista. Tallentakaa oma versio ryhmän github-repositoryyn documents-hakemistoon.
