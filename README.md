@@ -152,7 +152,7 @@ Viikkopalaverit pidetään ryhmän alikanavalla MS Teamssilla, niin ei tarvitse 
   - Github repository käyttöön
   - Yksityinen Teams-kanava luotu kurssin Teams-kanavan alle. Ryhmän jäsenet ja opettajat lisätty privaattikanavan omistajiksi
   - Priorisoikaa backend (tietokanta ja API), jotta käyttöliittymän voi tehdä toimimaan suoraan sitä vasten
-  - Tietokannan ER-kaavio pitää olla ohjeiden mukaisesti tehtynä ja ohjaajan (Pekka tai Jukka) hyväksymä. **Kevät 2025: ER-kaavio viedään GitHubiin docs-kansioon**
+  - Tietokannan ER-kaavio pitää olla ohjeiden mukaisesti tehtynä ja ohjaajan (Pekka) hyväksymä. **Kevät 2025: ER-kaavio viedään GitHubiin docs-kansioon**
   - Tietokannan, rajapinnan ja käyttöliittymän suunnittelua ja tekemistä
   - Qt-sovellus alulle
 
