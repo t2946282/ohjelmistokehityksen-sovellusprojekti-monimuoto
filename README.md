@@ -121,6 +121,202 @@ Viikkopalaverit pidetään ryhmän alikanavalla MS Teamssilla, niin ei tarvitse 
 - Muutoksia arvosanatavoitteeseen tai tavoitteisiin ylipäätänsä
 - Vilkaistaan projektidokumenttia ja teknistä määrittelyä
 
+ <span id="pr_ohje"></span>
+ 
+# Projektityön kuvaus
+
+Työn aihe on pankkiautomaatti
+
+## Ohjelmiston rakenne on seuraava
+
+![Projektikuva](./project.png)
+
+### Työ sisältää
+
+- Tietokannan (MySQL/MariaDB)
+- REST APIn (Node.js/Express.js)
+- Pankkiautomaattisovelluksen (Qt työpöytäsovellus, jossa käytetään Qt Network moduulia)
+
+**Huom!** Edellä mainitut kuuluvat kurssin sisältöön ja arviointi perustuu niiden osaamiseen, joten millään muilla tekniikoilla noita ei saa korvata.
+
+## Sovelluksen toiminta
+
+- Qt-sovellus kommunikoi REST APIn kanssa http-protokollan avulla.
+- REST API hoitaa kommunikoinnin tietokannan kanssa.
+
+## Sovelluksen arviointi
+
+Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy, niin tämä dokumentti on se, jota noudatetaan.
+
+**Huom!** Monimuotoryhmissä ei käytetä kortinlukijaa, vaan aloitusikkunasta avataan PIN-koodinkyselykäyttöliittymä painiketta painamalla, jossa annetaan PIN-koodin lisäksi kortin-id.
+
+### Vähimmäisvaatimukset sovellukselle (arvosana 1)
+
+- Debit kortti toteutettava (ei luottoa, saldo ei saa mennä miinukselle)
+- Qt-sovelluksen aloituskäyttöliittymä
+- Kortinlukijan käyttö ja PIN-koodin syöttö
+- Oikealla PIN-koodilla avautuu pääkäyttöliittymä, väärällä uudelleenkysely
+- Saldo tarkastelu
+- Rahan nosto: 20, 40, 50 tai 100 €
+- Näytetään 10 viimeisintä tilitapahtumaa
+
+### Vähimmäisvaatimukset (arvosana 2)
+
+- PIN-koodin syöttöraja 10 sekuntia (jos koodia ei anneta 10 sekunnin aikana palataan aloituskäyttöliittymään)
+- REST API:in toteutettu kaikkien tietokanta-taulujen CRUD-operaatiot (vaikkei niitä tarvita pankkiautomaatissa)
+
+### Hyvän arvosanan vaatimukset (arvosana 3)
+
+- Kortti voi olla joko debit tai credit
+- Credit-kortilla nosto luottorajan puitteissa
+- Vapaavalintaisen summan nosto (automaatissa 20 ja 50 € seteleitä)
+- 3 väärää PIN-koodia lukitsee kortin (ei vaadita tallennetamista tietokantaan)
+
+### Hyvän arvosanan vaatimukset (arvosana 4)
+
+- Korttilukitus tallennetaan tietokantaan (eli lukitus säilyy vaikka sovellus käynnistetään uudelleen)
+- 30 sekunnin inaktiivisuus palauttaa alkutilaan (jos käyttäjä ei tee mitään 30 sekunnin aikana, palataan aloituskäyttöliittymään ja kaikki muut ikkunat suljetaan)
+- Tilitapahtumien selaus (eteen/taakse, 10 kerrallaan)
+
+### Kiitettävän arvosanan vaatimukset (arvosana 5)
+
+- Kaksoiskortit (debit + credit samassa kortissa)
+- Kirjautuessa valinta: debit vai credit (vain jos kyseessä kaksoiskortti)
+- Tilakaavio luotu
+- **Lisäominaisuus** sovittava ohjaajan kanssa
+
+(Huom! Kaksoiskortti on kytketty kahteen eri tiliin, joista toinen on debit-tili ja toinen credit-tili)
+
+### Tiivistelmä arvosanoille
+
+|                            | 1  | 2  | 3  | 4  | 5  |
+|----------------------------|----|----|----|----|----|
+| Debit kortti               | x  | x  | x  | x  | x  |
+| Credit kortti              |    |    | x  | x  | x  |
+| Kaksoiskortti              |    |    |    |    | x  |
+| Kortinlukija toimii        | x  | x  | x  | x  | x  |
+| Kirjautuminen PIN-koodilla | x  | x  | x  | x  | x  |
+| Saldon näyttö              | x  | x  | x  | x  | x  |
+| Rahan nosto (20,40,50,100) | x  | x  | x  | x  | x  |
+| Rahan nosto (muu summa)    |    |    | x  | x  | x  |
+| Tilitapahtumien näyttö     | x  | x  | x  | x  | x  |
+| PIN-koodille 10 s timer    |    | x  | x  | x  | x  |
+| Kaikki CRUD-operaatiot     |    | x  | x  | x  | x  |
+| PIN-lukitus istunnolle     |    |    | x  | x  | x  |
+| PIN-lukitus tietokantaan   |    |    |    | x  | x  |
+| 30 s timerit               |    |    |    | x  | x  |
+| Tilitapahtumien selaus     |    |    |    | x  | x  |
+| Lisäominaisuus             |    |    |    |    | x  |
+
+
+#### Arvosanaa alentavia seikkoja
+
+- Dokumentoinnin puutteet
+- MVC-mallin noudattamatta jättäminen backendissä
+
+## Vaatimukset tietokannalle
+
+### Ilman credit-kortti ominaisuutta
+
+- Useita tilejä asiakkaalla
+- Yhdellä tilillä yksi omistaja
+- Asiakkaalla voi olla tili ilman korttia
+- Useita kortteja asiakkaalla, mutta yksi kortti → yksi tili
+- Asiakastiedoissa: etunimi, sukunimi, osoite
+- PIN-koodi hashattuna (bcrypt)
+
+### Kun toteutetaan credit-kortti ominaisuus
+
+- Credit-korteilla pitää olla luottoraja (credit-korteille ei tarvita erillistä taulua, jos debit-korteille laitetaan luottorajaksi nolla)
+
+
+### Kun toteutetaan kaksoiskortti
+
+- Kortilla pääsy useaan tiliin (debit ja credit)
+
+### Lisäominaisuuksia tietokannalle
+
+- Asiakkaalla käyttöoikeus toisen omistajan tilille
+
+## Opiskelijan arviointi
+
+- Sovelluksen arvosana
+- Vertais- ja itsearviointi
+- Ohjaajien näkemys
+- Githubin informaatio
+
+### Arvioinnin kohteet
+
+- Ryhmätyöskentely
+- Itsenäinen työ
+- Projektisitoutuminen
+- Qt-ohjelmointi
+- REST API -ohjelmointi
+- Tehtävien vaikeustaso
+- Gitin käyttö
+
+## Lisäominaisuusideoita
+
+## Kuvan lataus ja näyttäminen
+
+- Kuvan lataaminen backendiin ja näyttäminen Qt-sovelluksessa (vaikutus arvosanaan 1)
+
+Idean esittelyvideo: [https://www.youtube.com/watch?v=DlKRlZTNYl8](https://www.youtube.com/watch?v=DlKRlZTNYl8)
+
+### Toimintaperiaate:
+
+- Tietokanta taulussa on tekstikenttä, johon tulee kuvan nimi (esim. `aku.jpg`).
+- Kuva ladataan REST APIn kansioon (yleensä `public`-kansioon).
+- Kuva kansioon pitää päästä esim. selaimella.
+- Qt-sovelluksessa kuva näytetään `Label`-komponentissa.
+
+REST APIssa voi käyttää [Multer-moduulia](https://www.npmjs.com/package/multer).
+
+## Swagger dokumentointi
+
+- Lisätään sovellukseen swagger-sivu (vaikutus arvosanaan 1)
+
+Idean esittelyvideo: [https://www.youtube.com/watch?v=M6Fj5Y2K24w](https://www.youtube.com/watch?v=M6Fj5Y2K24w)  
+[https://www.npmjs.com/package/swagger-ui-express](https://www.npmjs.com/package/swagger-ui-express)
+
+## Logitus
+
+- Tapahtumien logittaminen backendissä ja niiden näyttäminen jollakin tavalla (`morgan`-moduuli). Pelkkä logitus on aika helppo, joten sen vaikutus n. 0,5. Mutta jos keksitte siihen jotain lisää, niin sitten isompi vaikutus.
+
+## WebSocket
+
+Toteutetaan WebSocketeilla jokin toiminto sovellukseen (vaikutus arvosanaan 1).
+
+- Node.js WebSocket: [https://www.npmjs.com/package/ws](https://www.npmjs.com/package/ws)
+- Qt:n websocket-moduuli
+
+Idean esittely: [https://youtu.be/QGnv7s0JIIo](https://youtu.be/QGnv7s0JIIo)
+
+## Docker
+
+Sovelluksen ajaminen Dockerissa (vaikutus arvosanaan 1).
+
+- [https://youtu.be/vUuA00D4wrY](https://youtu.be/vUuA00D4wrY)
+- [https://youtu.be/zxcbaB6Qq0M](https://youtu.be/zxcbaB6Qq0M)
+
+## Testien lisääminen backendiin
+
+Esimerkiksi `jest` ja `supertest` (vaikutus arvosanaan 1)
+
+Esittelyvideo: [https://youtu.be/HEZufcp2umI](https://youtu.be/HEZufcp2umI)
+
+## CI/CD
+
+- Jonkinlainen yksinkertainen CI/CD tai ainakin CD (esim. käännetyn tuotoksen "releasen" automatisointi Githubiin tai toiselle palvelimelle ladattavaksi vaikka Github actioneilla)
+(vaikutus arvosanaan 1)
+
+## Verkkopankin toteuttaminen
+
+- Verkkopankin toteuttaminen (vaikutus arvosanaan 1)
+
+## Ylimääräinen Qt-sovellus
+
+- Qt-sovellus pankin henkilökunnalle. Sovelluksella voidaan esimerkiksi luoda uusia asiakkaita, tilejä ja kortteja jne. 
   
 # Viikko 1
 
@@ -324,199 +520,3 @@ MySQL (ei tietoa laadusta):
 
 ___
 
- <span id="pr_ohje"></span>
- 
-# Projektityön kuvaus
-
-Työn aihe on pankkiautomaatti
-
-## Ohjelmiston rakenne on seuraava
-
-![Projektikuva](./project.png)
-
-### Työ sisältää
-
-- Tietokannan (MySQL/MariaDB)
-- REST APIn (Node.js/Express.js)
-- Pankkiautomaattisovelluksen (Qt työpöytäsovellus, jossa käytetään Qt Network moduulia)
-
-**Huom!** Edellä mainitut kuuluvat kurssin sisältöön ja arviointi perustuu niiden osaamiseen, joten millään muilla tekniikoilla noita ei saa korvata.
-
-## Sovelluksen toiminta
-
-- Qt-sovellus kommunikoi REST APIn kanssa http-protokollan avulla.
-- REST API hoitaa kommunikoinnin tietokannan kanssa.
-
-## Sovelluksen arviointi
-
-Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy, niin tämä dokumentti on se, jota noudatetaan.
-
-**Huom!** Monimuotoryhmissä ei käytetä kortinlukijaa, vaan aloitusikkunasta avataan PIN-koodinkyselykäyttöliittymä painiketta painamalla, jossa annetaan PIN-koodin lisäksi kortin-id.
-
-### Vähimmäisvaatimukset sovellukselle (arvosana 1)
-
-- Debit kortti toteutettava (ei luottoa, saldo ei saa mennä miinukselle)
-- Qt-sovelluksen aloituskäyttöliittymä
-- Kortinlukijan käyttö ja PIN-koodin syöttö
-- Oikealla PIN-koodilla avautuu pääkäyttöliittymä, väärällä uudelleenkysely
-- Saldo tarkastelu
-- Rahan nosto: 20, 40, 50 tai 100 €
-- Näytetään 10 viimeisintä tilitapahtumaa
-
-### Vähimmäisvaatimukset (arvosana 2)
-
-- PIN-koodin syöttöraja 10 sekuntia (jos koodia ei anneta 10 sekunnin aikana palataan aloituskäyttöliittymään)
-- REST API:in toteutettu kaikkien tietokanta-taulujen CRUD-operaatiot (vaikkei niitä tarvita pankkiautomaatissa)
-
-### Hyvän arvosanan vaatimukset (arvosana 3)
-
-- Kortti voi olla joko debit tai credit
-- Credit-kortilla nosto luottorajan puitteissa
-- Vapaavalintaisen summan nosto (automaatissa 20 ja 50 € seteleitä)
-- 3 väärää PIN-koodia lukitsee kortin (ei vaadita tallennetamista tietokantaan)
-
-### Hyvän arvosanan vaatimukset (arvosana 4)
-
-- Korttilukitus tallennetaan tietokantaan (eli lukitus säilyy vaikka sovellus käynnistetään uudelleen)
-- 30 sekunnin inaktiivisuus palauttaa alkutilaan (jos käyttäjä ei tee mitään 30 sekunnin aikana, palataan aloituskäyttöliittymään ja kaikki muut ikkunat suljetaan)
-- Tilitapahtumien selaus (eteen/taakse, 10 kerrallaan)
-
-### Kiitettävän arvosanan vaatimukset (arvosana 5)
-
-- Kaksoiskortit (debit + credit samassa kortissa)
-- Kirjautuessa valinta: debit vai credit (vain jos kyseessä kaksoiskortti)
-- Tilakaavio luotu
-- **Lisäominaisuus** sovittava ohjaajan kanssa
-
-(Huom! Kaksoiskortti on kytketty kahteen eri tiliin, joista toinen on debit-tili ja toinen credit-tili)
-
-### Tiivistelmä arvosanoille
-
-|                            | 1  | 2  | 3  | 4  | 5  |
-|----------------------------|----|----|----|----|----|
-| Debit kortti               | x  | x  | x  | x  | x  |
-| Credit kortti              |    |    | x  | x  | x  |
-| Kaksoiskortti              |    |    |    |    | x  |
-| Kortinlukija toimii        | x  | x  | x  | x  | x  |
-| Kirjautuminen PIN-koodilla | x  | x  | x  | x  | x  |
-| Saldon näyttö              | x  | x  | x  | x  | x  |
-| Rahan nosto (20,40,50,100) | x  | x  | x  | x  | x  |
-| Rahan nosto (muu summa)    |    |    | x  | x  | x  |
-| Tilitapahtumien näyttö     | x  | x  | x  | x  | x  |
-| PIN-koodille 10 s timer    |    | x  | x  | x  | x  |
-| Kaikki CRUD-operaatiot     |    | x  | x  | x  | x  |
-| PIN-lukitus istunnolle     |    |    | x  | x  | x  |
-| PIN-lukitus tietokantaan   |    |    |    | x  | x  |
-| 30 s timerit               |    |    |    | x  | x  |
-| Tilitapahtumien selaus     |    |    |    | x  | x  |
-| Lisäominaisuus             |    |    |    |    | x  |
-
-
-#### Arvosanaa alentavia seikkoja
-
-- Dokumentoinnin puutteet
-- MVC-mallin noudattamatta jättäminen backendissä
-
-## Vaatimukset tietokannalle
-
-### Ilman credit-kortti ominaisuutta
-
-- Useita tilejä asiakkaalla
-- Yhdellä tilillä yksi omistaja
-- Asiakkaalla voi olla tili ilman korttia
-- Useita kortteja asiakkaalla, mutta yksi kortti → yksi tili
-- Asiakastiedoissa: etunimi, sukunimi, osoite
-- PIN-koodi hashattuna (bcrypt)
-
-### Kun toteutetaan credit-kortti ominaisuus
-
-- Credit-korteilla pitää olla luottoraja (credit-korteille ei tarvita erillistä taulua, jos debit-korteille laitetaan luottorajaksi nolla)
-
-
-### Kun toteutetaan kaksoiskortti
-
-- Kortilla pääsy useaan tiliin (debit ja credit)
-
-### Lisäominaisuuksia tietokannalle
-
-- Asiakkaalla käyttöoikeus toisen omistajan tilille
-
-## Opiskelijan arviointi
-
-- Sovelluksen arvosana
-- Vertais- ja itsearviointi
-- Ohjaajien näkemys
-- Githubin informaatio
-
-### Arvioinnin kohteet
-
-- Ryhmätyöskentely
-- Itsenäinen työ
-- Projektisitoutuminen
-- Qt-ohjelmointi
-- REST API -ohjelmointi
-- Tehtävien vaikeustaso
-- Gitin käyttö
-
-## Lisäominaisuusideoita
-
-## Kuvan lataus ja näyttäminen
-
-- Kuvan lataaminen backendiin ja näyttäminen Qt-sovelluksessa (vaikutus arvosanaan 1)
-
-Idean esittelyvideo: [https://www.youtube.com/watch?v=DlKRlZTNYl8](https://www.youtube.com/watch?v=DlKRlZTNYl8)
-
-### Toimintaperiaate:
-
-- Tietokanta taulussa on tekstikenttä, johon tulee kuvan nimi (esim. `aku.jpg`).
-- Kuva ladataan REST APIn kansioon (yleensä `public`-kansioon).
-- Kuva kansioon pitää päästä esim. selaimella.
-- Qt-sovelluksessa kuva näytetään `Label`-komponentissa.
-
-REST APIssa voi käyttää [Multer-moduulia](https://www.npmjs.com/package/multer).
-
-## Swagger dokumentointi
-
-- Lisätään sovellukseen swagger-sivu (vaikutus arvosanaan 1)
-
-Idean esittelyvideo: [https://www.youtube.com/watch?v=M6Fj5Y2K24w](https://www.youtube.com/watch?v=M6Fj5Y2K24w)  
-[https://www.npmjs.com/package/swagger-ui-express](https://www.npmjs.com/package/swagger-ui-express)
-
-## Logitus
-
-- Tapahtumien logittaminen backendissä ja niiden näyttäminen jollakin tavalla (`morgan`-moduuli). Pelkkä logitus on aika helppo, joten sen vaikutus n. 0,5. Mutta jos keksitte siihen jotain lisää, niin sitten isompi vaikutus.
-
-## WebSocket
-
-Toteutetaan WebSocketeilla jokin toiminto sovellukseen (vaikutus arvosanaan 1).
-
-- Node.js WebSocket: [https://www.npmjs.com/package/ws](https://www.npmjs.com/package/ws)
-- Qt:n websocket-moduuli
-
-Idean esittely: [https://youtu.be/QGnv7s0JIIo](https://youtu.be/QGnv7s0JIIo)
-
-## Docker
-
-Sovelluksen ajaminen Dockerissa (vaikutus arvosanaan 1).
-
-- [https://youtu.be/vUuA00D4wrY](https://youtu.be/vUuA00D4wrY)
-- [https://youtu.be/zxcbaB6Qq0M](https://youtu.be/zxcbaB6Qq0M)
-
-## Testien lisääminen backendiin
-
-Esimerkiksi `jest` ja `supertest` (vaikutus arvosanaan 1)
-
-Esittelyvideo: [https://youtu.be/HEZufcp2umI](https://youtu.be/HEZufcp2umI)
-
-## CI/CD
-
-- Jonkinlainen yksinkertainen CI/CD tai ainakin CD (esim. käännetyn tuotoksen "releasen" automatisointi Githubiin tai toiselle palvelimelle ladattavaksi vaikka Github actioneilla)
-(vaikutus arvosanaan 1)
-
-## Verkkopankin toteuttaminen
-
-- Verkkopankin toteuttaminen (vaikutus arvosanaan 1)
-
-## Ylimääräinen Qt-sovellus
-
-- Qt-sovellus pankin henkilökunnalle. Sovelluksella voidaan esimerkiksi luoda uusia asiakkaita, tilejä ja kortteja jne. 
