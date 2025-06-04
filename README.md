@@ -347,7 +347,7 @@ Työn aihe on pankkiautomaatti
 - Qt-sovellus kommunikoi REST APIn kanssa http-protokollan avulla.
 - REST API hoitaa kommunikoinnin tietokannan kanssa.
 
-## ARVIOINTI
+## Sovelluksen arviointi
 
 Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy, niin tämä dokumentti on se, jota noudatetaan.
 
