@@ -49,7 +49,7 @@ Avainsanoja: UML/määrittelyt, Qt, API, MySQL, UI/UX
 
 ### Arviointi
 
-Arviointi perustuu:
+Opiskelijan arviointi perustuu:
 
 - Aikataulussa pysyminen. Työtä pitää tehdä järjestelmällisesti. Viikkoraportointi vaaditaan!
 - Ryhmän tuottaman sovellukseen tasoon (kts. Sovelluksen arviointi)
