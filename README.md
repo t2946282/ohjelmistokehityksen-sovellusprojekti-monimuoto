@@ -411,7 +411,8 @@ Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy,
 
 ### Kun toteutetaan credit-kortti ominaisuus
 
-- Credit-korteilla pitää olla luottoraja
+- Credit-korteilla pitää olla luottoraja (credit-korteille ei tarvita erillistä taulua, jos debit-korteille laitetaan luottorajaksi nolla)
+
 
 ### Kun toteutetaan kaksoiskortti
 
