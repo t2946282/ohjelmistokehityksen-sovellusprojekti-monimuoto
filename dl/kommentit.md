@@ -49,8 +49,7 @@ llback-helvettiä", jonka vuoksi nuo uudemmat systeemit on kehitetty
   - Ja Teemun web-sivullahan on linkkejä kirjoihin.
   - Kuitenkin tässä projektissa on tärkeämpää tuo koodaaminen kuin nuo dokumentit.
 
-- Nyt kun näitä eri projekteja on useimmilla menossa, niin tässäpä taas yleinen muistutus. Vaikka Github onkin erityisesti hajautettu versionhallintapalvelu, niin moni käyttää sitä lähinnä ja tai myös oman ”devaaja-CV:n” / portfolion rakentamiseen Tässä awesome-listassa on iso kasa esimerkkej
-ä: [https://github.com/matiassingers/awesome-readme](https://github.com/matiassingers/awesome-readme). Joitakin poimintoja:
+- Nyt kun näitä eri projekteja on useimmilla menossa, niin tässäpä taas yleinen muistutus. Vaikka Github onkin erityisesti hajautettu versionhallintapalvelu, niin moni käyttää sitä lähinnä ja tai myös oman ”devaaja-CV:n” / portfolion rakentamiseen Tässä awesome-listassa on iso kasa esimerkkejä: [https://github.com/matiassingers/awesome-readme](https://github.com/matiassingers/awesome-readme). Joitakin poimintoja:
   - [https://github.com/sourcerer-io/sourcerer-app#readme](https://github.com/sourcerer-io/sourcerer-app#readme)
   - [https://github.com/ma-shamshiri/Spam-Detector#readme](https://github.com/ma-shamshiri/Spam-Detector#readme)
   - [https://github.com/NSRare/NSGIF#readme](https://github.com/NSRare/NSGIF#readme)
