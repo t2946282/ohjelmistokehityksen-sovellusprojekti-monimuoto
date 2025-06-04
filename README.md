@@ -22,10 +22,9 @@
 ### Projektista
 
 - Minimikomponentit:
-  - Käyttöliittymä (Qt-työpöytäsovellus C++:lla)
-  - Node.js API
   - Tietokanta (MySQL)
   - Node.js-rajapinta (API) MySQL-tietokantaan
+  - Käyttöliittymä (Qt-työpöytäsovellus C++:lla)
 - 4 hengen ryhmät
 - Versionhallinta (Git + Github)
 - Projektidokumentti
@@ -64,14 +63,12 @@ Arviointi perustuu:
 
 Lisätehtäviä parempaan arvosanaan:
 
-- Qt-applikaatioon liittyviä lisäominaisuuksia (arvosanaa korottavat lisätehtävä on määritelty tarkemmin kohdassa "Yleisohje ja arviointi"). Katso [**Yleisohje ja arviointi**](#pr_ohje)
+- Arvosanaan 5 vaaditaan lisäominaisuuksia (arvosanaa korottavat lisätehtävät on määritelty tarkemmin kohdassa "Yleisohje ja arviointi"). Katso [**Yleisohje ja arviointi**](#pr_ohje)
 
 Extratehtäviä (erityisesti monimuoto-opiskelijat, joilla on jo Linux-kurssi käytynä). Nämä eivät korota arvosanaa:
 
-- Kanban-taulu käytössä projektille (erillinen Github-projekti ja sille Kanban)
 - API laitetaan reverse proxyn taakse. Esimerkiksi [Apache](https://httpd.apache.org/), [Nginx](https://nginx.org), [Caddy](https://caddyserver.com/) tai [frp](https://github.com/fatedier/frp)
 - Koko backend VPS-linuxilla (pilvipalvelusta kuten Digital Ocean tms. se VPS) tai jossain PaaS-alustassa suoraan tai konttina (Render.com, Fly.io, Vercel tms)
-- Jonkinlainen yksinkertainen CI/CD tai ainakin CD (esim. käännetyn tuotoksen "releasen" automatisointi Githubiin tai toiselle palvelimelle ladattavaksi vaikka Github actioneilla)
 - Web-palvelin käännettyjen softien lataamiseen (releaset automaattisesti tänne?)
 
 ### Qt/Express-materiaalit (Pekka Alaluukas)
@@ -488,6 +485,11 @@ Sovelluksen ajaminen Dockerissa (vaikutus arvosanaan 1).
 Esimerkiksi `jest` ja `supertest` (vaikutus arvosanaan 1)
 
 Esittelyvideo: [https://youtu.be/HEZufcp2umI](https://youtu.be/HEZufcp2umI)
+
+## CI/CD
+
+- Jonkinlainen yksinkertainen CI/CD tai ainakin CD (esim. käännetyn tuotoksen "releasen" automatisointi Githubiin tai toiselle palvelimelle ladattavaksi vaikka Github actioneilla)
+(vaikutus arvosanaan 1)
 
 ## Verkkopankin toteuttaminen
 
