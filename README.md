@@ -443,7 +443,7 @@ Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy,
 
 ## Kuvan lataus ja näyttäminen
 
-- Kuvan lataaminen backendiin ja näyttäminen Qt-sovelluksessa. Tämä on kokonaisen arvosanan arvoinen.
+- Kuvan lataaminen backendiin ja näyttäminen Qt-sovelluksessa (vaikutus arvosanaan 1)
 
 Idean esittelyvideo: [https://www.youtube.com/watch?v=DlKRlZTNYl8](https://www.youtube.com/watch?v=DlKRlZTNYl8)
 
@@ -458,7 +458,7 @@ REST APIssa voi käyttää [Multer-moduulia](https://www.npmjs.com/package/multe
 
 ## Swagger dokumentointi
 
-Tämä on kokonaisen arvosanan arvoinen.
+- Lisätään sovellukseen swagger-sivu (vaikutus arvosanaan 1)
 
 Idean esittelyvideo: [https://www.youtube.com/watch?v=M6Fj5Y2K24w](https://www.youtube.com/watch?v=M6Fj5Y2K24w)  
 [https://www.npmjs.com/package/swagger-ui-express](https://www.npmjs.com/package/swagger-ui-express)
@@ -469,7 +469,7 @@ Idean esittelyvideo: [https://www.youtube.com/watch?v=M6Fj5Y2K24w](https://www.y
 
 ## WebSocket
 
-Toteutetaan WebSocketeilla jokin toiminto sovellukseen.
+Toteutetaan WebSocketeilla jokin toiminto sovellukseen (vaikutus arvosanaan 1).
 
 - Node.js WebSocket: [https://www.npmjs.com/package/ws](https://www.npmjs.com/package/ws)
 - Qt:n websocket-moduuli
@@ -478,7 +478,7 @@ Idean esittely: [https://youtu.be/QGnv7s0JIIo](https://youtu.be/QGnv7s0JIIo)
 
 ## Docker
 
-Sovelluksen ajaminen Dockerissa. (vaikutus arvosanaan 1)
+Sovelluksen ajaminen Dockerissa (vaikutus arvosanaan 1).
 
 - [https://youtu.be/vUuA00D4wrY](https://youtu.be/vUuA00D4wrY)
 - [https://youtu.be/zxcbaB6Qq0M](https://youtu.be/zxcbaB6Qq0M)
