@@ -1,4 +1,4 @@
-# Ohjelmistokehityksen sovellusprojekti
+# Ohjelmistokehityksen sovellusprojekti (monimuoto ryhmät)
 
 - Opiskelijoiden tehtävä on suunnitella ja toteuttaa pankkiautomaattijärjestelmä: [**Yleisohje ja arviointi**](#pr_ohje)
 
