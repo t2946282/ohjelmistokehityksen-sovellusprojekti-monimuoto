@@ -52,7 +52,7 @@ Avainsanoja: UML/määrittelyt, Qt, API, MySQL, UI/UX
 Arviointi perustuu:
 
 - Aikataulussa pysyminen. Työtä pitää tehdä järjestelmällisesti. Viikkoraportointi vaaditaan!
-- Ryhmän tuottaman sovellukseen tasoon
+- Ryhmän tuottaman sovellukseen tasoon (kts. Sovelluksen arviointi)
 - Loppuesitykseen
 - Ohjaajan arvioon (tämä perustuu palavereissa saatuihin kokemuksiin ja GitHubin näkymiin)
 - Toveriarvioon, joka tehdään web-sovelluksella (vertaisarviointi)
