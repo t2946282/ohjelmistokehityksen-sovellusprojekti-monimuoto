@@ -488,3 +488,11 @@ Sovelluksen ajaminen Dockerissa (vaikutus arvosanaan 1).
 Esimerkiksi `jest` ja `supertest` (vaikutus arvosanaan 1)
 
 Esittelyvideo: [https://youtu.be/HEZufcp2umI](https://youtu.be/HEZufcp2umI)
+
+## Verkkopankin toteuttaminen
+
+- Verkkopankin toteuttaminen (vaikutus arvosanaan 1)
+
+## Ylimääräinen Qt-sovellus
+
+- Qt-sovellus pankin henkilökunnalle. Sovelluksella voidaan esimerkiksi luoda uusia asiakkaita, tilejä ja kortteja jne. 
