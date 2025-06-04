@@ -386,10 +386,12 @@ Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy,
 
 ### Kiitettävän arvosanan vaatimukset (arvosana 5)
 
-- Kaksoiskortit (debit + credit samassa)
-- Kirjautuessa valinta: debit vai credit (vain jos molemmat ovat käytössä)
+- Kaksoiskortit (debit + credit samassa kortissa)
+- Kirjautuessa valinta: debit vai credit (vain jos kyseessä kaksoiskortti)
 - Tilakaavio luotu
-- Lisäominaisuus sovittava ohjaajan kanssa
+- **Lisäominaisuus** sovittava ohjaajan kanssa
+
+(Huom! Kaksoiskortti on kytketty kahteen eri tiliin, joista toinen on debit-tili ja toinen credit-tili)
 
 #### Arvosanaa alentavia seikkoja
 
