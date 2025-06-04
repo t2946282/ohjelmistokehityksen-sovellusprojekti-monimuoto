@@ -351,34 +351,34 @@ Työn aihe on pankkiautomaatti
 
 Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy, niin tämä dokumentti on se, jota noudatetaan.
 
-**Huom!** Monimuotoryhmissä ei käytetä kortinlukijaa, vaan aloitusikkunasta avataan Tunnuksen syöttökäyttöliittymä painiketta painamalla, jossa annetaan PIN-koodin lisäksi kortin-id.
+**Huom!** Monimuotoryhmissä ei käytetä kortinlukijaa, vaan aloitusikkunasta avataan PIN-koodinkyselykäyttöliittymä painiketta painamalla, jossa annetaan PIN-koodin lisäksi kortin-id.
 
 ### Vähimmäisvaatimukset sovellukselle (arvosana 1)
 
 - Debit kortti toteutettava (ei luottoa, saldo ei saa mennä miinukselle)
 - Qt-sovelluksen aloituskäyttöliittymä
 - Kortinlukijan käyttö ja PIN-koodin syöttö
-- Oikealla PIN-koodilla pääkäyttöliittymä, väärällä uudelleenkysely
+- Oikealla PIN-koodilla avautuu pääkäyttöliittymä, väärällä uudelleenkysely
 - Saldo tarkastelu
 - Rahan nosto: 20, 40, 50 tai 100 €
+- Näytetään 10 viimeisintä tilitapahtumaa
 
 ### Vähimmäisvaatimukset (arvosana 2)
 
-- PIN-koodin syöttöraja 10 sekuntia
-- REST API kattaa kaikki automaatin toiminnot
+- PIN-koodin syöttöraja 10 sekuntia (jos koodia ei anneta 10 sekunnin aikana palataan aloituskäyttöliittymään)
+- REST API:in toteutettu kaikkien tietokanta-taulujen CRUD-operaatiot (vaikkei niitä tarvita pankkiautomaatissa)
 
 ### Hyvän arvosanan vaatimukset (arvosana 3)
 
 - Kortti voi olla joko debit tai credit
 - Credit-kortilla nosto luottorajan puitteissa
-- Vapaavalintaisen summan nosto
-- 10 viimeisintä tapahtumaa nähtävillä
-- 3 väärää PIN-koodia lukitsee kortin (ei tallenneta tietokantaan)
+- Vapaavalintaisen summan nosto (automaatissa 20 ja 50 € seteleitä)
+- 3 väärää PIN-koodia lukitsee kortin (ei vaadita tallennetamista tietokantaan)
 
 ### Hyvän arvosanan vaatimukset (arvosana 4)
 
-- Korttilukitus tallennetaan tietokantaan
-- 30 sekunnin inaktiivisuus palauttaa alkutilaan
+- Korttilukitus tallennetaan tietokantaan (eli lukitus säilyy vaikka sovellus käynnistetään uudelleen)
+- 30 sekunnin inaktiivisuus palauttaa alkutilaan (jos käyttäjä ei tee mitään 30 sekunnin aikana, palataan aloituskäyttöliittymään ja kaikki muut ikkunat suljetaan)
 - Tilitapahtumien selaus (eteen/taakse, 10 kerrallaan)
 
 ### Kiitettävän arvosanan vaatimukset (arvosana 5)
@@ -389,6 +389,28 @@ Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy,
 - **Lisäominaisuus** sovittava ohjaajan kanssa
 
 (Huom! Kaksoiskortti on kytketty kahteen eri tiliin, joista toinen on debit-tili ja toinen credit-tili)
+
+### Tiivistelmä arvosanoille
+
+|                            | 1  | 2  | 3  | 4  | 5  |
+|----------------------------|----|----|----|----|----|
+| Debit kortti               | x  | x  | x  | x  | x  |
+| Credit kortti              |    |    | x  | x  | x  |
+| Kaksoiskortti              |    |    |    |    | x  |
+| Kortinlukija toimii        | x  | x  | x  | x  | x  |
+| Kirjautuminen PIN-koodilla | x  | x  | x  | x  | x  |
+| Saldon näyttö              | x  | x  | x  | x  | x  |
+| Rahan nosto (20,40,50,100) | x  | x  | x  | x  | x  |
+| Rahan nosto (muu summa)    |    |    | x  | x  | x  |
+| Tilitapahtumien näyttö     | x  | x  | x  | x  | x  |
+| PIN-koodille 10 s timer    |    | x  | x  | x  | x  |
+| Kaikki CRUD-operaatiot     |    | x  | x  | x  | x  |
+| PIN-lukitus istunnolle     |    |    | x  | x  | x  |
+| PIN-lukitus tietokantaan   |    |    |    | x  | x  |
+| 30 s timerit               |    |    |    | x  | x  |
+| Tilitapahtumien selaus     |    |    |    | x  | x  |
+| Lisäominaisuus             |    |    |    |    | x  |
+
 
 #### Arvosanaa alentavia seikkoja
 
