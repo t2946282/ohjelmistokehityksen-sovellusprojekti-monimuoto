@@ -49,9 +49,6 @@ llback-helvettiä", jonka vuoksi nuo uudemmat systeemit on kehitetty
   - Ja Teemun web-sivullahan on linkkejä kirjoihin.
   - Kuitenkin tässä projektissa on tärkeämpää tuo koodaaminen kuin nuo dokumentit.
 
-- Luentoesimerkki: Muistattehan, että tuolla on se esimerkkini: [https://github.com/tvt24kmo-project/group_x/](https://github.com/tvt24kmo-project/group_x/)
-  - Ja lisäsin sen README-tiedostoon ohjeen, mitä pitää tehdä, jotta sovellus toimii.
-
 - Nyt kun näitä eri projekteja on useimmilla menossa, niin tässäpä taas yleinen muistutus. Vaikka Github onkin erityisesti hajautettu versionhallintapalvelu, niin moni käyttää sitä lähinnä ja tai myös oman ”devaaja-CV:n” / portfolion rakentamiseen Tässä awesome-listassa on iso kasa esimerkkej
 ä: [https://github.com/matiassingers/awesome-readme](https://github.com/matiassingers/awesome-readme). Joitakin poimintoja:
   - [https://github.com/sourcerer-io/sourcerer-app#readme](https://github.com/sourcerer-io/sourcerer-app#readme)
