@@ -332,7 +332,7 @@ Esittelyvideo: [https://youtu.be/HEZufcp2umI](https://youtu.be/HEZufcp2umI)
 - Jokaisesta ryhmästä yksi luo kurssin Teams-kanavan **ALAISUUTEEN** (ei siis kokonaan uutta Teams-kanavaa) uuden YKSITYISEN alikanavan nimeltä:
   - Ryhmä-xx ryhmä 1:n kanava on nimeltään Ryhmä-01 ryhmä 2:n kanava on nimeltään on Ryhmä-02, jne. Katso [tästä kuvasta yleinen  nimeämismalli](./dl/teams_ryhmat.png)
 - Kun ryhmän yksityinen Teams-kanava on luotu, lisää kanavalle ryhmän muut jäsenet. Lisää myös ohjaavat opettajat kanavan omistajaksi: Teemu Korpela ja Pekka Alaluukas
-- Github käyttöön (Pekan tekemän organisaation alle): [Pekan ohje](<https://unioulu.sharepoint.com/:b:/s/Ohjelmistokehityksensovellusprojektitestialusta/EZ_-C1pCL_dIsQ-WMkYrdE8BfpxDQDi9hyp2sYgYqDW-HA?e=4VrQ8A>)
+- Github käyttöön (Pekan tekemän organisaation alle): [Pekan ohje](#git_ohje)
 - Ryhmän jäsenet sopii alustavasti kuka tekee mitäkin toiminnallisuuksia (mutta ei niin, että vain yksi tekee koko Qt-työpöytäsovelluksen, että vain yksi tekee koko tietokannan jne.)
 - Aloittakaa tekemään projektidokumenttia (pitää tehdä yhdessä). Pohja löytyy Teamsista. Tallentakaa oma versio ryhmän github-repositoryyn documents-hakemistoon.
 - Aloittakaa tekemään teknistä määrittelydokumenttia (pitää tehdä yhdessä). Pohja löytyy Teamsista. Tallentakaa oma versio ryhmän github-repositoryyn documents-hakemistoon. 
@@ -522,4 +522,114 @@ MySQL (ei tietoa laadusta):
 - MySQL 5: [https://learning.oreilly.com/course/mysql-5/9781926873961/](https://learning.oreilly.com/course/mysql-5/9781926873961/)
 
 ___
+<span id="git_ohje"></span>
+# Projektin alustaminen
 
+📺 Voit katsoa ohjevideon osoitteesta:  
+[https://www.youtube.com/watch?v=_lfn6vsrOJY](https://www.youtube.com/watch?v=_lfn6vsrOJY)
+
+---
+
+## 1. Repositoryn alustaminen
+
+Yksi ryhmän opiskelijoista alustaa GitHub-repositoryn seuraavasti:
+
+```bash
+# Kloonaa repon omalle koneelleen
+git clone <repository-url> 
+
+cd groupx  # jossa groupx on kloonattu kansio
+git checkout -b initialize
+```
+
+---
+
+## 2. Backendin alustaminen
+
+```bash
+mkdir backend
+cd backend
+npx express-generator --no-view
+npm install
+```
+
+---
+
+## 3. Qt-sovelluksen alustaminen
+
+1. Käynnistä **Qt Creator**
+2. Luo **Qt Widget** -tyyppinen sovellus, jonka nimeksi `bank-automat`
+3. Tallenna sovellus kansioon `SPL_Groupx`
+4. Käännä sovellus
+5. Tarkista, että `bank-automat`-kansion alle ilmestyi `build`-kansio
+6. Jos `build`-kansiota ei ilmesty:
+   - Poista `bank-automat`-kansio
+   - Tarkista Qt:n asetukset:  
+     [https://peatutor.com/c_kieli/qt_asennus.php](https://peatutor.com/c_kieli/qt_asennus.php)
+   - Luo sovellus uudestaan
+
+---
+
+## 4. `.gitignore`-tiedoston luominen
+
+Luo tiedosto projektikansion `SPL_Groupx` juureen ja kirjoita siihen seuraavat rivit:
+
+```gitignore
+backend/node_modules/
+bank-automat/build/
+bank-automat/*.user
+```
+
+---
+
+## 5. Muutosten lisääminen ja pushaaminen
+
+Suorita komennot kansion `SPL_Groupx` juuressa:
+
+```bash
+git add .
+git commit -m "projekti alustettu"
+git push origin initialize
+```
+
+---
+
+## 6. Tarkistukset GitHubissa
+
+Varmista, että GitHubissa näkyy seuraavat kansiot:
+
+✅ `backend`  
+✅ `bank-automat`
+
+Ja että seuraavat **eivät ole GitHubissa**:
+
+❌ `backend/node_modules`  
+❌ `frontend/build`  
+❌ `frontend/xxx.user`
+
+---
+
+## 7. Pull Request
+
+- Jos kaikki edellä meni oikein, tee **Pull Request**
+- Pyydä jotain muuta ryhmän jäsentä hyväksymään PR ja yhdistämään `initialize` branchin `mainiin`
+
+---
+
+## 8. Branchin yhdistämisen jälkeen
+
+Henkilö, joka teki alustusvaiheet, suorittaa:
+
+```bash
+git checkout main
+git pull origin main
+```
+
+---
+
+## 9. Muut ryhmän jäsenet
+
+Tämän jälkeen kaikki muut ryhmän jäsenet:
+
+- kloonaavat repositoryn
+- luovat oman branchin
