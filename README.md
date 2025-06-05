@@ -538,7 +538,7 @@ Yksi ryhmän opiskelijoista alustaa GitHub-repositoryn seuraavasti:
 # Kloonaa repon omalle koneelleen
 git clone <repository-url> 
 
-cd groupx  # jossa groupx on kloonattu kansio
+cd groupx  # jossa groupx on kloonattu kansio ja x oman ryhmän numero
 git checkout -b initialize
 ```
 
@@ -546,6 +546,7 @@ git checkout -b initialize
 
 ## 2. Backendin alustaminen
 
+Anna groupx kansiossa seuraavat komennot
 ```bash
 mkdir backend
 cd backend
@@ -559,7 +560,7 @@ npm install
 
 1. Käynnistä **Qt Creator**
 2. Luo **Qt Widget** -tyyppinen sovellus, jonka nimeksi `bank-automat`
-3. Tallenna sovellus kansioon `SPL_Groupx`
+3. Tallenna sovellus kansioon `groupx`
 4. Käännä sovellus
 5. Tarkista, että `bank-automat`-kansion alle ilmestyi `build`-kansio
 6. Jos `build`-kansiota ei ilmesty:
@@ -572,7 +573,7 @@ npm install
 
 ## 4. `.gitignore`-tiedoston luominen
 
-Luo tiedosto projektikansion `SPL_Groupx` juureen ja kirjoita siihen seuraavat rivit:
+Luo tiedosto projektikansion `groupx` juureen ja kirjoita siihen seuraavat rivit:
 
 ```gitignore
 backend/node_modules/
@@ -584,7 +585,7 @@ bank-automat/*.user
 
 ## 5. Muutosten lisääminen ja pushaaminen
 
-Suorita komennot kansion `SPL_Groupx` juuressa:
+Suorita komennot kansion `groupx` juuressa:
 
 ```bash
 git add .
