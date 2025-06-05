@@ -619,18 +619,17 @@ Ja että seuraavat **eivät ole GitHubissa**:
 
 ## 8. Branchin yhdistämisen jälkeen
 
-Henkilö, joka teki alustusvaiheet, suorittaa:
+### Henkilö, joka teki alustusvaiheet
+- suorittaa komennot:
 
 ```bash
 git checkout main
 git pull origin main
 ```
+- ja tämän jälkeen hän luo oman branchin
 
----
 
-## 9. Muut ryhmän jäsenet
-
-Tämän jälkeen kaikki muut ryhmän jäsenet:
+### Muut ryhmän jäsenet
 
 - kloonaavat repositoryn
 - luovat oman branchin
