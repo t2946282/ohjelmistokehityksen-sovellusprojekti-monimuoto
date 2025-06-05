@@ -48,7 +48,7 @@ llback-helvettiä", jonka vuoksi nuo uudemmat systeemit on kehitetty
 - Nostotapahtumia varten kannattaa tehdä tietokantaan **proseduuri**, jolla rahaa nostetaan. Proseduuri hoitaa lisäksi toiminnot
   - tarkistaa, että saldo ja mahdollinen luottoraja sallivat nostettavan summan
   - kirjoittaa onnistuneen tapahtuman tiedot tilitapahtumiin
-  - katso mallia: [https://peatutor.com/databases/sql.php#transaction] (https://peatutor.com/databases/sql.php#transaction)
+  - katso mallia: [https://peatutor.com/databases/sql.php#transaction](https://peatutor.com/databases/sql.php#transaction)
 
 - Tuolla on esitelty noita UML-kaavioita: [https://www.cs.helsinki.fi/u/pohjalai/ke10/ohma/slides/ohma_03-UML.pdf](https://www.cs.helsinki.fi/u/pohjalai/ke10/ohma/slides/ohma_03-UML.pdf)
   - Ja Teemun web-sivullahan on linkkejä kirjoihin.
