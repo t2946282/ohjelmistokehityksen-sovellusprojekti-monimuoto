@@ -187,6 +187,7 @@ Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy,
 
 (Huom! Kaksoiskortti on kytketty kahteen eri tiliin, joista toinen on debit-tili ja toinen credit-tili)
 
+<span id="arvosana_tiiviste"></span>
 ### Tiivistelmä arvosanoille
 
 |                            | 1  | 2  | 3  | 4  | 5  |
@@ -206,6 +207,7 @@ Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy,
 | PIN-lukitus tietokantaan   |    |    |    | x  | x  |
 | 30 s timerit               |    |    |    | x  | x  |
 | Tilitapahtumien selaus     |    |    |    | x  | x  |
+| Tilakaavio                 |    |    |    | x  | x  |
 | Lisäominaisuus             |    |    |    |    | x  |
 
 
@@ -445,6 +447,7 @@ Täysin extraa, ei vaikuta arviointiin: **Huom! tvt24spl ja tvt24spo: ei tarvits
 
 # Viikko 8
 
+- Laadi vastaava taulukko kuin kohdassa [**Tiivistelmä arvosanoille**](#arvosana_tiiviste) ja rastita siihen oman toteutuksen suoritetut tehtävät
 - Demovideo projektista:
   - Videon pituuden tulisi olla noin 5 minuuttia, missä ehtii yleensä näyttämään keskeiset osat applikaatiosta ja posterista.
   - Videon on oltava julkisesti saatavilla ilman kirjautumista
