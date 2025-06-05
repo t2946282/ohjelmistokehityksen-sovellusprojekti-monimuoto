@@ -53,6 +53,7 @@ llback-helvettiä", jonka vuoksi nuo uudemmat systeemit on kehitetty
 - Tuolla on esitelty noita UML-kaavioita: [https://www.cs.helsinki.fi/u/pohjalai/ke10/ohma/slides/ohma_03-UML.pdf](https://www.cs.helsinki.fi/u/pohjalai/ke10/ohma/slides/ohma_03-UML.pdf)
   - Ja Teemun web-sivullahan on linkkejä kirjoihin.
   - Kuitenkin tässä projektissa on tärkeämpää tuo koodaaminen kuin nuo dokumentit.
+  - Luokkakaavio kannattaa tehdä vasta kun Qt-sovellus on (lähes) valmis.
 
 - Nyt kun näitä eri projekteja on useimmilla menossa, niin tässäpä taas yleinen muistutus. Vaikka Github onkin erityisesti hajautettu versionhallintapalvelu, niin moni käyttää sitä lähinnä ja tai myös oman ”devaaja-CV:n” / portfolion rakentamiseen Tässä awesome-listassa on iso kasa esimerkkejä: [https://github.com/matiassingers/awesome-readme](https://github.com/matiassingers/awesome-readme). Joitakin poimintoja:
   - [https://github.com/sourcerer-io/sourcerer-app#readme](https://github.com/sourcerer-io/sourcerer-app#readme)
