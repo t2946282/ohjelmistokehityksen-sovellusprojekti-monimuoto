@@ -28,13 +28,13 @@ ellä kenttä brand ja kirjoitetaan SQL-koodia näin
   - Kun tietokanta on tehty ja hyväksytty, niin voi lähteä tekemään sitä backendiä. Siinä voisi olla työnjakona sellainen, että kukin ryhmän jäsen tekee yhdelle tietokanta-taululle CRUD-operaatiot
 
 - Jos otatte sen Linux-palvelimen käyttöön, niin tässä muutamia asioita. En suhtautuisi tietoturvaan liittyviin juttuihin asenteella "tämähän on vain koulun projekti". Huonot käytänteet jäävät helposti päälle.
-  - 1. Pankkiautomaattia ajatellen MySQL:ään kannattaa luoda käyttäjä jolla on vain ne oikeudet jotka tarvitaan. Eli varmaan jotain tämmöistä:
+  - Pankkiautomaattia ajatellen MySQL:ään kannattaa luoda käyttäjä jolla on vain ne oikeudet jotka tarvitaan. Eli varmaan jotain tämmöistä:
      - oikeudet päivittää (UPDATE) account-taulua
      - oikeudet lisätä(INSERT) transaction tauluun
      - oikeudet suorittaa proseduuri/proseduureja
   - Näistä on esimerkkejä sivulla: [https://peatutor.com/databases/mysql.php#usermanagement](https://peatutor.com/databases/mysql.php#usermanagement)
   - Mutta siinä vaiheessa kun testaatte Postmanilla APIa niin tulee olla MySQL käyttäjä jolla on kaikki oikeudet siihen tietokantaan.
-  - 2. Varmaankin siinä Linuxissa on oletuksena seuraavat rajoitukset:
+  - Varmaankin siinä Linuxissa on oletuksena seuraavat rajoitukset:
     - palvelin kuuntelee vain 127.0.0.1 osoitteesta tulevia pyyntöjä
     - root saa kirjautua vain localhostista
   - Tuohon ekaan olen tietokannat kurssilla näyttänyt ohjeet. kts. [https://youtu.be/sQCz1m72wno](https://youtu.be/sQCz1m72wno). Noin kohdassa 1:45 alkaa tuo Linux-juttu. Eli voidaan laittaa se kuuntelemaan muualtakin tulevia pyyntöjä.
@@ -44,6 +44,11 @@ ellä kenttä brand ja kirjoitetaan SQL-koodia näin
   - Noudattakaa MVC-mallia eli tehkää mieluiten sen minun mallin mukaan, jossa Models-kansiossa on ne SQL-jutut ja Routes-kansiossa se "kontrollerit". Tätä pitäisin ehdottomana vaatimuksena
   - Mielellään teette projektin mallin mukaan perinteisillä "callbackeillä". Vaikka tähän on uudemmat systeemit "Promises" ja "async-await", niin olisi hyvä ymmärtää tuo callback systeemi. Seuraavassa projektissa saatte käyttää noita uudempia juttuja. Tässä sovelluksessa ei edes synny ns. "ca
 llback-helvettiä", jonka vuoksi nuo uudemmat systeemit on kehitetty
+
+- Nostotapahtumia varten kannattaa tehdä tietokantaan **proseduuri**, jolla rahaa nostetaan. Proseduuri hoitaa lisäksi toiminnot
+  - tarkistaa, että saldo ja mahdollinen luottoraja sallivat nostettavan summan
+  - kirjoittaa onnistuneen tapahtuman tiedot tilitapahtumiin
+  - katso mallia: [https://peatutor.com/databases/sql.php#transaction] (https://peatutor.com/databases/sql.php#transaction)
 
 - Tuolla on esitelty noita UML-kaavioita: [https://www.cs.helsinki.fi/u/pohjalai/ke10/ohma/slides/ohma_03-UML.pdf](https://www.cs.helsinki.fi/u/pohjalai/ke10/ohma/slides/ohma_03-UML.pdf)
   - Ja Teemun web-sivullahan on linkkejä kirjoihin.
