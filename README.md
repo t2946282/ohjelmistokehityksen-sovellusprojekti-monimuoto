@@ -579,6 +579,7 @@ Luo tiedosto projektikansion `groupx` juureen ja kirjoita siihen seuraavat rivit
 backend/node_modules/
 bank-automat/build/
 bank-automat/*.user
+.qtcreator/
 ```
 
 ---
