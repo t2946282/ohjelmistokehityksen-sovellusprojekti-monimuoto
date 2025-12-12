@@ -298,8 +298,7 @@ Idean esittely: [https://youtu.be/QGnv7s0JIIo](https://youtu.be/QGnv7s0JIIo)
 
 Sovelluksen ajaminen Dockerissa (vaikutus arvosanaan 1).
 
-- [https://youtu.be/vUuA00D4wrY](https://youtu.be/vUuA00D4wrY)
-- [https://youtu.be/zxcbaB6Qq0M](https://youtu.be/zxcbaB6Qq0M)
+- [https://youtu.be/DseMnAW0OTk](https://youtu.be/DseMnAW0OTk)
 
 ## Testien lisääminen backendiin
 
