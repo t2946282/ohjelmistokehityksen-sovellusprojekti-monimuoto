@@ -306,6 +306,10 @@ Esimerkiksi `jest` ja `supertest` (vaikutus arvosanaan 1)
 
 Esittelyvideo: [https://youtu.be/HEZufcp2umI](https://youtu.be/HEZufcp2umI)
 
+Tai Newman
+
+Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
+
 ## CI/CD
 
 - Jonkinlainen yksinkertainen CI/CD tai ainakin CD (esim. käännetyn tuotoksen "releasen" automatisointi Githubiin tai toiselle palvelimelle ladattavaksi vaikka Github actioneilla)
