@@ -343,7 +343,8 @@ Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
 - Katsokaa yhdessä valmiiksi viikon 2+ tavoitteet
 - Viikon luennot:
   - Aloitusinfo kurssin tekemiseksi
-  - Asiaa Qt:stä, MySQL:stä ja C++:sta
+  - Git perusteet (harjoitus)
+  - Asiaa Qt:stä, MySQL:stä, REST API:sta ja C++:sta
   - Ohjelmistotuotanto ja UML-mallinnus osa 1: Järjestelmäarkkitehtuuri, Käyttötapaukset, Tietosisältö
 - Tämän viikon aikana pitää olla tehtynä:
   - Projektisuunnitelma alulle
@@ -354,6 +355,10 @@ Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
   - Tietokannan ER-kaavio pitää olla ohjeiden mukaisesti tehtynä ja ohjaajan (Pekka) hyväksymä. Laittakaa ER-kaavio Teamsin Files osioon ja postatkaa viesti "@Pekka Alaluukas ER-kaavio valmis".
   - Tietokannan, rajapinnan ja käyttöliittymän suunnittelua ja tekemistä
   - Qt-sovellus alulle
+
+Vinkkejä tietokannan suunnitteluun
+  - Lukekaa [https://peatutor.com/databases/db.php#design](https://peatutor.com/databases/db.php#design) ja miettikää erityisesti **monen-suhde-moneen yhteydet**
+  - Miettikää tietotyyppejä ja tässä apuna [https://peatutor.com/databases/mysql.php#types](https://peatutor.com/databases/mysql.php#types)
 
 Täysin extraa, ei vaikuta arviointiin: **Huom! tvt24spl ja tvt24spo: ei tarvitse Kanbania**
 
