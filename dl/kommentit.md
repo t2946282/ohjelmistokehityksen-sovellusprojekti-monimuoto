@@ -4,8 +4,7 @@ Tälle sivulle on kasattu ohjaavien opettajien kommentteja ja vinkkejä projekti
 
 - Digitaloceaniin (Linux-palvelin pilvestä) saa $200 vuodeksi, jos hakee täältä voucherin students.oamk.fi emaililla: [https://education.github.com/pack](https://education.github.com/pack])
 
-- Huomatkaa myös että Linux on "case sensitive" ja Windows ei. Ja lisäksi UniServerin MySQL luo aina taulut pienin kirjaimin vaikka kirjoitatte ne isolla alkukirjaimilla. Teidän tulisi kirjoittaa backendissä SQL koodissa taulun nimet niin kuin ne on tietokannassa. Jos taulun nimi on car ja si
-ellä kenttä brand ja kirjoitetaan SQL-koodia näin
+- Huomatkaa myös että Linux on "case sensitive" ja Windows ei. Ja lisäksi UniServerin MySQL luo aina taulut pienin kirjaimin vaikka kirjoitatte ne isolla alkukirjaimilla. Teidän tulisi kirjoittaa backendissä SQL koodissa taulun nimet niin kuin ne on tietokannassa. Jos taulun nimi on car ja siellä on kenttä brand ja kirjoitetaan SQL-koodia näin
 
    ```text
    SELECT Brand FROM Car;
@@ -37,7 +36,6 @@ ellä kenttä brand ja kirjoitetaan SQL-koodia näin
   - Varmaankin siinä Linuxissa on oletuksena seuraavat rajoitukset:
     - palvelin kuuntelee vain 127.0.0.1 osoitteesta tulevia pyyntöjä
     - root saa kirjautua vain localhostista
-  - Tuohon ekaan olen tietokannat kurssilla näyttänyt ohjeet. kts. [https://youtu.be/sQCz1m72wno](https://youtu.be/sQCz1m72wno). Noin kohdassa 1:45 alkaa tuo Linux-juttu. Eli voidaan laittaa se kuuntelemaan muualtakin tulevia pyyntöjä.
   - Mutta jos se node.js sovellus on samalla koneella, niin ei tuota tarvitse avata. Tietokantaan voi kytkeytyä niin että ottaa SSH-yhteyden ja käyttää komentorivi-clienttia. Tai sitten Workbenchillä voi ottaa yhteyden, kun konffaa siihen "Connection methodiksi" Standard TCP/IP over SSH".
 
 - Javascriptistä ja tuosta backendistä pari juttua:
@@ -62,7 +60,7 @@ llback-helvettiä", jonka vuoksi nuo uudemmat systeemit on kehitetty
   - [https://github.com/sulu/sulu#readme](https://github.com/sulu/sulu#readme)
 
  
-- MySQL:n Bind-address: Uniserveristä se my.ini:n löytää helposti:
+- **MySQL:n Bind-address**: Uniserveristä sen **my.ini**:n löytää helposti:
   - Avaa Control-paneelin
   - MySQL palvelin ei saa olla käynnissä
   - Valikosta MySQL valitaan "Edit file my.ini"
@@ -104,11 +102,10 @@ llback-helvettiä", jonka vuoksi nuo uudemmat systeemit on kehitetty
    - Pythonilla tehty SQL-sorkkimistyökalu: [https://sqlmap.org/](https://sqlmap.org/)
    - IPPSec korkkaa hacktheboxin käytöstä poistuneita virtuaalikoneita. Videoilla on aika usein jotain web- tai api-juttuja, missä tarkoituksella reikiä: [https://www.youtube.com/@ippsec/videos](https://www.youtube.com/@ippsec/videos)
 
-- Tuon backendin kuvaaminen luokkakaaviossa voi tuntua hankalalta. Laitoin tuonne esimerkkiin vähän mallia siitä
-  - Eli siis "app" on yksi luokka. student (eli router/student.js tiedostossa oleva koodi) muodostaa luokan, jolla on yhteys(assosiaatio luokan app kanssa)
+- Tuon backendin kuvaaminen luokkakaaviossa voi tuntua hankalalta. Esimerkissä https://peatutor.com/express/Examples/app.php luokkakaavion voi tehdä näin:
+  - Tässä "app" on yksi luokka. 
+  - Book (eli router/book.js tiedostossa oleva koodi) muodostaa luokan, jolla on yhteys(assosiaatio luokan app kanssa)
   - Ei ole siis perintä eikä kompositio
-  - [https://github.com/tvt24kmo-project/group_x](https://github.com/tvt24kmo-project/group_x)
-  - Piirtelin sen kaavion nyt LucidChartilla. Tuon StudentRouter-luokan osalta en noudattanut ihan perinteistä UML tyyliä noiden metodien kuvauksessa. Mielestäni tuo tapa jolla ne tein antaa paremman informaation, jos tuon avulla pitäisi koodata
 
 - Kannattaa muuten seurata tuon Julia Evansin blogia. Kirjoittaa ihan hyviä postauksia ohjelmistokehittäjän arjesta ja oivalluksista miten se itse kehittyy (varsinkin jos lukee vanhoja postauksia) [https://jvns.ca/](https://jvns.ca/)
 
