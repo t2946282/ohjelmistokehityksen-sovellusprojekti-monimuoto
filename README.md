@@ -356,7 +356,7 @@ Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
   - Tietokannan, rajapinnan ja käyttöliittymän suunnittelua ja tekemistä
   - Qt-sovellus alulle
 
-Vinkkejä tietokannan suunnitteluun
+**Vinkkejä tietokannan suunnitteluun**
   - Lukekaa [https://peatutor.com/databases/db.php#design](https://peatutor.com/databases/db.php#design) ja miettikää erityisesti **monen-suhde-moneen yhteydet**
   - Miettikää tietotyyppejä ja tässä apuna [https://peatutor.com/databases/mysql.php#types](https://peatutor.com/databases/mysql.php#types)
 
