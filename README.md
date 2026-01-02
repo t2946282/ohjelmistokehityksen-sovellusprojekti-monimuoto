@@ -1,7 +1,6 @@
 # Ohjelmistokehityksen sovellusprojekti (monimuoto ryhmät)
 
 - Opiskelijoiden tehtävä on suunnitella ja toteuttaa pankkiautomaattijärjestelmä: [**Yleisohje ja arviointi**](#pr_ohje)
-
 - 4 opiskelijan ryhmät määritellään [Excel-dokumentissa](<https://unioulu-my.sharepoint.com/:x:/g/personal/tk_oamk_fi/ETmu1ZUhPdpLuY_QVFEC5gkBYR6tp3Ftdc4HKKpviBAkoA?e=dDAaA4>)
 
 ### Oikopolut eri viikoille
@@ -21,7 +20,7 @@
 
 ### Projektista
 
-- Minimikomponentit:
+- Minimikomponentit (ohjelmisto):
   - Tietokanta (MySQL)
   - Node.js-rajapinta (API) MySQL-tietokantaan
   - Käyttöliittymä (Qt-työpöytäsovellus C++:lla)
@@ -29,9 +28,10 @@
 - Versionhallinta (Git + Github)
 - Projektidokumentti
 - Tekninen määrittelydokumentti
-- Readme.md Github-repositorylle
+- Readme.md -tiedosto Github-repositorylle (etusivu)
 - MS Teams viestintään
 - Viikkopalaverit
+- Kanban-taulun luonti, kokonaisuuksien pilkkominen tehtäviksi ja taulun ylläpito projektin seurantaan
 - Loppuesitykset videona ja englanninkielinen posteri
 
 Avainsanoja: UML/määrittelyt, Qt, API, MySQL, UI/UX
@@ -52,24 +52,26 @@ Avainsanoja: UML/määrittelyt, Qt, API, MySQL, UI/UX
 Opiskelijan arviointi perustuu:
 
 - Aikataulussa pysyminen. Työtä pitää tehdä järjestelmällisesti. Viikkoraportointi vaaditaan!
-- Ryhmän tuottaman sovellukseen tasoon (kts. Sovelluksen arviointi)
-- Loppuesitykseen
+- Jokaisen ryhmän jäsenen pitää osata kertoa omasta tekemisestä viikkopalaverissa
 - Ohjaajan arvioon (tämä perustuu palavereissa saatuihin kokemuksiin ja GitHubin näkymiin)
+- Ryhmän tuottaman sovellukseen tasoon (kts. Sovelluksen arviointi)
 - Toveriarvioon, joka tehdään web-sovelluksella (vertaisarviointi)
 - Itsearvioon, joka tehdään web-sovelluksella (itsearviointi)
 - Projektidokumentointi ja tekninen määrittelydokumentti (heikko dokumentointi voi alentaa arvosanaa)
 - Englanninkielinen posteri (hyväksytty/hylätty, pitää päästä läpi)
+- Loppuesitykseen
 - Arvosanaa ei voi korottaa myöhemmin
 
 Lisätehtäviä parempaan arvosanaan:
 
 - Arvosanaan 5 vaaditaan lisäominaisuuksia (arvosanaa korottavat lisätehtävät on määritelty tarkemmin kohdassa "Yleisohje ja arviointi"). Katso [**Yleisohje ja arviointi**](#pr_ohje)
 
-Extratehtäviä (erityisesti monimuoto-opiskelijat, joilla on jo Linux-kurssi käytynä). Nämä eivät korota arvosanaa:
+Extratehtäviä (erityisesti monimuoto-opiskelijat, joilla on jo Linux-alkeiskurssi käytynä). **Nämä eivät kuitenkaan korota arvosanaa**:
 
 - API laitetaan reverse proxyn taakse. Esimerkiksi [Apache](https://httpd.apache.org/), [Nginx](https://nginx.org), [Caddy](https://caddyserver.com/) tai [frp](https://github.com/fatedier/frp)
-- Koko backend VPS-linuxilla (pilvipalvelusta kuten Digital Ocean tms. se VPS) tai jossain PaaS-alustassa suoraan tai konttina (Render.com, Fly.io, Vercel tms)
-- Web-palvelin käännettyjen softien lataamiseen (releaset automaattisesti tänne?)
+- Koko backend VPS-linuxilla (pilvipalvelusta kuten CSC:n Pouta, Digital Ocean tms.) tai jossain PaaS-alustassa suoraan tai konttina (esim. Render.com, Fly.io)
+- Web-palvelin käännettyjen softien lataamiseen (releaset menemään automaattisesti tänne. Github tai vaikka em. VPS-Linux)
+- CI/CD Github Actioneilla
 
 ### Qt/Express-materiaalit (Pekka Alaluukas)
 
@@ -83,8 +85,14 @@ Extratehtäviä (erityisesti monimuoto-opiskelijat, joilla on jo Linux-kurssi k�
 - Teemu Leppäsen wanhat luentotallenteet [videosoittolista \(kevät 2024\)](https://oulu.yuja.com/V/PlayList?node=3375576&a=1408679542)
 - Teamsissa [oppimateriaalit-kanava](<https://unioulu.sharepoint.com/:f:/r/sites/Ohjelmistokehityksensovellusprojektitestialusta/Shared%20Documents/3.%20Tiedostot%20ja%20yleiset%20oppimateriaalit?csf=1&web=1&e=hbYrc3>)
 
-### Extraa: IaC, reverse proxy, ohjelmistiolisensseistä (Teemu Korpela)
+### Teemaluentoja: AI, IaC, CI/CD, reverse proxy, ohjelmistiolisensseistä (Teemu Korpela)
 
+- 7.1.2026 Kanban-taulut, projektipalavereista
+- 15.1.2026 Verkkopalveluista, IaC, CI/CD, rajapinnoista (API), Reverse proxyt
+- 21.1.2026 Ohjelmistolisensseistä
+- 29.1.2026 AI-(vibe)koodaus
+
+Vanhoja, linkattuna tähän vain historiallisista syistä (tälle toteutukselle tehdään uudet:
 - [13.1.2025 Teemaluento: IaC, CI/CD, Reverse proxy](https://www.youtube.com/live/1Iiflc1Rj7o)
 - [20.1.2025 Teemaluento: Palveluiden bind ja projektien markdownista](https://www.youtube.com/live/Le6hPRxJn9g)
 - [21.4.2021 Teemaluento: Vähän ohjelmistolisensseistä](https://www.youtube.com/watch?v=57m6hktjfeg&t=225s)
@@ -110,13 +118,13 @@ Katso näistä Teams-kanavan dokumenteista mallia teknisen määrittelydokumenti
 - Choose a license: [https://choosealicense.com/](https://choosealicense.com/)
 - Public license selector:  [https://ufal.github.io/public-license-selector/](https://ufal.github.io/public-license-selector/)
 
-## Noin 15 min viikkopalavereiden yleinen agenda
+## Noin 10-15 min viikkopalavereiden yleinen agenda
 
 Viikkopalaverit pidetään ryhmän alikanavalla MS Teamssilla, niin ei tarvitse tehdä erillisiä kutsuja vaan voi liittyä suoraan siellä.
 
 - Pääsääntöisesti kaikkien pitää olla paikalla
 - Yleistä keskustelua, että miten projekti on edennyt
-- Yleistä keskustelua, että miten kukin opiskelija on osallistunut
+- Yleistä keskustelua, että miten kukin opiskelija on osallistunut (eli jokainen opiskelija kertoo itse mitä on tehnyt kuluneen viikon aikana)
 - Versiohallinnan esittely (ja .gitignore käytössä)
 - Muutoksia arvosanatavoitteeseen tai tavoitteisiin ylipäätänsä
 - Vilkaistaan projektidokumenttia ja teknistä määrittelyä
@@ -156,27 +164,27 @@ Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy,
 - Qt-sovelluksen aloituskäyttöliittymä
 - Kortinlukijan käyttö ja PIN-koodin syöttö
 - Oikealla PIN-koodilla avautuu pääkäyttöliittymä, väärällä uudelleenkysely
-- Saldo tarkastelu
+- Saldon tarkastelu
 - Rahan nosto: 20, 40, 50 tai 100 €
 - Näytetään 10 viimeisintä tilitapahtumaa
 
 ### Vähimmäisvaatimukset (arvosana 2)
 
-- PIN-koodin syöttöraja 10 sekuntia (jos koodia ei anneta 10 sekunnin aikana palataan aloituskäyttöliittymään)
-- REST API:in toteutettu kaikkien tietokanta-taulujen CRUD-operaatiot (vaikkei niitä tarvita pankkiautomaatissa)
+- PIN-koodin syötön aikaraja 10 sekuntia (jos koodia ei anneta 10 sekunnin aikana palataan aloituskäyttöliittymään)
+- REST API:in on toteutettu kaikkien tietokanta-taulujen CRUD-operaatiot (vaikkei niitä tarvita pankkiautomaatissa)
 
 ### Hyvän arvosanan vaatimukset (arvosana 3)
 
-- Kortti voi olla joko debit tai credit
+- Kortti voi olla joko debit- tai credit -tyyppinen
 - Credit-kortilla nosto luottorajan puitteissa
-- Vapaavalintaisen summan nosto (automaatissa 20 ja 50 € seteleitä)
-- 3 väärää PIN-koodia lukitsee kortin (ei vaadita tallennetamista tietokantaan)
+- Vapaavalintaisen summan nosto (automaatissa vain 20 ja 50 € seteleitä)
+- Kolme väärää PIN-koodia lukitsee kortin (ei vaadita tallentamista tietokantaan)
 
 ### Hyvän arvosanan vaatimukset (arvosana 4)
 
 - Korttilukitus tallennetaan tietokantaan (eli lukitus säilyy vaikka sovellus käynnistetään uudelleen)
 - 30 sekunnin inaktiivisuus palauttaa alkutilaan (jos käyttäjä ei tee mitään 30 sekunnin aikana, palataan aloituskäyttöliittymään ja kaikki muut ikkunat suljetaan)
-- Tilitapahtumien selaus (eteen/taakse, 10 kerrallaan)
+- Tilitapahtumien selaus (eteen/taakse, 10 tapahtumaa kerrallaan)
 
 ### Kiitettävän arvosanan vaatimukset (arvosana 5)
 
@@ -188,26 +196,39 @@ Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy,
 (Huom! Kaksoiskortti on kytketty kahteen eri tiliin, joista toinen on debit-tili ja toinen credit-tili)
 
 <span id="arvosana_tiiviste"></span>
+
 ### Tiivistelmä arvosanoille
+
+Nämä ovat ohjelmistokokonaisuutta projektihallinnallisesta näkökulmasta koskevat minimit (arviointi):
 
 |                            | 1  | 2  | 3  | 4  | 5  |
 |----------------------------|----|----|----|----|----|
-| Debit kortti               | x  | x  | x  | x  | x  |
-| Credit kortti              |    |    | x  | x  | x  |
-| Kaksoiskortti              |    |    |    |    | x  |
+| Versionhallinnan käyttö    | x  | x  | x  | x  | x  |
+| Kanban                     | x  | x  | x  | x  | x  |
+| Viikkopalaverit            | x  | x  | x  | x  | x  |
+| Tekninen määrittelydokum.  | x  | x  | x  | x  | x  |
+| Projektisuunnitelma        | x  | x  | x  | x  | x  |
+| ER-kaavio                  | x  | x  | x  | x  | x  |
+| Readme.md                  | x  | x  | x  | x  | x  |
+
+Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
+
 | Kortinlukija toimii        | x  | x  | x  | x  | x  |
 | Kirjautuminen PIN-koodilla | x  | x  | x  | x  | x  |
 | Saldon näyttö              | x  | x  | x  | x  | x  |
 | Rahan nosto (20,40,50,100) | x  | x  | x  | x  | x  |
-| Rahan nosto (muu summa)    |    |    | x  | x  | x  |
 | Tilitapahtumien näyttö     | x  | x  | x  | x  | x  |
+| Debit kortti               | x  | x  | x  | x  | x  |
 | PIN-koodille 10 s timer    |    | x  | x  | x  | x  |
 | Kaikki CRUD-operaatiot     |    | x  | x  | x  | x  |
+| Credit kortti              |    |    | x  | x  | x  |
+| Rahan nosto (muu summa)    |    |    | x  | x  | x  |
 | PIN-lukitus istunnolle     |    |    | x  | x  | x  |
 | PIN-lukitus tietokantaan   |    |    |    | x  | x  |
 | 30 s timerit               |    |    |    | x  | x  |
 | Tilitapahtumien selaus     |    |    |    | x  | x  |
 | Tilakaavio                 |    |    |    | x  | x  |
+| Kaksoiskortti              |    |    |    |    | x  |
 | Lisäominaisuus             |    |    |    |    | x  |
 
 
@@ -257,7 +278,7 @@ Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy,
 - Tehtävien vaikeustaso
 - Gitin käyttö
 
-## Lisäominaisuusideoita
+## Lisäominaisuusideoita (arvosanan 5 tarvitaan vähintään yksi tällainen lisäominaisuus)
 
 ## Kuvan lataus ja näyttäminen
 
@@ -341,6 +362,11 @@ Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
 - Aloittakaa tekemään projektidokumenttia (pitää tehdä yhdessä). Pohja löytyy Teamsista. Tallentakaa oma versio ryhmän github-repositoryyn documents-hakemistoon.
 - Aloittakaa tekemään teknistä määrittelydokumenttia (pitää tehdä yhdessä). Pohja löytyy Teamsista. Tallentakaa oma versio ryhmän github-repositoryyn documents-hakemistoon. 
 - Katsokaa yhdessä valmiiksi viikon 2+ tavoitteet
+- Kanban: Githubissa Kanban-taulu käyttöön ja Kanban-taulu linkitettynä ryhmän oman Teams-alikanavan omaksi välilehdeksi
+  - Käytä Githubin Kanban-työkalun valmista sarakemuotoista pohjaa ja lisää / editoi siihen sarakkeet:
+  - Kanbanissa pitää olla vähintään nämä sarakkeet tai ainakin mukaillen: Requested/backlog, Design/analysis, Development, Review/testing, Deployment, Done
+  - Esimerkkejä Kanban-tauluista: [https://businessmap.io/kanban-resources/kanban-software/kanban-board-examples](https://businessmap.io/kanban-resources/kanban-software/kanban-board-examples)
+  - Pilkkokaa tekemisiä ja toiminnallisuuksia Kanban-tauluun (ja muistakaa lisätä/päivittää taulua jatkuvasti)
 - Viikon luennot:
   - Aloitusinfo kurssin tekemiseksi
   - Git perusteet (harjoitus)
@@ -356,18 +382,10 @@ Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
   - Tietokannan, rajapinnan ja käyttöliittymän suunnittelua ja tekemistä
   - Qt-sovellus alulle
 
+
 **Vinkkejä tietokannan suunnitteluun**
   - Lukekaa [https://peatutor.com/databases/db.php#design](https://peatutor.com/databases/db.php#design) ja miettikää erityisesti **monen-suhde-moneen yhteydet**
   - Miettikää tietotyyppejä ja tässä apuna [https://peatutor.com/databases/mysql.php#types](https://peatutor.com/databases/mysql.php#types)
-
-Täysin extraa, ei vaikuta arviointiin: **Huom! tvt24spl ja tvt24spo: ei tarvitse Kanbania**
-
-- Githubissa Kanban käyttöön ja Kanban-taulu linkitettynä ryhmän oman Teams-alikanavan omaksi välilehdeksi
-  - Käytä Githubin Kanban-työkalun valmista sarakemuotoista pohjaa ja lisää / editoi siihen sarakkeet:
-    - Kanbanissa pitää olla vähintään nämä sarakkeet tai ainakin mukaillen: Requested/backlog, Design/analysis, Development, Review/testing, Deployment, Done
-  - Esimerkkejä Kanban-tauluista: [https://businessmap.io/kanban-resources/kanban-software/kanban-board-examples](https://businessmap.io/kanban-resources/kanban-software/kanban-board-examples)
-- Pilkkokaa tekemisiä ja toiminnallisuuksia Kanban-tauluun (ja muistakaa lisätä/päivittää taulua jatkuvasti)
-
 
 # Viikko 2
 
@@ -382,7 +400,6 @@ Täysin extraa, ei vaikuta arviointiin: **Huom! tvt24spl ja tvt24spo: ei tarvits
   - Projektisuunnitelma valmis.
   - Tekninen määrittely osin tehtynä: Järjestelmäarkkitehtuuri, Käyttötapaukset, Tietosisältö 
   - CRUD-operaatioista demo
-
 
 # Viikko 3
 
@@ -532,6 +549,7 @@ MySQL (ei tietoa laadusta):
 
 ___
 <span id="git_ohje"></span>
+
 # Projektin alustaminen
 
 📺 Voit katsoa ohjevideon osoitteesta:  
