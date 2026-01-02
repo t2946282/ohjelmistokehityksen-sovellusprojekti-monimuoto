@@ -1,4 +1,4 @@
-# Ohjelmistokehityksen sovellusprojekti (monimuoto ryhmät)
+# Ohjelmistokehityksen sovellusprojekti (TVT-monimuoto)
 
 - Opiskelijoiden tehtävä on suunnitella ja toteuttaa pankkiautomaattijärjestelmä: [**Yleisohje ja arviointi**](#pr_ohje)
 - 4 opiskelijan ryhmät määritellään [Excel-dokumentissa](<https://unioulu-my.sharepoint.com/:x:/g/personal/tk_oamk_fi/ETmu1ZUhPdpLuY_QVFEC5gkBYR6tp3Ftdc4HKKpviBAkoA?e=dDAaA4>)
@@ -364,11 +364,16 @@ Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
 - Aloittakaa tekemään projektidokumenttia (pitää tehdä yhdessä). Pohja löytyy Teamsista. Tallentakaa oma versio ryhmän github-repositoryyn documents-hakemistoon.
 - Aloittakaa tekemään teknistä määrittelydokumenttia (pitää tehdä yhdessä). Pohja löytyy Teamsista. Tallentakaa oma versio ryhmän github-repositoryyn documents-hakemistoon. 
 - Katsokaa yhdessä valmiiksi viikon 2+ tavoitteet
-- Kanban: Githubissa Kanban-taulu käyttöön ja Kanban-taulu linkitettynä ryhmän oman Teams-alikanavan omaksi välilehdeksi
-  - Käytä Githubin Kanban-työkalun valmista sarakemuotoista pohjaa ja lisää / editoi siihen sarakkeet:
-  - Kanbanissa pitää olla vähintään nämä sarakkeet tai ainakin mukaillen: Requested/backlog, Design/analysis, Development, Review/testing, Deployment, Done
-  - Esimerkkejä Kanban-tauluista: [https://businessmap.io/kanban-resources/kanban-software/kanban-board-examples](https://businessmap.io/kanban-resources/kanban-software/kanban-board-examples)
+- Kanban: Githubissa Kanban-taulu käyttöön
+  - Tehkää oma projekti ja repository Kanbania varten Githubissa
+  - Linkittäkää Kanban-taulu ryhmän omalle Teams-alikanavalle omaksi välilehdeksi
+  - Käytäkää Githubin Kanban-työkalun valmista sarakemuotoista pohjaa
+  - Ei ole välttämättä huono ajatus tehdä frontendistä (Qt-applikaatio) ja backendistä (API, tietokanta, mahdollinen palvelin) kokonaan erilliset Kanban-taulun välilehdet Githubin Kanbanilla
+  - Kanbanissa pitää olla vähintään nämä sarakkeet tai ainakin mukaillen (merkinnät ja taulu saa olla myös suomeksi): Requested/backlog, Design/analysis, Under development, Review/testing, Deployment, Done
+  - Edelliset sarakkeet kahteen kertaan, jos frontille ja backendille erilliset välilehdet
   - Pilkkokaa tekemisiä ja toiminnallisuuksia Kanban-tauluun (ja muistakaa lisätä/päivittää taulua jatkuvasti)
+  - Esimerkkejä Kanban-tauluista: [https://businessmap.io/kanban-resources/kanban-software/kanban-board-examples](https://businessmap.io/kanban-resources/kanban-software/kanban-board-examples)
+  
 - Viikon luennot:
   - Aloitusinfo kurssin tekemiseksi
   - Git perusteet (harjoitus)
@@ -378,6 +383,7 @@ Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
   - Projektisuunnitelma alulle
   - Tekninen määrittely-dokumentti alulle
   - Github repository käyttöön
+  - Kanban-taulu laitettu alulle
   - Yksityinen Teams-kanava luotu kurssin Teams-kanavan alle. Ryhmän jäsenet ja opettajat lisätty privaattikanavan omistajiksi
   - Priorisoikaa backend (tietokanta ja API), jotta käyttöliittymän voi tehdä toimimaan suoraan sitä vasten
   - Tietokannan ER-kaavio pitää olla ohjeiden mukaisesti tehtynä ja ohjaajan (Pekka) hyväksymä. Laittakaa ER-kaavio Teamsin Files osioon ja postatkaa viesti "@Pekka Alaluukas ER-kaavio valmis".
