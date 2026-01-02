@@ -213,6 +213,8 @@ Nämä ovat ohjelmistokokonaisuutta projektihallinnallisesta näkökulmasta kosk
 
 Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 
+|                            | 1  | 2  | 3  | 4  | 5  |
+|----------------------------|----|----|----|----|----|
 | Kortinlukija toimii        | x  | x  | x  | x  | x  |
 | Kirjautuminen PIN-koodilla | x  | x  | x  | x  | x  |
 | Saldon näyttö              | x  | x  | x  | x  | x  |
