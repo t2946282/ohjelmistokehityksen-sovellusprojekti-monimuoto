@@ -651,8 +651,9 @@ Varmista, että GitHubissa näkyy seuraavat kansiot:
 Ja että seuraavat **eivät ole GitHubissa**:
 
 ❌ `backend/node_modules`  
-❌ `frontend/build`  
-❌ `frontend/xxx.user`
+❌ `bank-automat/build`  
+❌ `bank-automat/xxx.user`
+❌ `bank-automat/.qtcreator`
 
 ---
 
