@@ -465,7 +465,7 @@ Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
 
 - Viikkopalaveri
   - Versiohallinnan esittely
-- Katso Jari Ahon vierailijaluennon tallenne teemasta [Ohjelmoijana pienessä ohjelmistoyrityksessä ja legacy-koodista \(2021\)(https://www.youtube.com/watch?v=YRYnhKOBl9k). Video on osa tätä vierailevien asiantuntijoiden luentosarjaa: [https://tl.oamk.fi/asiantuntijavieraat/](https://tl.oamk.fi/asiantuntijavieraat/)
+- Katso Jari Ahon vierailijaluennon tallenne teemasta [Ohjelmoijana pienessä ohjelmistoyrityksessä ja legacy-koodista \(2021\)](https://www.youtube.com/watch?v=YRYnhKOBl9k). Video on osa tätä vierailevien asiantuntijoiden luentosarjaa: [https://tl.oamk.fi/asiantuntijavieraat/](https://tl.oamk.fi/asiantuntijavieraat/)
 - Sovelluksen tekemistä
 - Tämän viikon aikana pitää olla tehtynä:
   - Tekninen määrittelydokumentti kokonaan valmiiksi 
