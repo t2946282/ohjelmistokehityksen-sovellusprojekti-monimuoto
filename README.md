@@ -453,6 +453,7 @@ Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
   - Mikä/mitkä kielet käytössä? Jotain tiettyjä frameworkeja?
   - Mikä IDE/editori?
   - Näkyykö videolla jokin versionhallinta, projektityökalu jne. käytössä?
+- Katso Matti Rädyn vierailijaluennon tallenne teemasta [Miten Unityllä tehdään softaa \(2021\)(https://www.youtube.com/watch?v=7tfpOtJjmbQ). Video on osa tätä vierailevien asiantuntijoiden luentosarjaa: [https://tl.oamk.fi/asiantuntijavieraat/](https://tl.oamk.fi/asiantuntijavieraat/)
 - Sovelluksen tekemistä
 - Teknisen määrittelydokumentin tekemistä
 - Tämän viikon aikana pitää olla tehtynä:
@@ -464,6 +465,7 @@ Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
 
 - Viikkopalaveri
   - Versiohallinnan esittely
+- Katso Jari Ahon vierailijaluennon tallenne teemasta [Ohjelmoijana pienessä ohjelmistoyrityksessä ja legacy-koodista \(2021\)(https://www.youtube.com/watch?v=YRYnhKOBl9k). Video on osa tätä vierailevien asiantuntijoiden luentosarjaa: [https://tl.oamk.fi/asiantuntijavieraat/](https://tl.oamk.fi/asiantuntijavieraat/)
 - Sovelluksen tekemistä
 - Tämän viikon aikana pitää olla tehtynä:
   - Tekninen määrittelydokumentti kokonaan valmiiksi 
@@ -475,6 +477,7 @@ Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
 - Viikkopalaveri
   - Esitellään valmis tekninen määrittelydokumentti
   - Versiohallinnan esittely
+- Katso Miika Hämeenahon  vierailijaluennon tallenne teemasta [Mobiilikehitys \(2022\)(https://www.youtube.com/watch?v=aMDq1uOiSnU). Video on osa tätä vierailevien asiantuntijoiden luentosarjaa: [https://tl.oamk.fi/asiantuntijavieraat/](https://tl.oamk.fi/asiantuntijavieraat/)
 - Sovelluksen tekemistä
 - Tämän viikon aikana pitää olla tehtynä:
   - Projektille kirjoitettu markdown-muotoinen Readme-tiedosto Githubiin
@@ -484,6 +487,7 @@ Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
 
 - Viikkopalaveri
   - Versiohallinnan esittely
+- Katso Timo Konun vierailijaluennon tallenne teemasta [Ratkaisukeskeisen ohjelmistoyrityksen johtaminen \(2022\)(https://www.youtube.com/watch?v=bkBQ0z9ZYGU). Video on osa tätä vierailevien asiantuntijoiden luentosarjaa: [https://tl.oamk.fi/asiantuntijavieraat/](https://tl.oamk.fi/asiantuntijavieraat/)
 - Sovelluksen tekemistä
 - Demovideon valmistelu
 - Ryhmä tekee yhdessä posterin englanniksi. Posteripohja löytyy Teamssista
