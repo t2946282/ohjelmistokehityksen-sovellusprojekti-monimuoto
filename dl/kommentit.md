@@ -183,3 +183,5 @@ llback-helvettiä", jonka vuoksi nuo uudemmat systeemit on kehitetty
 - Suosittelen tutustumaan OSB:ään jos vähänkään enemmän teette screencastina videoita tai streamaatte: [https://obsproject.com/](https://obsproject.com/)
 
 - Jos ei ole vielä tullut vastaan tämä repo "This repository is a compilation of well-written, step-by-step guides for re-creating our favorite technologies from scratch." [https://github.com/codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x)
+
+- Selailkaa tämä "Awesome" lista, kun mietitte niitä API-juttuja: [https://github.com/arainho/awesome-api-security](https://github.com/arainho/awesome-api-security). Erityisesti kohtia Cheatsheets, Checklist ja Design, Architecture, Development
