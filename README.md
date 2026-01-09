@@ -276,6 +276,18 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 
 - Asiakkaalla käyttöoikeus toisen omistajan tilille
 
+### Tileistä ja korteista
+
+- Vaikka tässä tehdään pankkiautomaatti, niin tehdään tietokannasta kuitenkin oikeaa pankintietokantaa muistuttava. Eihän pankeilla ole erikseen tietokantaa pankkiautomaattien tileille. Siksi siis pitää voida luoda tilejä ja osalle niistä annetaan kortti osalle ei.
+ 
+- Sellainen kortti, jossa on sekä debit, että credit ominaisuus toimii niin, että se on kytketty kahteen tiliin:
+  - toinen on debit tili (se on asiakkaan oma tili)
+  - toinen tili on credit tili (sen omistaa pankki ja asiakas ei näe sitä tiliä verkkopankissa)
+  - tässä on siis kyseessä **monen-suhde-moneen yhteys**: 
+    - yhdelle tilille voi olla pääsy monella kortilla: vaikkapa koko perheellä 
+-yksi kortti on kytketty moneen eri tiliin (vaikka se on käytännössä korkeintaan kahteen tiliin(debit ja credit).
+->Tästä seuraa hyvin tavanomainen RELAATIOTIETOKANNAN "pulma" joka  ratkaistaan välitystaulun avulla
+
 ## Opiskelijan arviointi
 
 - Sovelluksen arvosana
