@@ -130,7 +130,7 @@ llback-helvettiä", jonka vuoksi nuo uudemmat systeemit on kehitetty
   - Tietoa ei kannata siirtää turhaan: Esim. jos haetaan kaikki data API:sta, niin monissa pilvipalveluissa (kuten AWS) usein ne isoimmat kulut on tietoliikennekulut sieltä konesalista ulospäin lähtevälle datalle. Jos datamäärät on isoja, niin tuo kerryttää tarpeettomasti laskua. Ei välttämättä nyt tässä tapauksessa, mutta noin ylipäätänsä
   - Nykyserverit on niin tehokkaita, että aika halpa ja tehoton palvelin pystyy käsittelemään kymmeniä tai satoja pyyntöjä sekunnissa
   - Kannattaa tehdä operaatiot aina tietokannassa jos voi (ei ole mitään järkeä siirtää dataa ulos kannasta, prosessoida sitä clientissa ja siirtää sitä takaisin kantaan ellei ole pakko)
-  - Clienttiin ei voi koskaan luokkaa tietoturvamielessä, vaikka olisi mikä. Kaikki tietosuojan tai tietoturvan kannalta kriittiset jutut pitää tehdä aina ainoastaan palvelinpäässä
+  - Clienttiin ei voi koskaan luottaa tietoturvamielessä, vaikka olisi mikä. Kaikki tietosuojan tai tietoturvan kannalta kriittiset jutut pitää tehdä aina palvelinpäässä
 
 - Tuli muuten mieleen nämä meikäläisen kavereiden vierailujaluennot. enimmäkseen softadevaukseen liittyviä luentoja. 3-4 vuotta vanhoja, mutta nuo asiat ei ole sinänsä muuttunu miksikään: [https://tl.oamk.fi/asiantuntijavieraat/](https://tl.oamk.fi/asiantuntijavieraat/)
 
