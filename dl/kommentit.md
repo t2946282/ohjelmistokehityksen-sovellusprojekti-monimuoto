@@ -173,14 +173,13 @@ llback-helvettiä", jonka vuoksi nuo uudemmat systeemit on kehitetty
 
 - 10 vuotta devaajana ja mietteitä: [https://chriskiehl.com/article/thoughts-after-10-years](https://chriskiehl.com/article/thoughts-after-10-years)
 
-
 - Ihan mielekästä pohdintaa LLM AI vaikutuksesta softainssihommiin [https://serce.me/posts/2025-02-07-the-llm-curve-of-impact-on-software-engineers](https://serce.me/posts/2025-02-07-the-llm-curve-of-impact-on-software-engineers)
 
 - Prompt-ideoita copilotin kanssa koodin korjailuun: [https://github.blog/ai-and-ml/github-copilot/how-to-refactor-code-with-github-copilot/](https://github.blog/ai-and-ml/github-copilot/how-to-refactor-code-with-github-copilot/)
 
 - Sellaisena villinä heittona tuli mieleen, että jos  teillä pyörii MySQL ja node.js:llä tehty API samassa raudassa, niin joku shared memory tai IPC (käytännössä named pipes) mahdollistais luultavasti nopeamman tiedonsiirron node.js:n ja MySQL:n välillä. Ei tietoa miten onnistuu nodella, jos  edes onnistuu: [https://stackoverflow.com/questions/271864/best-way-to-connect-to-mysql-locally](https://stackoverflow.com/questions/271864/best-way-to-connect-to-mysql-locally) Ne TCP/IP-soketit on kuitenkin aina vähän hitaita saman palvelimen sisällä käytettynä vrt putkiin tai suoraan muistin kautta käsiteltävään dataan ilman välissä olevaa protokollapinoa
 
-- Suosittelen tutustumaan OSB:ään jos vähänkään enemmän teette screencastina videoita tai streamaatte: [https://obsproject.com/](https://obsproject.com/)
+- Suosittelen tutustumaan OBS:ään jos vähänkään enemmän teette screencastina videoita tai streamaatte: [https://obsproject.com/](https://obsproject.com/)
 
 - Jos ei ole vielä tullut vastaan tämä repo "This repository is a compilation of well-written, step-by-step guides for re-creating our favorite technologies from scratch." [https://github.com/codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x)
 
