@@ -101,7 +101,7 @@ Extratehtäviä (erityisesti monimuoto-opiskelijat, joilla on jo Linux-alkeiskur
 ### Teemaluentoja: AI, IaC, CI/CD, reverse proxy, ohjelmistiolisensseistä (Teemu Korpela)
 
 - [Keskiviikko 7.1.2026 klo 17:00 - Tiedonhausta, IT-uutisista, alan seuraamisesta ja Kanban-taulut](https://youtube.com/live/laNmAles5go)
-- Torstai 15.1.2026 klo 17:00 - Verkkopalveluista, IaC, CI/CD, rajapinnoista (API), Reverse proxyt
+- [Torstai 15.1.2026 klo 17:00 - Verkkopalveluista, IaC, CI/CD, rajapinnoista, reverse proxyt](https://youtube.com/live/iEa4woguddM)
 - Torstai 22.1.2026 klo 17:00 - Ohjelmistolisensseistä
 - Torstai 29.1.2026 klo 17:00 - AI-(vibe)koodaus
 
