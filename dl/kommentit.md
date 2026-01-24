@@ -130,7 +130,7 @@ llback-helvettiä", jonka vuoksi nuo uudemmat systeemit on kehitetty
   - Tietoa ei kannata siirtää turhaan: Esim. jos haetaan kaikki data API:sta, niin monissa pilvipalveluissa (kuten AWS) usein ne isoimmat kulut on tietoliikennekulut sieltä konesalista ulospäin lähtevälle datalle. Jos datamäärät on isoja, niin tuo kerryttää tarpeettomasti laskua. Ei välttämättä nyt tässä tapauksessa, mutta noin ylipäätänsä
   - Nykyserverit on niin tehokkaita, että aika halpa ja tehoton palvelin pystyy käsittelemään kymmeniä tai satoja pyyntöjä sekunnissa
   - Kannattaa tehdä operaatiot aina tietokannassa jos voi (ei ole mitään järkeä siirtää dataa ulos kannasta, prosessoida sitä clientissa ja siirtää sitä takaisin kantaan ellei ole pakko)
-  - Clienttiin ei voi koskaan luokkaa tietoturvamielessä, vaikka olisi mikä. Kaikki tietosuojan tai tietoturvan kannalta kriittiset jutut pitää tehdä aina ainoastaan palvelinpäässä
+  - Clienttiin ei voi koskaan luottaa tietoturvamielessä, vaikka olisi mikä. Kaikki tietosuojan tai tietoturvan kannalta kriittiset jutut pitää tehdä aina palvelinpäässä
 
 - Tuli muuten mieleen nämä meikäläisen kavereiden vierailujaluennot. enimmäkseen softadevaukseen liittyviä luentoja. 3-4 vuotta vanhoja, mutta nuo asiat ei ole sinänsä muuttunu miksikään: [https://tl.oamk.fi/asiantuntijavieraat/](https://tl.oamk.fi/asiantuntijavieraat/)
 
@@ -173,15 +173,22 @@ llback-helvettiä", jonka vuoksi nuo uudemmat systeemit on kehitetty
 
 - 10 vuotta devaajana ja mietteitä: [https://chriskiehl.com/article/thoughts-after-10-years](https://chriskiehl.com/article/thoughts-after-10-years)
 
-
 - Ihan mielekästä pohdintaa LLM AI vaikutuksesta softainssihommiin [https://serce.me/posts/2025-02-07-the-llm-curve-of-impact-on-software-engineers](https://serce.me/posts/2025-02-07-the-llm-curve-of-impact-on-software-engineers)
 
 - Prompt-ideoita copilotin kanssa koodin korjailuun: [https://github.blog/ai-and-ml/github-copilot/how-to-refactor-code-with-github-copilot/](https://github.blog/ai-and-ml/github-copilot/how-to-refactor-code-with-github-copilot/)
 
 - Sellaisena villinä heittona tuli mieleen, että jos  teillä pyörii MySQL ja node.js:llä tehty API samassa raudassa, niin joku shared memory tai IPC (käytännössä named pipes) mahdollistais luultavasti nopeamman tiedonsiirron node.js:n ja MySQL:n välillä. Ei tietoa miten onnistuu nodella, jos  edes onnistuu: [https://stackoverflow.com/questions/271864/best-way-to-connect-to-mysql-locally](https://stackoverflow.com/questions/271864/best-way-to-connect-to-mysql-locally) Ne TCP/IP-soketit on kuitenkin aina vähän hitaita saman palvelimen sisällä käytettynä vrt putkiin tai suoraan muistin kautta käsiteltävään dataan ilman välissä olevaa protokollapinoa
 
-- Suosittelen tutustumaan OSB:ään jos vähänkään enemmän teette screencastina videoita tai streamaatte: [https://obsproject.com/](https://obsproject.com/)
+- Suosittelen tutustumaan OBS:ään jos vähänkään enemmän teette screencastina videoita tai streamaatte: [https://obsproject.com/](https://obsproject.com/)
 
 - Jos ei ole vielä tullut vastaan tämä repo "This repository is a compilation of well-written, step-by-step guides for re-creating our favorite technologies from scratch." [https://github.com/codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x)
 
 - Selailkaa tämä "Awesome" lista, kun mietitte niitä API-juttuja: [https://github.com/arainho/awesome-api-security](https://github.com/arainho/awesome-api-security). Erityisesti kohtia Cheatsheets, Checklist ja Design, Architecture, Development
+
+- Ohjelmistoturvallisuus on todella vaikeaa. Teoriassa kaikkien koodaajien pitäis osata ja tunnistaa nämä haavoittuvuudet softaa kehittäessä. CWE on luokittelujärjestelmä numeroida haavoittuvuuksia. Tässä PDF:ssä on 2865 sivua ja 1434 haavoittuvuutta: [https://cwe.mitre.org/data/published/cwe_latest.pdf](https://cwe.mitre.org/data/published/cwe_latest.pdf). Esimerkiksi ajatellaan sitä teidän nodejs-rajapintaa. Jos se vastaa systemaattisesti eri viiveellä sen mukaan onko vaikka käyttäjätunnusta olemassa, niin joku voi yrittää käyttää ajastushyökkäystä vaikkapa käyttäjätunnussanaston kanssa selvittääkseen minkä nimisiä tunnuksia kyseinen API palvelee. Haavoittuvuus olisi luokittelussa CWE-208. Ratkaisu tuohon olisi lisätä pieni viive esim. kirjautumisen yhteyteen siten, että se vastaus kestää aina saman ajan, oli kyseessä sitten onnistunut tai epäonnistunut kirjautuminen.
+ 
+- Ei ole pakollinen työkalu tälle projektille, mutta vahva suositus että kun mietitte ja suunnittelette sitä käyttöliittymää seuraavilla viikoilla, niin tehkää siitä omasta Qt-applikaatiosta ensin mockup/wireframe Figmalla. Figma on todella yleinen käyttöliittymien suunnittelusofta (kaupallinen palvelu). Ilmaisella tilillä ja versiolla pääsee pitkälle. [https://www.figma.com/](https://www.figma.com/). Tulevaisuutta tai jo nykyisyyttä on myös se, että erilaiset AI agentit koodaa käyttöliittymiä suoraan tuollaisilla työkaluilla tehtyjen suunnitelmien pohjalta valmiiksi. Esim. Claude Code ja Figma MCP tekee suoraan Figmalla tehdystä käyttöliittymäsuunnitelmasta koodin. (Mutta teidän pitää nyt tässä projektissa tehdä se Qt-käyttöliittymä ja softa ihan itse!)
+
+- PIN hashataan bcryptillä ja se tekee 60 merkkiä pitkän hashin joten laittakaa VARCHAR(60). Monet varautuvat tulevaisuuteen laittamalla siihen pidemmänkin. Ja valuutoille DECIMAL(10,2) on hyvä valinta. (Jossain maksujärjestelmissä vielä pidempikin)
+
+- Github mobilella voi läpikäydä ja hyväksyä pull requesteja kännykällä, jos ei satu olemaan tietokoneen äärellä. [https://github.com/mobile](https://github.com/mobile)
