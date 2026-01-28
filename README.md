@@ -659,15 +659,15 @@ git push origin initialize
 
 Varmista, että GitHubissa näkyy seuraavat kansiot:
 
-✅ `backend`  
-✅ `bank-automat`
+- backend  
+- bank-automat
 
 Ja että seuraavat **eivät ole GitHubissa**:
 
-❌ `backend/node_modules`  
-❌ `bank-automat/build`  
-❌ `bank-automat/xxx.user`
-❌ `bank-automat/.qtcreator`
+- backend/node_modules  
+- bank-automat/build 
+- bank-automat/.qtcreator
+- bank-automat/xxx.user
 
 ---
 
