@@ -353,7 +353,7 @@ Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
 
 ## CI/CD
 
-- Jonkinlainen CI/CD esimerkiksi:
+- Jonkinlainen CI/CD esimerkiksi (vaikutus arvosanaan 1):
   - backendin julkaisu automaattisesti jollain julkisella palvelimella (Github Actioneilla)
   - Qt-sovelluksen "setupin" rakentaminen automaattisesti Githubissa ja "releasen" julkaisu ladattavaksi GitHubissa tai toisella palvelimelle ladattavaksi 
 
