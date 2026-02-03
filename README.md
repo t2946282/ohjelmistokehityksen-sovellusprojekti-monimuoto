@@ -80,8 +80,6 @@ Extratehtäviä (erityisesti monimuoto-opiskelijat, joilla on jo Linux-alkeiskur
 
 - API laitetaan reverse proxyn taakse. Esimerkiksi [Apache](https://httpd.apache.org/), [Nginx](https://nginx.org), [Caddy](https://caddyserver.com/) tai [frp](https://github.com/fatedier/frp)
 - Koko backend VPS-linuxilla (pilvipalvelusta kuten CSC:n Pouta, Digital Ocean tms.) tai jossain PaaS-alustassa suoraan tai konttina (esim. Render.com, Fly.io)
-- Web-palvelin käännettyjen softien lataamiseen (releaset menemään automaattisesti tänne. Github tai vaikka em. VPS-Linux)
-- CI/CD Github Actioneilla
 
 ### Qt/Express-materiaalit (Pekka Alaluukas)
 
@@ -237,7 +235,7 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 | PIN-lukitus tietokantaan   |    |    |    | x  | x  |
 | 30 s timerit               |    |    |    | x  | x  |
 | Tilitapahtumien selaus     |    |    |    | x  | x  |
-| Tilakaavio                 |    |    |    | x  | x  |
+| Tilakaavio                 |    |    |    |    | x  |
 | Kaksoiskortti              |    |    |    |    | x  |
 | Lisäominaisuus             |    |    |    |    | x  |
 
@@ -355,8 +353,9 @@ Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
 
 ## CI/CD
 
-- Jonkinlainen yksinkertainen CI/CD tai ainakin CD (esim. käännetyn tuotoksen "releasen" automatisointi Githubiin tai toiselle palvelimelle ladattavaksi vaikka Github actioneilla)
-(vaikutus arvosanaan 1)
+- Jonkinlainen CI/CD esimerkiksi:
+  - backendin julkaisu automaattisesti jollain julkisella palvelimella (Github Actioneilla)
+  - Qt-sovelluksen "setupin" rakentaminen automaattisesti Githubissa ja "releasen" julkaisu ladattavaksi GitHubissa tai toisella palvelimelle ladattavaksi 
 
 ## Verkkopankin toteuttaminen
 
