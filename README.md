@@ -221,7 +221,6 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 
 |                            | 1  | 2  | 3  | 4  | 5  |
 |----------------------------|----|----|----|----|----|
-| Kortinlukija toimii        | x  | x  | x  | x  | x  |
 | Kirjautuminen PIN-koodilla | x  | x  | x  | x  | x  |
 | Saldon näyttö              | x  | x  | x  | x  | x  |
 | Rahan nosto (20,40,50,100) | x  | x  | x  | x  | x  |
@@ -504,7 +503,12 @@ Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
 
 # Viikko 8
 
-- Laadi vastaava taulukko kuin kohdassa [**Tiivistelmä arvosanoille**](#arvosana_tiiviste) ja rastita siihen oman toteutuksen suoritetut tehtävät
+- Laadi vastaava taulukko kuin kohdassa [**Tiivistelmä arvosanoille**](#arvosana_tiiviste) ja rastita siihen oman toteutuksen suoritetut tehtävät.
+  
+  - Voit ladata excel-tiedoston (taskit.xlsx) Teamsin kanavalta **Tiedostot ja yhteiset oppimateriaalit**
+  - Rastita tehdyt tehtävät
+  - Lataa tiedosto GitRepon juureen (jos et käytä exceliä laita kuitenkin nimen alkuosaksi taskit)
+
 - Demovideo projektista:
   - Videon pituuden tulisi olla noin 5 minuuttia, missä ehtii yleensä näyttämään keskeiset osat applikaatiosta ja posterista.
   - Videon on oltava julkisesti saatavilla ilman kirjautumista
