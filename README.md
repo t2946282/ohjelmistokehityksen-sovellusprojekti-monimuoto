@@ -178,6 +178,13 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 - Git perusteita [Peatutor.com/git_tutor/](https://peatutor.com/git_tutor/)
 - Muita Pekan tekemiä ohjeita (Qt yms.): [Peatutor.com/](https://peatutor.com/)
 
+### Teemaluentoja: AI, IaC, CI/CD, reverse proxy, ohjelmistiolisensseistä (Teemu Korpela)
+
+- [7.1.2026 - Tiedonhausta, IT-uutisista, alan seuraamisesta ja Kanban-taulut](https://youtube.com/live/laNmAles5go)
+- [15.1.2026 - Verkkopalveluista, IaC, CI/CD, rajapinnoista, reverse proxyt](https://youtube.com/live/iEa4woguddM)
+- [21.4.2021 - Ohjelmistolisensseistä \(aikaisempi tallenne, ei tarvetta uudelle\)](https://www.youtube.com/watch?v=57m6hktjfeg&t=225s)
+- [29.1.2026 - AI-\(vibe\)koodaus](https://youtube.com/live/X-KdliMD4-8)
+
 ### Ohjelmistokehityksen perusteet ja UML-mallinnus videot Yujassa (Teemu Leppänen)
 
 - Teemu Leppäsen luentotallenteet [videosoittolista \(kevät 2025\)](https://oulu.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx#folderID=%2221064f4a-0801-451c-8e5c-b29d00e337be%22)
@@ -603,12 +610,7 @@ Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
 - Me ohjaajina emme halua arvioida tekoälyn tekemää sovellusta ja tekemistä, vaan opiskelijoiden. Emme myöskään ryhdy poliisiksi, joka käyttää työaikansa tekoälyn jäljittämiseen, vaan **opiskelijalla on oltava itsellään halu oppia eikä tavoitella pelkästään arvosanoja**
 - Tämän projektikurssin ohjaajia yhdistää vuosikymmeniä kestänyt innostus ja kiinnostus tietotekniikkaan ja uteliaisuus oppia ja kokeilla uutta. Myös teköälyalustoja, jotka on vain uusi mielenkiintoinen vaihe tietotekniikan historiassa. Emme todellakaan ole tekoälyvastaisia, vaan päin vastoin. Niitä on hyvä ja tärkeää oppia hyödyntämään, mutta ei siten että perusteet jää oppimatta!
 
-# Teemaluentoja: AI, IaC, CI/CD, reverse proxy, ohjelmistiolisensseistä (Teemu Korpela)
 
-- [7.1.2026 - Tiedonhausta, IT-uutisista, alan seuraamisesta ja Kanban-taulut](https://youtube.com/live/laNmAles5go)
-- [15.1.2026 - Verkkopalveluista, IaC, CI/CD, rajapinnoista, reverse proxyt](https://youtube.com/live/iEa4woguddM)
-- [21.4.2021 - Ohjelmistolisensseistä \(aikaisempi tallenne, ei tarvetta uudelle\)](https://www.youtube.com/watch?v=57m6hktjfeg&t=225s)
-- [29.1.2026 - AI-\(vibe\)koodaus](https://youtube.com/live/X-KdliMD4-8)
 
 
 # Softalisensseistä
