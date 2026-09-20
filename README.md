@@ -1,142 +1,17 @@
-# Ohjelmistokehityksen sovellusprojekti (TVT-monimuoto)
+# Ohjelmistokehityksen sovellusprojekti (TVT Monimuoto)
 
 - Opiskelijoiden tehtävä on suunnitella ja toteuttaa pankkiautomaattijärjestelmä: [**Yleisohje ja arviointi**](#pr_ohje)
 - 4 opiskelijan ryhmät määritellään [Excel-dokumentissa](<https://unioulu-my.sharepoint.com/:x:/g/personal/tk_oamk_fi/ETmu1ZUhPdpLuY_QVFEC5gkBYR6tp3Ftdc4HKKpviBAkoA?e=dDAaA4>)
+- [**Projektin alustaminen**](#initialize)
 
-### Oikopolut eri viikoille
-
-- [Viikko 1](./#viikko-1)
-- [Viikko 2](./#viikko-2)
-- [Viikko 3](./#viikko-3)
-- [Viikko 4](./#viikko-4)
-- [Viikko 5](./#viikko-5)
-- [Viikko 6](./#viikko-6)
-- [Viikko 7](./#viikko-7)
-- [Viikko 8](./#viikko-8)
-
-### Ohjaajien kommentteja ja vinkkejä
-
-- Tänne on kasattu aikaisempien projektien [ohjaajien kommentteja ja vinkkejä](./dl/kommentit.md)
-
-### Projektista
-
-- Minimikomponentit (ohjelmisto):
-  - Tietokanta (MySQL)
-  - Node.js-rajapinta (API) MySQL-tietokantaan
-  - Käyttöliittymä (Qt-työpöytäsovellus C++:lla)
-- 4 hengen ryhmät
-- Versionhallinta (Git + Github)
-- Projektidokumentti
-- Tekninen määrittelydokumentti
-- Readme.md -tiedosto Github-repositorylle (etusivu)
-- MS Teams viestintään
-- Viikkopalaverit
-- Kanban-taulun luonti, kokonaisuuksien pilkkominen tehtäviksi ja taulun ylläpito projektin seurantaan
-- Loppuesitykset videona ja englanninkielinen posteri
-
-Avainsanoja: UML/määrittelyt, Qt, API, MySQL, UI/UX
+- Ryhmät työskentelevät joka päivä klo 9-15
+- Viikko-ohjelmat: 
+|[Viikko 1](./#viikko-1) | [Viikko 2](./#viikko-2) |[Viikko 3](./#viikko-3) | [Viikko 4](./#viikko-4) | [Viikko 5](./#viikko-5) | [Viikko 6](./#viikko-6) | [Viikko 7](./#viikko-7) | [Viikko 8](./#viikko-8) |
 
 
-### Oppimistavoitteet
 
-- Opiskelija tunnistaa ja ymmärtää ohjelmistokehityksen vaihejakomallin perusvaiheet. Hän tietää eri vaiheiden merkitykset, vaihetuotteet ja vaiheiden erot
-- Itsenäisen ja ryhmätyöskentelyn avulla opiskelija oppii suunnittelemaan ja toteuttamaan vaatimusmäärittelyn mukaisen järjestelmän käyttäen moderneja kehitystyökaluja
-- Opiskelija ymmärtää ryhmätyöskentelyn merkityksen ohjelmistokehitystyössä
-- Opiskelija osaa käyttää oliopohjaista mallinnuskieltä kehitystyön (UML) eri vaiheissa ja osaa kirjoittaa kaavioiden pohjalta ohjelmakoodia
-- Opiskelija osaa suunnitella ja toteuttaa oliopohjaisen sovelluksen luokkakirjaston mukaisesti
-- Opiskelija osaa suunnitella ja toteuttaa sovellukseen tietokanta-arkkitehtuurin
-- Opiskelija osaa laatia ohjelmistoprojektin dokumentaation ja pystyy viestimään suullisesti ja kirjallisesti, myös englanniksi
 
-### Generatiiviset tekoälyt (AI-koodaus) ja vastaavat apuvälineet. Ohjaajien (ja yleisestikin IT-opettajien) ajatuksia aiheesta:
 
-- Tekoäly on hyvä renki, mutta huono isäntä. Varsinkin oppimisessa.
-- Tekoälyäkin pitää oppia hyödyntämään, mutta vähän myöhemmin
-- Ensin on kuitenkin syytä opiskella perusteet, oli se sitten vaikkapa IT arkkitehtuurista, ohjelmistotekniikan perusteista, tietoverkoista, tietoturvallisuudesta, tietosuojasta, dokumentoinnoista, elektroniikasta yms.
-- Työnantajat tuskin palkkaavat tuhansia euroja kuussa maksavaa työntekijöitä, jotka ovat pelkästään tekoälykonttoristeja
-- Perusasioiden ymmärrys ei katoa mihinkään ja onhan se myös ammattiylpeyttä suunnitella ja käsittää mitä tapahtuu milloinkin
-- Me ohjaajina emme halua arvioida tekoälyn tekemää sovellusta ja tekemistä, vaan opiskelijoiden. Emme myöskään ryhdy poliisiksi, joka käyttää työaikansa tekoälyn jäljittämiseen, vaan **opiskelijalla on oltava itsellään halu oppia eikä tavoitella pelkästään arvosanoja**
-- Tämän projektikurssin ohjaajia yhdistää vuosikymmeniä kestänyt innostus ja kiinnostus tietotekniikkaan ja uteliaisuus oppia ja kokeilla uutta. Myös teköälyalustoja, jotka on vain uusi mielenkiintoinen vaihe tietotekniikan historiassa. Emme todellakaan ole tekoälyvastaisia, vaan päin vastoin. Niitä on hyvä ja tärkeää oppia hyödyntämään, mutta ei siten että perusteet jää oppimatta!
-
-### Arviointi
-
-Opiskelijan arviointi perustuu:
-
-- Aikataulussa pysyminen. Työtä pitää tehdä järjestelmällisesti. Viikkoraportointi vaaditaan!
-- Jokaisen ryhmän jäsenen pitää osata kertoa omasta tekemisestä viikkopalaverissa
-- Ohjaajan arvioon (tämä perustuu palavereissa saatuihin kokemuksiin ja GitHubin näkymiin)
-- Ryhmän tuottaman sovellukseen tasoon (kts. Sovelluksen arviointi)
-- Toveriarvioon, joka tehdään web-sovelluksella (vertaisarviointi)
-- Itsearvioon, joka tehdään web-sovelluksella (itsearviointi)
-- Projektidokumentointi ja tekninen määrittelydokumentti (heikko dokumentointi voi alentaa arvosanaa)
-- Englanninkielinen posteri (hyväksytty/hylätty, pitää päästä läpi)
-- Loppuesitykseen
-- Arvosanaa ei voi korottaa myöhemmin
-
-Lisätehtäviä parempaan arvosanaan:
-
-- Arvosanaan 5 vaaditaan lisäominaisuuksia (arvosanaa korottavat lisätehtävät on määritelty tarkemmin kohdassa "Yleisohje ja arviointi"). Katso [**Yleisohje ja arviointi**](#pr_ohje)
-
-Extratehtäviä (erityisesti monimuoto-opiskelijat, joilla on jo Linux-alkeiskurssi käytynä). **Nämä eivät kuitenkaan korota arvosanaa**:
-
-- API laitetaan reverse proxyn taakse. Esimerkiksi [Apache](https://httpd.apache.org/), [Nginx](https://nginx.org), [Caddy](https://caddyserver.com/) tai [frp](https://github.com/fatedier/frp)
-- Koko backend VPS-linuxilla (pilvipalvelusta kuten CSC:n Pouta, Digital Ocean tms.) tai jossain PaaS-alustassa suoraan tai konttina (esim. Render.com, Fly.io)
-
-### Qt/Express-materiaalit (Pekka Alaluukas)
-
-- Pekka Alaluukkaan [ohjeet ja tallenteet videosoittolistana](https://www.youtube.com/playlist?list=PLWl0bS7jZq99iOUNmMyuT9EgU6YfxP_en)
-- Git perusteita [Peatutor.com/git_tutor/](https://peatutor.com/git_tutor/)
-- Muita Pekan tekemiä ohjeita (Qt yms.): [Peatutor.com/](https://peatutor.com/)
-
-### Ohjelmistokehityksen perusteet ja UML-mallinnus videot Yujassa (Teemu Leppänen)
-
-- Teemu Leppäsen luentotallenteet [videosoittolista \(kevät 2025\)](https://oulu.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx#folderID=%2221064f4a-0801-451c-8e5c-b29d00e337be%22)
-- Teamsissa [oppimateriaalit-kanava](<https://unioulu.sharepoint.com/:f:/r/sites/Ohjelmistokehityksensovellusprojektitestialusta/Shared%20Documents/3.%20Tiedostot%20ja%20yleiset%20oppimateriaalit?csf=1&web=1&e=hbYrc3>)
-
-### Esimerkkisovelluksen UML-kaaviot
-
-- Pekan luennoilla rakennetaan esimerkkisovellus, jonka UML-kaaviot ja muut suunnitteluvaiheet löytyvät GiHubista [https://github.com/alaluuk/peppiExample](https://github.com/alaluuk/peppiExample)
-
-### Teemaluentoja: AI, IaC, CI/CD, reverse proxy, ohjelmistiolisensseistä (Teemu Korpela)
-
-- [7.1.2026 - Tiedonhausta, IT-uutisista, alan seuraamisesta ja Kanban-taulut](https://youtube.com/live/laNmAles5go)
-- [15.1.2026 - Verkkopalveluista, IaC, CI/CD, rajapinnoista, reverse proxyt](https://youtube.com/live/iEa4woguddM)
-- [21.4.2021 - Ohjelmistolisensseistä \(aikaisempi tallenne, ei tarvetta uudelle\)](https://www.youtube.com/watch?v=57m6hktjfeg&t=225s)
-- [29.1.2026 - AI-\(vibe\)koodaus](https://youtube.com/live/X-KdliMD4-8)
-
-### Kaaviot dokumentointiin
-
-Esimerkiksi näillä työkaluilla:
-
-- Drawio: [https://www.drawio.com/](https://www.drawio.com/). Suora linkki: [https://app.diagrams.net/](https://app.diagrams.net/)
-- Lucidchart: [https://www.lucidchart.com](https://www.lucidchart.com)
-- Diagrameditor: [https://www.diagrameditor.com/](https://www.diagrameditor.com/)
-- PlantUML: [https://plantuml.com/](https://plantuml.com/)
-
-Katso näistä Teams-kanavan dokumenteista mallia teknisen määrittelydokumentin kaavioihin:
-
-- Ohjelmistokehityksen [materiaalit](<https://unioulu.sharepoint.com/:f:/r/sites/Ohjelmistokehityksensovellusprojektitestialusta/Shared%20Documents/3.%20Tiedostot%20ja%20yleiset%20oppimateriaalit/Ohjelmistokehityksen%20materiaalit?csf=1&web=1&e=T5e6e4>)
-- Valmiita esimerkkejä [määrittelyvaiheen kaavioista](<https://unioulu.sharepoint.com/:b:/r/sites/Ohjelmistokehityksensovellusprojektitestialusta/Shared%20Documents/3.%20Tiedostot%20ja%20yleiset%20oppimateriaalit/Ohjelmistokehityksen%20materiaalit/IN00CS90_Luku_5_Maarittelyvaihe.pdf?csf=1&web=1&e=TnPtge>)
-- UML-mallinnuksen [kaavioesimerkit](<https://unioulu.sharepoint.com/:f:/r/sites/Ohjelmistokehityksensovellusprojektitestialusta/Shared%20Documents/3.%20Tiedostot%20ja%20yleiset%20oppimateriaalit/Ohjelmistokehityksen%20materiaalit/UML-mallinnus?csf=1&web=1&e=0UrXUt>)
-- Yleinen [esimerkkikuva järjestelmäarkkitehtuurista](./dl/arkkitehtuurikuva.png)
-
-### Softalisensseistä
-
-- Choose a license: [https://choosealicense.com/](https://choosealicense.com/)
-- Public license selector:  [https://ufal.github.io/public-license-selector/](https://ufal.github.io/public-license-selector/)
-
-## Noin 10-15 min viikkopalavereiden yleinen agenda
-
-Viikkopalaverit pidetään ryhmän alikanavalla MS Teamssilla, niin ei tarvitse tehdä erillisiä kutsuja vaan voi liittyä suoraan siellä.
-
-- Pääsääntöisesti kaikkien pitää olla paikalla
-- Yleistä keskustelua, että miten projekti on edennyt
-- Yleistä keskustelua, että miten kukin opiskelija on osallistunut (eli jokainen opiskelija kertoo itse mitä on tehnyt kuluneen viikon aikana)
-- Versiohallinnan esittely (ja .gitignore käytössä)
-- Muutoksia arvosanatavoitteeseen tai tavoitteisiin ylipäätänsä
-- Vilkaistaan projektidokumenttia ja teknistä määrittelyä
-
- <span id="pr_ohje"></span>
- 
 # Projektityön kuvaus
 
 Työn aihe on pankkiautomaatti
@@ -144,11 +19,15 @@ Työn aihe on pankkiautomaatti
 ## Ohjelmiston rakenne on seuraava
 
 ![Projektikuva](./project.png)
+Huom! Monimuotoryhmissä ei käytetä kortinlukijaa, vaan kortinnumero annetaan Qt-sovellukseen manuaalisesti.
 
 ### Työ sisältää
 
 - Tietokannan (MySQL/MariaDB)
-- REST APIn (Node.js/Express.js)
+- REST API:n (Node.js/Express.js) 
+  - Käytettävä MVC-mallia
+  - Käytettävä callbackejä (ei Promisea, eikä async-await rakennetta)
+  - Ei saa käyttää mitään ORM:ia
 - Pankkiautomaattisovelluksen (Qt työpöytäsovellus, jossa käytetään Qt Network moduulia)
 
 **Huom!** Edellä mainitut kuuluvat kurssin sisältöön ja arviointi perustuu niiden osaamiseen, joten millään muilla tekniikoilla noita ei saa korvata.
@@ -158,17 +37,45 @@ Työn aihe on pankkiautomaatti
 - Qt-sovellus kommunikoi REST APIn kanssa http-protokollan avulla.
 - REST API hoitaa kommunikoinnin tietokannan kanssa.
 
+# Oppimistavoitteet
+
+- Opiskelija tunnistaa ja ymmärtää ohjelmistokehityksen vaihejakomallin perusvaiheet. Hän tietää eri vaiheiden merkitykset, vaihetuotteet ja vaiheiden erot
+- Itsenäisen ja ryhmätyöskentelyn avulla opiskelija oppii suunnittelemaan ja toteuttamaan vaatimusmäärittelyn mukaisen järjestelmän käyttäen moderneja kehitystyökaluja
+- Opiskelija ymmärtää ryhmätyöskentelyn merkityksen ohjelmistokehitystyössä
+- Opiskelija osaa käyttää oliopohjaista mallinnuskieltä kehitystyön (UML) eri vaiheissa ja osaa kirjoittaa kaavioiden pohjalta ohjelmakoodia
+- Opiskelija osaa suunnitella ja toteuttaa oliopohjaisen sovelluksen luokkakirjaston mukaisesti
+- Opiskelija osaa suunnitella ja toteuttaa sovellukseen tietokanta-arkkitehtuurin
+- Opiskelija osaa laatia ohjelmistoprojektin dokumentaation ja pystyy viestimään suullisesti ja kirjallisesti, myös englanniksi
+
+
+# Opiskelijan arviointi
+
+Kukin opiskelija arvioidaan yksilöllisesti ja arvioinnissa huomioidaan seuraavat asiat:
+
+- Sovelluksen arvosana
+- Vertais- ja itsearviointi
+- Ohjaajien näkemys
+- Githubin informaatio
+
+## Vertaisarvioinnin kohteet
+
+- Ryhmätyöskentely
+- Itsenäinen työ
+- Projektisitoutuminen
+- Qt-ohjelmointi
+- REST API -ohjelmointi
+- Tehtävien vaikeustaso
+- Gitin käyttö
+
 ## Sovelluksen arviointi
 
 Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy, niin tämä dokumentti on se, jota noudatetaan.
 
-**Huom!** Monimuotoryhmissä ei käytetä kortinlukijaa, vaan aloitusikkunasta avataan PIN-koodinkyselykäyttöliittymä painiketta painamalla, jossa annetaan PIN-koodin lisäksi kortin-id.
-
 ### Vähimmäisvaatimukset sovellukselle (arvosana 1)
 
-- Debit kortti toteutettava (ei luottoa, saldo ei saa mennä miinukselle)
+- Debit kortti toteutettava: 
+  - Debit-kortti kytketään tiliin, jolla ei ole luottoa eli tilin saldo ei saa mennä miinukselle
 - Qt-sovelluksen aloituskäyttöliittymä
-- Kortinlukijan käyttö ja PIN-koodin syöttö
 - Oikealla PIN-koodilla avautuu pääkäyttöliittymä, väärällä uudelleenkysely
 - Saldon tarkastelu
 - Rahan nosto: 20, 40, 50 tai 100 €
@@ -176,13 +83,14 @@ Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy,
 
 ### Vähimmäisvaatimukset (arvosana 2)
 
+- Webtoken autentikointi toteutettu
 - PIN-koodin syötön aikaraja 10 sekuntia (jos koodia ei anneta 10 sekunnin aikana palataan aloituskäyttöliittymään)
 - REST API:in on toteutettu kaikkien tietokanta-taulujen CRUD-operaatiot (vaikkei niitä tarvita pankkiautomaatissa)
 
 ### Hyvän arvosanan vaatimukset (arvosana 3)
 
-- Kortti voi olla joko debit- tai credit -tyyppinen
-- Credit-kortilla nosto luottorajan puitteissa
+- Debit-kortin lisäksi on toteutettava credit-kortti:
+  - Credit-kortti liitetään credit tiliin eli tilillä on luottoraja ja saldo saa mennä miinukselle luottorajan verran
 - Vapaavalintaisen summan nosto (automaatissa vain 20 ja 50 € seteleitä)
 - Kolme väärää PIN-koodia lukitsee kortin (ei vaadita tallentamista tietokantaan)
 
@@ -194,12 +102,14 @@ Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy,
 
 ### Kiitettävän arvosanan vaatimukset (arvosana 5)
 
-- Kaksoiskortit (debit + credit samassa kortissa)
-- Kirjautuessa valinta: debit vai credit (vain jos kyseessä kaksoiskortti)
+- Toteutetaan kaksioiskortti: 
+  - Kortilla on debit ja credit ominaisuus eli se on kytketty yhteen credit-tiliin ja yhteen debit-tiliin
+- Kirjautuessa valinta: debit vai credit: 
+  - Valinta tehdään vain jos kyseessä kaksoiskortti
+  - Jos kyseessä debit-kortti tai credit-kortti, valinta ohitetaan
 - Tilakaavio luotu
 - **Lisäominaisuus** sovittava ohjaajan kanssa
 
-(Huom! Kaksoiskortti on kytketty kahteen eri tiliin, joista toinen on debit-tili ja toinen credit-tili)
 
 <span id="arvosana_tiiviste"></span>
 
@@ -210,7 +120,6 @@ Nämä ovat ohjelmistokokonaisuutta projektihallinnallisesta näkökulmasta kosk
 |                            | 1  | 2  | 3  | 4  | 5  |
 |----------------------------|----|----|----|----|----|
 | Versionhallinnan käyttö    | x  | x  | x  | x  | x  |
-| Kanban                     | x  | x  | x  | x  | x  |
 | Viikkopalaverit            | x  | x  | x  | x  | x  |
 | Tekninen määrittelydokum.  | x  | x  | x  | x  | x  |
 | Projektisuunnitelma        | x  | x  | x  | x  | x  |
@@ -226,6 +135,7 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 | Rahan nosto (20,40,50,100) | x  | x  | x  | x  | x  |
 | Tilitapahtumien näyttö     | x  | x  | x  | x  | x  |
 | Debit kortti               | x  | x  | x  | x  | x  |
+| Webtoken autentikointi     |    | x  | x  | x  | x  |
 | PIN-koodille 10 s timer    |    | x  | x  | x  | x  |
 | Kaikki CRUD-operaatiot     |    | x  | x  | x  | x  |
 | Credit kortti              |    |    | x  | x  | x  |
@@ -242,9 +152,61 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 #### Arvosanaa alentavia seikkoja
 
 - Dokumentoinnin puutteet
-- MVC-mallin noudattamatta jättäminen backendissä
+- Sovelluksen rakenne ei ole annettujen määritysten mukainen
 
-## Vaatimukset tietokannalle
+
+
+## Tiivistelmä arvioinnissa huomioitavista asioista:
+
+- Aikataulussa pysyminen. Työtä pitää tehdä järjestelmällisesti. Viikkoraportointi vaaditaan!
+- Jokaisen ryhmän jäsenen pitää osata kertoa omasta tekemisestä viikkopalaverissa
+- Opiskelijan tulee osata selittää kirjoittamansa koodi
+- Ohjaajan arvio perustuu palavereissa saatuihin kokemuksiin ja GitHubin näkymiin
+- Ryhmän tuottaman sovellukseen tasoon (kts. Sovelluksen arviointi)
+- Toveriarvio tehdään web-sovelluksella (vertaisarviointi)
+- Itsearvio tehdään web-sovelluksella (itsearviointi)
+- Projektidokumentointi ja tekninen määrittelydokumentti (heikko dokumentointi voi alentaa arvosanaa)
+- Englanninkielinen posteri (hyväksytty/hylätty, pitää päästä läpi)
+- Loppuesitys vaikuttaa arvosanaan
+- Arvosanaa ei voi korottaa myöhemmin
+
+
+# Oppimateriaalit
+
+### Qt/Express-materiaalit (Pekka Alaluukas)
+
+- Pekka Alaluukkaan [ohjeet ja tallenteet videosoittolistana](https://www.youtube.com/playlist?list=PLWl0bS7jZq99iOUNmMyuT9EgU6YfxP_en)
+- Git perusteita [Peatutor.com/git_tutor/](https://peatutor.com/git_tutor/)
+- Muita Pekan tekemiä ohjeita (Qt yms.): [Peatutor.com/](https://peatutor.com/)
+
+### Ohjelmistokehityksen perusteet ja UML-mallinnus videot Yujassa (Teemu Leppänen)
+
+- Teemu Leppäsen luentotallenteet [videosoittolista \(kevät 2025\)](https://oulu.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx#folderID=%2221064f4a-0801-451c-8e5c-b29d00e337be%22)
+- Teamsissa [oppimateriaalit-kanava](<https://unioulu.sharepoint.com/:f:/r/sites/OhjelmistokehitysProjekti/Shared%20Documents/Tiedostot%20ja%20yleiset%20oppimateriaalit/Ohjelmistokehityksen%20materiaalit?csf=1&web=1&e=hNAzHw>)
+
+### Esimerkkisovelluksen UML-kaaviot
+
+- Pekan luennoilla rakennetaan esimerkkisovellus, jonka UML-kaaviot ja muut suunnitteluvaiheet löytyvät GiHubista [https://github.com/alaluuk/peppiExample](https://github.com/alaluuk/peppiExample)
+
+
+### Kaaviot dokumentointiin
+
+Esimerkiksi näillä työkaluilla:
+
+- Drawio: [https://www.drawio.com/](https://www.drawio.com/). Suora linkki: [https://app.diagrams.net/](https://app.diagrams.net/)
+- Lucidchart: [https://www.lucidchart.com](https://www.lucidchart.com)
+- Diagrameditor: [https://www.diagrameditor.com/](https://www.diagrameditor.com/)
+- PlantUML: [https://plantuml.com/](https://plantuml.com/)
+
+Katso näistä Teams-kanavan dokumenteista mallia teknisen määrittelydokumentin kaavioihin:
+
+- Ohjelmistokehityksen [materiaalit](<https://unioulu.sharepoint.com/:f:/r/sites/OhjelmistokehitysProjekti/Shared%20Documents/Tiedostot%20ja%20yleiset%20oppimateriaalit/Ohjelmistokehityksen%20materiaalit?csf=1&web=1&e=wTy8hF>)
+- Valmiita esimerkkejä [määrittelyvaiheen kaavioista](<https://unioulu.sharepoint.com/sites/Ohjelmistokehityksensovellusprojektitestialusta/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FOhjelmistokehityksensovellusprojektitestialusta%2FShared%20Documents%2F3%2E%20Tiedostot%20ja%20yleiset%20oppimateriaalit%2FOhjelmistokehityksen%20materiaalit%2FIN00CS90%5FLuku%5F5%5FMaarittelyvaihe%2Epdf&parent=%2Fsites%2FOhjelmistokehityksensovellusprojektitestialusta%2FShared%20Documents%2F3%2E%20Tiedostot%20ja%20yleiset%20oppimateriaalit%2FOhjelmistokehityksen%20materiaalit>)
+- UML-mallinnuksen [kaavioesimerkit](<https://unioulu.sharepoint.com/:f:/r/sites/OhjelmistokehitysProjekti/Shared%20Documents/Tiedostot%20ja%20yleiset%20oppimateriaalit/Ohjelmistokehityksen%20materiaalit/UML-mallinnus?csf=1&web=1&e=T1to4y>)
+- Yleinen [esimerkkikuva järjestelmäarkkitehtuurista](./dl/arkkitehtuurikuva.png)
+
+
+# Vaatimukset tietokannalle
 
 ### Ilman credit-kortti ominaisuutta
 
@@ -279,25 +241,293 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
     - yhdelle tilille voi olla pääsy monella kortilla: vaikkapa koko perheellä 
 -yksi kortti on kytketty moneen eri tiliin (vaikka se on käytännössä korkeintaan kahteen tiliin(debit ja credit).
 ->Tästä seuraa hyvin tavanomainen RELAATIOTIETOKANNAN "pulma" joka  ratkaistaan välitystaulun avulla
+  
 
-## Opiskelijan arviointi
+# Viikkopalavereiden yleinen agenda
 
-- Sovelluksen arvosana
-- Vertais- ja itsearviointi
-- Ohjaajien näkemys
-- Githubin informaatio
+- Pääsääntöisesti kaikkien pitää olla paikalla
+- Yleistä keskustelua, että miten projekti on edennyt
+- Kukin opiskelija kertoo (ja näyttää) mitä on tehnyt kuluneen viikon aikana
+- Versiohallinnan esittely
+- Muutoksia arvosanatavoitteeseen tai tavoitteisiin ylipäätänsä
 
-### Arvioinnin kohteet
+ <span id="pr_ohje"></span>
 
-- Ryhmätyöskentely
-- Itsenäinen työ
-- Projektisitoutuminen
-- Qt-ohjelmointi
-- REST API -ohjelmointi
-- Tehtävien vaikeustaso
-- Gitin käyttö
+# Viikko 1
 
-## Lisäominaisuusideoita (arvosanan 5 tarvitaan vähintään yksi tällainen lisäominaisuus)
+## 1. Päivän / TEHTÄVÄT 
+
+1. Luodaan neljän hengen ryhmät [Excel-dokumentissa](<https://unioulu-my.sharepoint.com/:x:/g/personal/alaluuk_oamk_fi/IQBgHAzlTg22TYgV7PycCmFeAbtyxjCUqFPvKd9RjO1HQjc?e=hFPzhm>)
+
+2. Jokainen opiskelija luo tunnuksen itselleen sivustolla
+  [https://peatutor.com/project_app/register/tvt26](https://peatutor.com/project_app/register/tvt26)
+  
+  
+    - Voit keksiä minkä hyvänsä tunnuksen (joka on vapaa)
+    - Rekisteröityä voi vain oamk.fi ja oulu.fi sähköposteilla
+    - Luotuasi tunnuksen, saat sähköpostin, jossa on tunnuksesi ja salasanasi. Pidä ne tallessa.
+
+    **Huom!** Tarkista ennen rekisteröitymistä, tarkista mikä on sinun GitHub-tunnus, koska se on annettava rekisteröityessä.
+
+3. Jokaisesta ryhmästä yksi luo kurssin Teams-kanavan **ALAISUUTEEN** (ei siis kokonaan uutta Teams-kanavaa) uuden PRIVAATIN alikanavan, jolla on sama nimi kuin ryhmällä Excelissä eli group_1, group_2, .... 
+
+## Loppuviikon / TEHTÄVÄT
+
+- Tutustukaa arviointikriteereihin ja päättäkää mihin arvosanaan pyritään
+- Tarkista että olet kurssin Teams-kanavalla (pyydä opettajalta pääsy jos et ole). Käytä students.oamk.fi-sähköpostiosoitetta kun kirjaudut Teamssiin
+
+- Github käyttöön (Pekan tekemän organisaation alle): [Pekan ohje](#initialize)
+- Ryhmän jäsenet sopii alustavasti kuka tekee mitäkin toiminnallisuuksia (mutta ei niin, että vain yksi tekee koko Qt-työpöytäsovelluksen, että vain yksi tekee koko tietokannan jne.)
+- Ryhmä sopii käytetäänko Qt sovelluksessa build järjestelmänä **qmake**:a vai **cmake**:a (on parasta että koko ryhmä käyttää samaa)
+- Aloittakaa tekemään projektidokumenttia (pitää tehdä yhdessä). Pohja löytyy Teamsista. Tallentakaa oma versio ryhmän github-repositoryyn documents-hakemistoon.
+- Aloittakaa tekemään teknistä määrittelydokumenttia (pitää tehdä yhdessä). Pohja löytyy Teamsista. Tallentakaa oma versio ryhmän github-repositoryyn documents-hakemistoon. 
+- Katsokaa yhdessä valmiiksi viikon 2+ tavoitteet
+
+- Tämän viikon aikana pitää olla tehtynä:
+  - Projektisuunnitelma alulle
+  - Tekninen määrittely-dokumentti alulle
+  - Github repository käyttöön
+  - Priorisoikaa backend (tietokanta ja API), jotta käyttöliittymän voi tehdä toimimaan suoraan sitä vasten
+  - Tietokannan ER-kaavio pitää olla ohjeiden mukaisesti tehtynä ja ladattuna PNG-kuvana GitHubiin documents kansioon. Kun se on tehty, laittakaa  ohjaajalle viesti rymänne Teamsin kautta (SPL:Jukka, SPO:Pekka). 
+    - "@Jukka Jauhiainen ER-kaavio valmis".
+    - "@Pekka Alaluukas ER-kaavio valmis".
+
+**Vinkkejä tietokannan suunnitteluun**
+  - Lukekaa [https://peatutor.com/databases/db.php#design](https://peatutor.com/databases/db.php#design) ja miettikää erityisesti **monen-suhde-moneen yhteydet**
+  - Miettikää tietotyyppejä ja tässä apuna [https://peatutor.com/databases/mysql.php#types](https://peatutor.com/databases/mysql.php#types)
+
+# Viikko 2
+
+- Viikkopalaveri opettajan kanssa
+  - Versiohallinnan esittely (Tarkistetaan että repository on alustettu)
+  - Esitelkää mitä dokumentteihin (projektisuunnitelma, tekninen määrittely) on kirjattu tähän mennessä
+- Sovelluksen tekemistä
+- Tämän viikon aikana pitää olla tehtynä:
+  - Ohjelmistokehityksen perusteet ja UML-mallinnus videot katsottuna: [Soittolista luentotallenteista](https://www.youtube.com/playlist?list=PLWl0bS7jZq99iOUNmMyuT9EgU6YfxP_en)
+  - Projektisuunnitelma valmis.
+  - Tekninen määrittely osin tehtynä: Järjestelmäarkkitehtuuri, Käyttötapaukset, Tietosisältö 
+  - ER-kaavio hyväksytty
+
+# Viikko 3
+
+- Viikkopalaveri
+  - Projektisuunnitelma kokonaan valmis
+  - Tekninen määrittely: Järjestelmäarkkitehtuuri, Käyttötapaukset, Tietosisältö valmiina
+  - Esitellään dokumentit
+  - CRUD-operaatioista demo (Pitää olla jotain endpointteja backendissä)
+
+- Kirjoita Github-projektille kuvaus markdownilla (readme.md-tiedosto). Github osaa prosessoida markdown-kieltä suoraan readme.md:stä HTML:ksi
+  - Muista päivittää omaa projektikuvausta Githubissa (readme.md) myös myöhemmin!
+  - Esimerkkejä [hyvistä readme-projektitiedostoista](https://github.com/matiassingers/awesome-readme)
+  - Teemun tekemä yksinkertainen esimerkki: [https://github.com/t2946282/demoproject](https://github.com/t2946282/demoproject)
+- Sovelluksen tekemistä
+- Tämän viikon aikana pitää olla tehtynä:
+  - Readme.md:n ensimmäinen versio repositorylle Githubissa
+  - Backendissä endpointteja
+  - Tehtyjen endpointtien testausta [Postmanilla](https://www.postman.com/) 
+
+# Viikko 4
+
+- Viikkopalaveri
+  - Versiohallinnan esittely
+- Sovelluksen tekemistä
+- Teknisen määrittelydokumentin tekemistä
+- Tämän viikon aikana pitää olla tehtynä:
+  - Login endpoint backendissä (kortin numerolla ja oikealla PIN koodilla saadaan webtoken)
+  - Vähintään pankkiautomaatin tarvitsemat endpointit backendissä 
+
+# Viikko 5
+
+- Viikkopalaveri
+  - Versiohallinnan esittely
+  - Nyt pitää olla jo Qt-sovelluksessa jotain omaa koodia
+- Sovelluksen tekemistä
+- Tämän viikon aikana pitää olla tehtynä:
+  - Tekninen määrittelydokumentti kokonaan valmiiksi 
+  - Kirjautuminen onnistuu Qt-sovelluksesta (ainakin kovakoodatulla kortin numerolla eli sarjaportinlukijan ei tarvitse olla valmis)
+ 
+  
+# Viikko 6
+
+- Viikkopalaveri
+  - Esitellään valmis tekninen määrittelydokumentti
+  - Versiohallinnan esittely
+  - Sovelluksen tekemistä
+
+- Tämän viikon aikana pitää olla tehtynä:
+  - Projektille kirjoitettu markdown-muotoinen Readme-tiedosto Githubiin
+
+
+# Viikko 7
+
+- Viikkopalaveri
+  - Versiohallinnan esittely
+- Sovelluksen tekemistä
+- Demovideon valmistelu
+- Ryhmä tekee yhdessä posterin englanniksi. Posteripohja löytyy Teamssista
+- Ota posterista hyvälaatuinen kuvaruutukaappaus, lisää se kuvana Github-repositoryyn ja linkitä näkyväksi readme.md tiedostossa repositoryn etusivulla
+- Tämän viikon aikana pitää olla tehtynä:
+  - Posteri valmiiksi ja Teamssiin
+  - Posteri Githubissa kuvana ja linkitetty readme.md:ssä repositoryn etusivulle
+
+# Viikko 8
+
+- Laadi vastaava taulukko kuin kohdassa [**Tiivistelmä arvosanoille**](#arvosana_tiiviste) ja rastita siihen oman toteutuksen suoritetut tehtävät.
+  
+  - Voit ladata excel-tiedoston (taskit.xlsx) Teamsin kanavalta **Tiedostot ja yhteiset oppimateriaalit**
+  - Rastita tehdyt tehtävät
+  - Lataa tiedosto GitRepon juureen (jos et käytä exceliä laita kuitenkin nimen alkuosaksi taskit)
+  
+- Demovideo projektista:
+  - Videon pituuden tulisi olla noin 5 minuuttia, missä ehtii yleensä näyttämään keskeiset osat applikaatiosta ja posterista.
+  - Videon on oltava julkisesti saatavilla ilman kirjautumista
+    - YouTubeen unlisted-videoksi (myös students.oamk.fi -tunnukset toimivat myös Youtubeen)
+    - Älä aseta videon lupaa "YouTube-sisältö lapsille", koska se ei salli videon tallentamista YouTube-soittolistaan
+    - Linkkaa videon URL ryhmän Teams-kanavalle
+  - Luo 3-4 sivun PowerPoint- tai PDF-dokumentti tukemaan videon esitystä. Dokumentissa tulisi olla vähintään:
+    - Mitkä olivat projektin tavoitteet
+    - Tiivistelmä arvosanoille -taulukko
+    - Ketkä osallistuivat projektiin ja mitä he tekivät (suunnilleen)
+    - Mikä oli hyvää, mikä oli huonoa
+    - Esitä dokumentin sisältö videon alussa
+    - Kaikkien ei välttämättä tarvitse puhua videolla (mutta toki saa)
+    - Näytä posteri videon lopuksi
+    - Lisää PowerPoint- tai PDF-dokumentti Github-repositoryyn
+  - Esittele pankkiautomaattiprojekti
+- Loppuesitykset koko luokalle (osallistumispakko)
+  - Ohjelman demonstrointi ja vapaata keskustelua
+  - Posterin esittely
+ 
+
+ <span id="initialize"></span>
+# Projektin alustaminen
+
+📺 Voit katsoa ohjevideon osoitteesta:  
+[https://www.youtube.com/watch?v=_lfn6vsrOJY](https://www.youtube.com/watch?v=_lfn6vsrOJY)
+
+---
+
+## 1. Repositoryn alustaminen
+
+Yksi ryhmän opiskelijoista alustaa GitHub-repositoryn seuraavasti:
+
+```bash
+# Kloonaa repon omalle koneelleen
+git clone <repository-url> 
+
+cd groupx  # jossa groupx on kloonattu kansio ja x oman ryhmän numero
+git checkout -b initialize
+```
+
+---
+
+## 2. Backendin alustaminen
+
+Anna groupx kansiossa seuraavat komennot
+```bash
+mkdir documents
+mkdir backend
+cd backend
+npx express-generator --no-view
+npm install
+```
+**Huom!** Tuo express-generator asentaa hieman vanhat npm-paketit, joten voitte halutessanne korvata tuon npx komennon seraavilla komennoilla (jotka ajetaan backend kansiossa):
+
+```bash
+npm init
+npm install express mysql2 bcryptjs jsonwebtoken dotenv
+mkdir routes
+mkdir models
+```
+
+Ja sitten app.js rakennetaan kuten luennoilla on opastettu.
+
+---
+
+## 3. Qt-sovelluksen alustaminen
+
+1. Käynnistä **Qt Creator**
+2. Luo **Qt Widget** -tyyppinen sovellus, jonka nimeksi `bank-automat`
+3. Tallenna sovellus kansioon `groupx`
+4. Käännä sovellus
+5. Tarkista, että `bank-automat`-kansion alle ilmestyi `build`-kansio
+6. Jos `build`-kansiota ei ilmesty:
+   - Poista `bank-automat`-kansio
+   - Tarkista Qt:n asetukset:  
+     [https://peatutor.com/c_kieli/qt_asennus.php](https://peatutor.com/c_kieli/qt_asennus.php)
+   - Luo sovellus uudestaan
+
+---
+
+## 4. `.gitignore`-tiedoston luominen
+
+Luo tiedosto projektikansion `groupx` juureen ja kirjoita siihen seuraavat rivit:
+
+```gitignore
+backend/node_modules/
+bank-automat/build/
+bank-automat/.qtcreator/
+bank-automat/*.user 
+```
+
+---
+
+## 5. Muutosten lisääminen ja pushaaminen
+
+Suorita komennot kansion `groupx` juuressa:
+
+```bash
+git add .
+git commit -m "projekti alustettu"
+git push origin initialize
+```
+
+---
+
+## 6. Tarkistukset GitHubissa
+
+Varmista, että GitHubissa näkyy seuraavat kansiot:
+
+- backend  
+- bank-automat
+- documents
+
+Ja että seuraavat **eivät ole GitHubissa**:
+
+- backend/node_modules  
+- bank-automat/build 
+- bank-automat/.qtcreator
+- bank-automat/xxx.user
+
+---
+
+## 7. Pull Request
+
+- Jos kaikki edellä meni oikein, tee **Pull Request**
+- Pyydä jotain muuta ryhmän jäsentä hyväksymään PR ja yhdistämään `initialize` branchin `mainiin`
+
+---
+
+## 8. Branchin yhdistämisen jälkeen
+
+### Henkilö, joka teki alustusvaiheet
+- suorittaa komennot:
+
+```bash
+git checkout main
+git pull origin main
+```
+- ja tämän jälkeen hän luo oman branchin
+
+
+### Muut ryhmän jäsenet
+
+- kloonaavat repositoryn
+- luovat oman branchin
+
+
+# Lisäominaisuusideoita 
+(arvosanan 5 tarvitaan vähintään yksi tällainen lisäominaisuus)
 
 ## Kuvan lataus ja näyttäminen
 
@@ -352,9 +582,9 @@ Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
 
 ## CI/CD
 
-- Jonkinlainen CI/CD esimerkiksi (vaikutus arvosanaan 1):
-  - backendin julkaisu automaattisesti jollain julkisella palvelimella (Github Actioneilla)
-  - Qt-sovelluksen "setupin" rakentaminen automaattisesti Githubissa ja "releasen" julkaisu ladattavaksi GitHubissa tai toisella palvelimelle ladattavaksi 
+- Jonkinlainen yksinkertainen CI/CD tai ainakin CD (
+  esim. backendin julkaisu jossain pilvipalvelussa ja qt-sovelluksen "releasen" automatisointi Githubiin tai toiselle palvelimelle ladattavaksi vaikka Github actioneilla)
+(vaikutus arvosanaan 1)
 
 ## Verkkopankin toteuttaminen
 
@@ -363,172 +593,29 @@ Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
 ## Ylimääräinen Qt-sovellus
 
 - Qt-sovellus pankin henkilökunnalle. Sovelluksella voidaan esimerkiksi luoda uusia asiakkaita, tilejä ja kortteja jne. 
-  
-# Viikko 1
 
-- Aloitusinfo
-- Luodaan ja numeroidaan neljän opiskelijan ryhmät
-- Jokainen opiskelija luo tunnuksen itselleen sivustolla
-  [https://peatutor.com/project_app/register/tvt25kmo](https://peatutor.com/project_app/register/tvt25kmo).
-  (Luotuasi tunnuksen, saat sähköpostin, jossa on tunnuksesi ja salasanasi. Pidä ne tallessa.)
-- Tutustukaa arviointikriteereihin ja päättäkää mihin arvosanaan pyritään
-- Tarkista että olet kurssin Teams-kanavalla (pyydä opettajalta pääsy jos et ole). Käytä students.oamk.fi-sähköpostiosoitetta kun kirjaudut Teamssiin
-- Jokaisesta ryhmästä yksi luo kurssin Teams-kanavan **ALAISUUTEEN** (ei siis kokonaan uutta Teams-kanavaa) uuden YKSITYISEN alikanavan nimeltä:
-  - Ryhmä-xx ryhmä 1:n kanava on nimeltään Ryhmä-01 ryhmä 2:n kanava on nimeltään on Ryhmä-02, jne. Katso [tästä kuvasta yleinen  nimeämismalli](./dl/teams_ryhmat.png)
-- Kun ryhmän yksityinen Teams-kanava on luotu, lisää kanavalle ryhmän muut jäsenet. Lisää myös ohjaavat opettajat kanavan omistajaksi: Teemu Korpela ja Pekka Alaluukas
-- Github käyttöön (Pekan tekemän organisaation alle): [Pekan ohje](#git_ohje)
-- Ryhmän jäsenet sopii alustavasti kuka tekee mitäkin toiminnallisuuksia (mutta ei niin, että vain yksi tekee koko Qt-työpöytäsovelluksen, että vain yksi tekee koko tietokannan jne.)
-- Ryhmä sopii käytetäänko Qt sovelluksessa build järjestelmänä **qmake**:a vai **cmake**:a (on parasta että koko ryhmä käyttää samaa)
-- Aloittakaa tekemään projektidokumenttia (pitää tehdä yhdessä). Pohja löytyy Teamsista. Tallentakaa oma versio ryhmän github-repositoryyn documents-hakemistoon.
-- Aloittakaa tekemään teknistä määrittelydokumenttia (pitää tehdä yhdessä). Pohja löytyy Teamsista. Tallentakaa oma versio ryhmän github-repositoryyn documents-hakemistoon. 
-- Katsokaa yhdessä valmiiksi viikon 2+ tavoitteet
-- Kanban: Githubissa Kanban-taulu käyttöön
-  - Tehkää oma projekti ja repository Kanbania varten Githubissa
-  - Linkittäkää Kanban-taulu ryhmän omalle Teams-alikanavalle omaksi välilehdeksi
-  - Käytäkää Githubin Kanban-työkalun valmista sarakemuotoista pohjaa
-  - Ei ole välttämättä huono ajatus tehdä frontendistä (Qt-applikaatio) ja backendistä (API, tietokanta, mahdollinen palvelin) kokonaan erilliset Kanban-taulun välilehdet Githubin Kanbanilla
-  - Kanbanissa pitää olla vähintään nämä sarakkeet tai ainakin mukaillen (merkinnät ja taulu saa olla myös suomeksi): Requested/backlog, Design/analysis, Under development, Review/testing, Deployment, Done
-  - Edelliset sarakkeet kahteen kertaan, jos frontille ja backendille erilliset välilehdet
-  - Pilkkokaa tekemisiä ja toiminnallisuuksia Kanban-tauluun (ja muistakaa lisätä/päivittää taulua jatkuvasti)
-  - Esimerkkejä Kanban-tauluista: [https://businessmap.io/kanban-resources/kanban-software/kanban-board-examples](https://businessmap.io/kanban-resources/kanban-software/kanban-board-examples)
-  
-- Viikon luennot:
-  - Aloitusinfo kurssin tekemiseksi
-  - Git perusteet (harjoitus)
-  - Asiaa Qt:stä, MySQL:stä, REST API:sta ja C++:sta
-  - Ohjelmistotuotanto ja UML-mallinnus osa 1: Järjestelmäarkkitehtuuri, Käyttötapaukset, Tietosisältö
-- Tämän viikon aikana pitää olla tehtynä:
-  - Projektisuunnitelma alulle
-  - Tekninen määrittely-dokumentti alulle
-  - Github repository käyttöön
-  - Kanban-taulu laitettu alulle
-  - Yksityinen Teams-kanava luotu kurssin Teams-kanavan alle. Ryhmän jäsenet ja opettajat lisätty privaattikanavan omistajiksi
-  - Priorisoikaa backend (tietokanta ja API), jotta käyttöliittymän voi tehdä toimimaan suoraan sitä vasten
-  - Tietokannan ER-kaavio pitää olla ohjeiden mukaisesti tehtynä ja ohjaajan (Pekka) hyväksymä. Laittakaa ER-kaavio Teamsin Files osioon ja postatkaa viesti "@Pekka Alaluukas ER-kaavio valmis".
-  - Tietokannan, rajapinnan ja käyttöliittymän suunnittelua ja tekemistä
-  - Qt-sovellus alulle
+# Generatiiviset tekoälyt (AI-koodaus) ja vastaavat apuvälineet. Ohjaajien (ja yleisestikin IT-opettajien) ajatuksia aiheesta:
+
+- Tekoäly on hyvä renki, mutta huono isäntä. Varsinkin oppimisessa.
+- Tekoälyäkin pitää oppia hyödyntämään, mutta vähän myöhemmin
+- Ensin on kuitenkin syytä opiskella perusteet, oli se sitten vaikkapa IT arkkitehtuurista, ohjelmistotekniikan perusteista, tietoverkoista, tietoturvallisuudesta, tietosuojasta, dokumentoinnoista, elektroniikasta yms.
+- Työnantajat tuskin palkkaavat tuhansia euroja kuussa maksavaa työntekijöitä, jotka ovat pelkästään tekoälykonttoristeja
+- Perusasioiden ymmärrys ei katoa mihinkään ja onhan se myös ammattiylpeyttä suunnitella ja käsittää mitä tapahtuu milloinkin
+- Me ohjaajina emme halua arvioida tekoälyn tekemää sovellusta ja tekemistä, vaan opiskelijoiden. Emme myöskään ryhdy poliisiksi, joka käyttää työaikansa tekoälyn jäljittämiseen, vaan **opiskelijalla on oltava itsellään halu oppia eikä tavoitella pelkästään arvosanoja**
+- Tämän projektikurssin ohjaajia yhdistää vuosikymmeniä kestänyt innostus ja kiinnostus tietotekniikkaan ja uteliaisuus oppia ja kokeilla uutta. Myös teköälyalustoja, jotka on vain uusi mielenkiintoinen vaihe tietotekniikan historiassa. Emme todellakaan ole tekoälyvastaisia, vaan päin vastoin. Niitä on hyvä ja tärkeää oppia hyödyntämään, mutta ei siten että perusteet jää oppimatta!
+
+# Teemaluentoja: AI, IaC, CI/CD, reverse proxy, ohjelmistiolisensseistä (Teemu Korpela)
+
+- [7.1.2026 - Tiedonhausta, IT-uutisista, alan seuraamisesta ja Kanban-taulut](https://youtube.com/live/laNmAles5go)
+- [15.1.2026 - Verkkopalveluista, IaC, CI/CD, rajapinnoista, reverse proxyt](https://youtube.com/live/iEa4woguddM)
+- [21.4.2021 - Ohjelmistolisensseistä \(aikaisempi tallenne, ei tarvetta uudelle\)](https://www.youtube.com/watch?v=57m6hktjfeg&t=225s)
+- [29.1.2026 - AI-\(vibe\)koodaus](https://youtube.com/live/X-KdliMD4-8)
 
 
-**Vinkkejä tietokannan suunnitteluun**
-  - Lukekaa [https://peatutor.com/databases/db.php#design](https://peatutor.com/databases/db.php#design) ja miettikää erityisesti **monen-suhde-moneen yhteydet**
-  - Miettikää tietotyyppejä ja tässä apuna [https://peatutor.com/databases/mysql.php#types](https://peatutor.com/databases/mysql.php#types)
+# Softalisensseistä
 
-# Viikko 2
-
-- Viikkopalaveri opettajan kanssa
-  - Esitelkää mitä dokumentteihin (projektisuunnitelma, tekninen määrittely) on kirjattu tähän mennessä
-- Luento:
-  - Projektin suunnitteluvaihe ja UML-mallinnus osa 2: Komponenttikaavio, tilakaavio
-  - Lisämateriaali: luentotallenne (13.1.2025) Youtubessa: [Teemaluento: IaC, CI/CD, Reverse proxy](https://www.youtube.com/live/1Iiflc1Rj7o)
-- Sovelluksen tekemistä
-- Tämän viikon aikana pitää olla tehtynä:
-  - Ohjelmistokehityksen perusteet ja UML-mallinnus videot katsottuna: [Soittolista luentotallenteista](https://www.youtube.com/playlist?list=PLWl0bS7jZq99iOUNmMyuT9EgU6YfxP_en)
-  - Projektisuunnitelma valmis.
-  - Tekninen määrittely osin tehtynä: Järjestelmäarkkitehtuuri, Käyttötapaukset, Tietosisältö 
-  - CRUD-operaatioista demo
-
-# Viikko 3
-
-- Viikkopalaveri
-  - Projektisuunnitelma kokonaan valmis
-  - Tekninen määrittely: Järjestelmäarkkitehtuuri, Käyttötapaukset, Tietosisältö valmiina
-  - Esitellään dokumentit
-  - Versiohallinnan esittely
-- Luento:
-  - (Extraoppimista) Ohjelmistolisensseistä: [Luentotallenne Youtubessa vuodelta 2021](https://youtu.be/57m6hktjfeg?t=225)
-    - Videolla käytetyt luentokalvot [täällä](./dl/softwarelicensing.pdf)
-  - Opiskelijaprojektien portfoliosta Githubiin, Markdown-kieli ja readme.md-tiedostosta projektille
-  - Luentotallenne (20.1.2025) Youtubessa: [Teemaluento: Palveluiden bind ja projektien markdownista](https://youtube.com/live/Le6hPRxJn9g)
-- Kirjoita Github-projektille kuvaus markdownilla (readme.md-tiedosto). Github osaa prosessoida markdown-kieltä suoraan readme.md:stä HTML:ksi
-  - Muista päivittää omaa projektikuvausta Githubissa (readme.md) myös myöhemmin!
-  - Esimerkkejä [hyvistä readme-projektitiedostoista](https://github.com/matiassingers/awesome-readme)
-  - Teemun tekemä yksinkertainen esimerkki: [https://github.com/t2946282/demoproject](https://github.com/t2946282/demoproject)
-- Sovelluksen tekemistä
-- Tämän viikon aikana pitää olla tehtynä:
-  - Readme.md:n ensimmäinen versio repositorylle Githubissa
-  - Sovelluksen tekemistä
-  - [Postmanilla](https://www.postman.com/) API:n testaus jos API jo tehtynä
-
-# Viikko 4
-
-- Viikkopalaveri
-  - Versiohallinnan esittely
-- Katso hetki joitakin [livenä koodaavia striimaajia Twitchistä](https://www.twitch.tv/directory/game/Software%20and%20Game%20Development) ja koita selvittää:
-  - Mikä/mitkä kielet käytössä? Jotain tiettyjä frameworkeja?
-  - Mikä IDE/editori?
-  - Näkyykö videolla jokin versionhallinta, projektityökalu jne. käytössä?
-- Katso Matti Rädyn vierailijaluennon tallenne teemasta [Miten Unityllä tehdään softaa \(2021\)](https://www.youtube.com/watch?v=7tfpOtJjmbQ). Video on osa tätä vierailevien asiantuntijoiden luentosarjaa: [https://tl.oamk.fi/asiantuntijavieraat/](https://tl.oamk.fi/asiantuntijavieraat/)
-- Sovelluksen tekemistä
-- Teknisen määrittelydokumentin tekemistä
-- Tämän viikon aikana pitää olla tehtynä:
-  - Twitch-striimien vilkaisu
-  - Tekninen määrittelydokumentti eteenpäin
-  - Sovelluksen tekemistä
-
-# Viikko 5
-
-- Viikkopalaveri
-  - Versiohallinnan esittely
-- Katso Jari Ahon vierailijaluennon tallenne teemasta [Ohjelmoijana pienessä ohjelmistoyrityksessä ja legacy-koodista \(2021\)](https://www.youtube.com/watch?v=YRYnhKOBl9k). Video on osa tätä vierailevien asiantuntijoiden luentosarjaa: [https://tl.oamk.fi/asiantuntijavieraat/](https://tl.oamk.fi/asiantuntijavieraat/)
-- Sovelluksen tekemistä
-- Tämän viikon aikana pitää olla tehtynä:
-  - Tekninen määrittelydokumentti kokonaan valmiiksi 
-  - Sovelluksen tekemistä
- 
-  
-# Viikko 6
-
-- Viikkopalaveri
-  - Esitellään valmis tekninen määrittelydokumentti
-  - Versiohallinnan esittely
-- Katso Miika Hämeenahon  vierailijaluennon tallenne teemasta [Mobiilikehitys \(2022\)](https://www.youtube.com/watch?v=aMDq1uOiSnU). Video on osa tätä vierailevien asiantuntijoiden luentosarjaa: [https://tl.oamk.fi/asiantuntijavieraat/](https://tl.oamk.fi/asiantuntijavieraat/)
-- Sovelluksen tekemistä
-- Tämän viikon aikana pitää olla tehtynä:
-  - Projektille kirjoitettu markdown-muotoinen Readme-tiedosto Githubiin
-  - Sovelluksen tekemistä
-
-# Viikko 7
-
-- Viikkopalaveri
-  - Versiohallinnan esittely
-- Katso Timo Konun vierailijaluennon tallenne teemasta [Ratkaisukeskeisen ohjelmistoyrityksen johtaminen \(2022\)](https://www.youtube.com/watch?v=bkBQ0z9ZYGU). Video on osa tätä vierailevien asiantuntijoiden luentosarjaa: [https://tl.oamk.fi/asiantuntijavieraat/](https://tl.oamk.fi/asiantuntijavieraat/)
-- Sovelluksen tekemistä
-- Demovideon valmistelu
-- Ryhmä tekee yhdessä posterin englanniksi. Posteripohja löytyy Teamssista
-- Ota posterista hyvälaatuinen kuvaruutukaappaus, lisää se kuvana Github-repositoryyn ja linkitä näkyväksi readme.md tiedostossa repositoryn etusivulla
-- Tämän viikon aikana pitää olla tehtynä:
-  - Posteri valmiiksi ja Teamssiin
-  - Posteri Githubissa kuvana ja linkitetty readme.md:ssä repositoryn etusivulle
-  - Sovelluksen tekemistä
-
-# Viikko 8
-
-- Laadi vastaava taulukko kuin kohdassa [**Tiivistelmä arvosanoille**](#arvosana_tiiviste) ja rastita siihen oman toteutuksen suoritetut tehtävät.
-  
-  - Voit ladata excel-tiedoston (taskit.xlsx) Teamsin kanavalta **Tiedostot ja yhteiset oppimateriaalit**
-  - Rastita tehdyt tehtävät
-  - Lataa tiedosto GitRepon juureen (jos et käytä exceliä laita kuitenkin nimen alkuosaksi taskit)
-
-- Demovideo projektista:
-  - Videon pituuden tulisi olla noin 5 minuuttia, missä ehtii yleensä näyttämään keskeiset osat applikaatiosta ja posterista.
-  - Videon on oltava julkisesti saatavilla ilman kirjautumista
-    - YouTubeen unlisted-videoksi (myös students.oamk.fi -tunnukset toimivat myös Youtubeen)
-    - Älä aseta videon lupaa "YouTube-sisältö lapsille", koska se ei salli videon tallentamista YouTube-soittolistaan
-    - Linkkaa videon URL ryhmän Teams-kanavalle
-  - Luo 3-4 sivun PowerPoint- tai PDF-dokumentti tukemaan videon esitystä. Dokumentissa tulisi olla vähintään:
-    - Mitkä olivat projektin tavoitteet
-    - Ketkä osallistuivat projektiin ja mitä he tekivät (suunnilleen)
-    - Mikä oli hyvää, mikä oli huonoa
-    - Esitä dokumentin sisältö videon alussa
-    - Kaikkien ei välttämättä tarvitse puhua videolla (mutta toki saa)
-    - Esittele mahdollinen Kanban
-    - Näytä posteri videon lopuksi
-    - Lisää PowerPoint- tai PDF-dokumentti Github-repositoryyn
-  - Esittele pankkiautomaattiprojekti
-- Loppuesitykset koko luokalle (osallistumispakko)
-  - Ohjelman demonstrointi ja vapaata keskustelua
-  - Posterin esittely
- 
+- Choose a license: [https://choosealicense.com/](https://choosealicense.com/)
+- Public license selector:  [https://ufal.github.io/public-license-selector/](https://ufal.github.io/public-license-selector/)
 
 # Kirjat ja kurssit taustatiedoksi ja malliksi
 
@@ -582,118 +669,7 @@ MySQL (ei tietoa laadusta):
 - Fundamentals of Data Engineering: [https://learning.oreilly.com/library/view/fundamentals-of-data/9781098108298/](https://learning.oreilly.com/library/view/fundamentals-of-data/9781098108298/)
 - MySQL 5: [https://learning.oreilly.com/course/mysql-5/9781926873961/](https://learning.oreilly.com/course/mysql-5/9781926873961/)
 
-___
-<span id="git_ohje"></span>
 
-# Projektin alustaminen
+# Ohjaajien kommentteja ja vinkkejä
 
-📺 Voit katsoa ohjevideon osoitteesta:  
-[https://www.youtube.com/watch?v=_lfn6vsrOJY](https://www.youtube.com/watch?v=_lfn6vsrOJY)
-
----
-
-## 1. Repositoryn alustaminen
-
-Yksi ryhmän opiskelijoista alustaa GitHub-repositoryn seuraavasti:
-
-```bash
-# Kloonaa repon omalle koneelleen
-git clone <repository-url> 
-
-cd groupx  # jossa groupx on kloonattu kansio ja x oman ryhmän numero
-git checkout -b initialize
-```
-
----
-
-## 2. Backendin alustaminen
-
-Anna groupx kansiossa seuraavat komennot
-```bash
-mkdir backend
-cd backend
-npx express-generator --no-view
-npm install
-```
-
----
-
-## 3. Qt-sovelluksen alustaminen
-
-1. Käynnistä **Qt Creator**
-2. Luo **Qt Widget** -tyyppinen sovellus, jonka nimeksi `bank-automat`
-3. Tallenna sovellus kansioon `groupx`
-4. Käännä sovellus
-5. Tarkista, että `bank-automat`-kansion alle ilmestyi `build`-kansio
-6. Jos `build`-kansiota ei ilmesty:
-   - Poista `bank-automat`-kansio
-   - Tarkista Qt:n asetukset:  
-     [https://peatutor.com/c_kieli/qt_asennus.php](https://peatutor.com/c_kieli/qt_asennus.php)
-   - Luo sovellus uudestaan
-
----
-
-## 4. `.gitignore`-tiedoston luominen
-
-Luo tiedosto projektikansion `groupx` juureen ja kirjoita siihen seuraavat rivit:
-
-```gitignore
-backend/node_modules/
-bank-automat/build/
-bank-automat/.qtcreator/
-bank-automat/*.user
-```
-
----
-
-## 5. Muutosten lisääminen ja pushaaminen
-
-Suorita komennot kansion `groupx` juuressa:
-
-```bash
-git add .
-git commit -m "projekti alustettu"
-git push origin initialize
-```
-
----
-
-## 6. Tarkistukset GitHubissa
-
-Varmista, että GitHubissa näkyy seuraavat kansiot:
-
-- backend  
-- bank-automat
-
-Ja että seuraavat **eivät ole GitHubissa**:
-
-- backend/node_modules  
-- bank-automat/build 
-- bank-automat/.qtcreator
-- bank-automat/xxx.user
-
----
-
-## 7. Pull Request
-
-- Jos kaikki edellä meni oikein, tee **Pull Request**
-- Pyydä jotain muuta ryhmän jäsentä hyväksymään PR ja yhdistämään `initialize` branchin `mainiin`
-
----
-
-## 8. Branchin yhdistämisen jälkeen
-
-### Henkilö, joka teki alustusvaiheet
-- suorittaa komennot:
-
-```bash
-git checkout main
-git pull origin main
-```
-- ja tämän jälkeen hän luo oman branchin
-
-
-### Muut ryhmän jäsenet
-
-- kloonaavat repositoryn
-- luovat oman branchin
+- Tänne on kasattu aikaisempien projektien [ohjaajien kommentteja ja vinkkejä](./dl/kommentit.md)
