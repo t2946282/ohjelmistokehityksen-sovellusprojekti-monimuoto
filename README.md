@@ -592,6 +592,14 @@ Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
   esim. backendin julkaisu jossain pilvipalvelussa ja qt-sovelluksen "releasen" automatisointi Githubiin tai toiselle palvelimelle ladattavaksi vaikka Github actioneilla)
 (vaikutus arvosanaan 1)
 
+## Kafka 
+
+-Apache Kafkan käyttö järjestelmien väliseen viestinvälitykseen. Kafka voidaan ottaa käyttöön esimerkiksi Aivenin pilvipalvelussa.
+
+-Ota Kafka käyttöön ja rakenna Node.js-sovellus, joka vastaanottaa Kafka-viestejä ja näyttää ne käyttäjälle.
+
+-Pekan esimerkkivideo: [https://youtu.be/Cf4B9XYzq7k](https://youtu.be/Cf4B9XYzq7k)
+
 ## Verkkopankin toteuttaminen
 
 - Verkkopankin toteuttaminen (vaikutus arvosanaan 1)
