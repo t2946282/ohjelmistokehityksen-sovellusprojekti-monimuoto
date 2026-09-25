@@ -190,9 +190,6 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 - Teemu Leppäsen luentotallenteet [videosoittolista \(kevät 2025\)](https://oulu.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx#folderID=%2221064f4a-0801-451c-8e5c-b29d00e337be%22)
 - Teamsissa [oppimateriaalit-kanava](<https://unioulu.sharepoint.com/:f:/r/sites/Ohjelmistokehityksensovellusprojektitestialusta/Shared%20Documents/3.%20Tiedostot%20ja%20yleiset%20oppimateriaalit?csf=1&web=1&e=hbYrc3>)
 
-### Esimerkkisovelluksen UML-kaaviot
-
-- Pekan luennoilla rakennetaan esimerkkisovellus, jonka UML-kaaviot ja muut suunnitteluvaiheet löytyvät GiHubista [https://github.com/alaluuk/peppiExample](https://github.com/alaluuk/peppiExample)
 
 
 ### Kaaviot dokumentointiin
@@ -203,6 +200,7 @@ Esimerkiksi näillä työkaluilla:
 - Lucidchart: [https://www.lucidchart.com](https://www.lucidchart.com)
 - Diagrameditor: [https://www.diagrameditor.com/](https://www.diagrameditor.com/)
 - PlantUML: [https://plantuml.com/](https://plantuml.com/)
+- Mermaid: [https://mermaid.js.org/](https://mermaid.js.org/)
 
 Katso näistä Teams-kanavan dokumenteista mallia teknisen määrittelydokumentin kaavioihin:
 
