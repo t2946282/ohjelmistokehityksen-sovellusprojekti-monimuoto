@@ -310,7 +310,7 @@ Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineeri
   - generoidaan model MySQL Workenchillä
   - tarkistetaan että Workbenchillä saatu ER-model vastaa toiminnallisen määrittelyn diagrammia
   - ladataan Workbenchin ER-modelista Exportattu PNG-kuva GitHubiin documents-kansioon
-  - Ilmoitus Pekalle, että tarkista 
+  - Teamsissa oman kanavan kautta ilmoitus Pekalle, että tarkista (viestin alkuun @Pekka Alaluukas) 
   - Workbenchillä synkronoidaan modelista tietokanta
 - Sovelluksen tekemistä : aloittaakaa backendistä
   - kukin opiskelija valitsee tietokannasta yhden taulun, jolle alkaa tekemään CRUD-operaatioita
