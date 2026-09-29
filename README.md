@@ -28,6 +28,8 @@ Huom! Monimuotoryhmissä ei käytetä kortinlukijaa, vaan kortinnumero annetaan 
   - Käytettävä callbackejä (ei Promisea, eikä async-await rakennetta)
   - Ei saa käyttää mitään ORM:ia
 - Pankkiautomaattisovelluksen (Qt työpöytäsovellus, jossa käytetään Qt Network moduulia)
+- Sovelluksen koodin GitHubissa
+- Vaaditut dokumentit GitHubissa
 
 **Huom!** Edellä mainitut kuuluvat kurssin sisältöön ja arviointi perustuu niiden osaamiseen, joten millään muilla tekniikoilla noita ei saa korvata.
 
@@ -120,8 +122,8 @@ Nämä ovat ohjelmistokokonaisuutta projektihallinnallisesta näkökulmasta kosk
 |----------------------------|----|----|----|----|----|
 | Versionhallinnan käyttö    | x  | x  | x  | x  | x  |
 | Viikkopalaverit            | x  | x  | x  | x  | x  |
-| Tekninen määrittelydokum.  | x  | x  | x  | x  | x  |
-| Projektisuunnitelma        | x  | x  | x  | x  | x  |
+| Toiminnallinen määrittelydokum.  | x  | x  | x  | x  | x  |
+| Tekninen määrittelydokum.        | x  | x  | x  | x  | x  |
 | ER-kaavio                  | x  | x  | x  | x  | x  |
 | Readme.md                  | x  | x  | x  | x  | x  |
 
@@ -152,6 +154,7 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 
 - Dokumentoinnin puutteet
 - Sovelluksen rakenne ei ole annettujen määritysten mukainen
+- Poissaolo palavereista
 
 
 
@@ -164,7 +167,7 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 - Ryhmän tuottaman sovellukseen tasoon (kts. Sovelluksen arviointi)
 - Toveriarvio tehdään web-sovelluksella (vertaisarviointi)
 - Itsearvio tehdään web-sovelluksella (itsearviointi)
-- Projektidokumentointi ja tekninen määrittelydokumentti (heikko dokumentointi voi alentaa arvosanaa)
+- Vaaditut dokumentit (heikko dokumentointi voi alentaa arvosanaa)
 - Englanninkielinen posteri (hyväksytty/hylätty, pitää päästä läpi)
 - Loppuesitys vaikuttaa arvosanaan
 - Arvosanaa ei voi korottaa myöhemmin
@@ -176,6 +179,7 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 
 - Pekka Alaluukkaan [ohjeet ja tallenteet videosoittolistana](https://www.youtube.com/playlist?list=PLWl0bS7jZq99iOUNmMyuT9EgU6YfxP_en)
 - Git perusteita [Peatutor.com/git_tutor/](https://peatutor.com/git_tutor/)
+- Ohjelmistotuotanto [Peatutor.com/swengineering/] (https://peatutor.com/swengineering/)
 - Muita Pekan tekemiä ohjeita (Qt yms.): [Peatutor.com/](https://peatutor.com/)
 
 ### Teemaluentoja: AI, IaC, CI/CD, reverse proxy, ohjelmistiolisensseistä (Teemu Korpela)
@@ -188,7 +192,6 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 ### Ohjelmistokehityksen perusteet ja UML-mallinnus videot Yujassa (Teemu Leppänen)
 
 - Teemu Leppäsen luentotallenteet [videosoittolista \(kevät 2025\)](https://oulu.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx#folderID=%2221064f4a-0801-451c-8e5c-b29d00e337be%22)
-- Teamsissa [oppimateriaalit-kanava](<https://unioulu.sharepoint.com/:f:/r/sites/Ohjelmistokehityksensovellusprojektitestialusta/Shared%20Documents/3.%20Tiedostot%20ja%20yleiset%20oppimateriaalit?csf=1&web=1&e=hbYrc3>)
 
 
 
@@ -202,13 +205,15 @@ Esimerkiksi näillä työkaluilla:
 - PlantUML: [https://plantuml.com/](https://plantuml.com/)
 - Mermaid: [https://mermaid.js.org/](https://mermaid.js.org/)
 
-Katso näistä Teams-kanavan dokumenteista mallia teknisen määrittelydokumentin kaavioihin:
+Suosittelemme Mermaidia.
+Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineering/mermaid_example.php](https://peatutor.com/swengineering/mermaid_example.php)
 
-- Ohjelmistokehityksen [materiaalit](<https://unioulu.sharepoint.com/:f:/r/sites/OhjelmistokehitysProjekti/Shared%20Documents/Tiedostot%20ja%20yleiset%20oppimateriaalit/Ohjelmistokehityksen%20materiaalit?csf=1&web=1&e=wTy8hF>)
-- Valmiita esimerkkejä [määrittelyvaiheen kaavioista](<https://unioulu.sharepoint.com/sites/Ohjelmistokehityksensovellusprojektitestialusta/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FOhjelmistokehityksensovellusprojektitestialusta%2FShared%20Documents%2F3%2E%20Tiedostot%20ja%20yleiset%20oppimateriaalit%2FOhjelmistokehityksen%20materiaalit%2FIN00CS90%5FLuku%5F5%5FMaarittelyvaihe%2Epdf&parent=%2Fsites%2FOhjelmistokehityksensovellusprojektitestialusta%2FShared%20Documents%2F3%2E%20Tiedostot%20ja%20yleiset%20oppimateriaalit%2FOhjelmistokehityksen%20materiaalit>)
-- UML-mallinnuksen [kaavioesimerkit](<https://unioulu.sharepoint.com/:f:/r/sites/OhjelmistokehitysProjekti/Shared%20Documents/Tiedostot%20ja%20yleiset%20oppimateriaalit/Ohjelmistokehityksen%20materiaalit/UML-mallinnus?csf=1&web=1&e=T1to4y>)
-- Yleinen [esimerkkikuva järjestelmäarkkitehtuurista](./dl/arkkitehtuurikuva.png)
-
+# Vaatimukset dokumenteille
+- Vaadittavat dokumentit: toiminnallinen määrittely ja tekninen määrittely
+- Luettavissa GitRepon documents-kansiosta
+- Kirjoitettu Markdownilla
+- Kaaviot lisättynä dokumentteihin (suositellaan Mermaidia)
+- Lisäksi README.MD tiedostossa vapaamuotoinen  kuvaus sovelluksesta
 
 # Vaatimukset tietokannalle
 
@@ -264,7 +269,7 @@ Katso näistä Teams-kanavan dokumenteista mallia teknisen määrittelydokumenti
 1. Luodaan neljän hengen ryhmät [Excel-dokumentissa](<https://unioulu-my.sharepoint.com/:x:/g/personal/alaluuk_oamk_fi/IQBgHAzlTg22TYgV7PycCmFeAbtyxjCUqFPvKd9RjO1HQjc?e=hFPzhm>)
 
 2. Jokainen opiskelija luo tunnuksen itselleen sivustolla
-  [https://peatutor.com/project_app/register/tvt26](https://peatutor.com/project_app/register/tvt26)
+  [https://peatutor.com/project_app/register/tvt26kmo](https://peatutor.com/project_app/register/tvt26kmo)
   
   
     - Voit keksiä minkä hyvänsä tunnuksen (joka on vapaa)
@@ -283,18 +288,14 @@ Katso näistä Teams-kanavan dokumenteista mallia teknisen määrittelydokumenti
 - Github käyttöön (Pekan tekemän organisaation alle): [Pekan ohje](#initialize)
 - Ryhmän jäsenet sopii alustavasti kuka tekee mitäkin toiminnallisuuksia (mutta ei niin, että vain yksi tekee koko Qt-työpöytäsovelluksen, että vain yksi tekee koko tietokannan jne.)
 - Ryhmä sopii käytetäänko Qt sovelluksessa build järjestelmänä **qmake**:a vai **cmake**:a (on parasta että koko ryhmä käyttää samaa)
-- Aloittakaa tekemään projektidokumenttia (pitää tehdä yhdessä). Pohja löytyy Teamsista. Tallentakaa oma versio ryhmän github-repositoryyn documents-hakemistoon.
-- Aloittakaa tekemään teknistä määrittelydokumenttia (pitää tehdä yhdessä). Pohja löytyy Teamsista. Tallentakaa oma versio ryhmän github-repositoryyn documents-hakemistoon. 
+- Aloittakaa tekemään vaatimusmäärittelydokumenttia (pitää tehdä yhdessä). Dokumentti tehdään GitRepon documents kansioon nimellä toiminnallinen.MD. 
+- Aloittakaa tekemään teknistä määrittelydokumenttia (pitää tehdä yhdessä). Dokumentti tehdään GitRepon documents kansioon nimellä tekninen.MD. 
 - Katsokaa yhdessä valmiiksi viikon 2+ tavoitteet
 
 - Tämän viikon aikana pitää olla tehtynä:
-  - Projektisuunnitelma alulle
-  - Tekninen määrittely-dokumentti alulle
   - Github repository käyttöön
-  - Priorisoikaa backend (tietokanta ja API), jotta käyttöliittymän voi tehdä toimimaan suoraan sitä vasten
-  - Tietokannan ER-kaavio pitää olla ohjeiden mukaisesti tehtynä ja ladattuna PNG-kuvana GitHubiin documents kansioon. Kun se on tehty, laittakaa  ohjaajalle viesti rymänne Teamsin kautta (SPL:Jukka, SPO:Pekka). 
-    - "@Jukka Jauhiainen ER-kaavio valmis".
-    - "@Pekka Alaluukas ER-kaavio valmis".
+  - Toiminnallinen määrittely-dokumentti valmis
+  - Tekninen määrittely-dokumentti alulle
 
 **Vinkkejä tietokannan suunnitteluun**
   - Lukekaa [https://peatutor.com/databases/db.php#design](https://peatutor.com/databases/db.php#design) ja miettikää erityisesti **monen-suhde-moneen yhteydet**
@@ -303,21 +304,24 @@ Katso näistä Teams-kanavan dokumenteista mallia teknisen määrittelydokumenti
 # Viikko 2
 
 - Viikkopalaveri opettajan kanssa
-  - Versiohallinnan esittely (Tarkistetaan että repository on alustettu)
-  - Esitelkää mitä dokumentteihin (projektisuunnitelma, tekninen määrittely) on kirjattu tähän mennessä
-- Sovelluksen tekemistä
+  - Versiohallinnan esittely (Tarkistetaan että repository on alustettu ja vaatimusmäärittely valmis)
+- Tekninen määrittely valmiiksi
+- Luodaan MySQL-tietokanta
+  - generoidaan model MySQL Workenchillä
+  - tarkistetaan että Workbenchillä saatu ER-model vastaa toiminnallisen määrittelyn diagrammia
+  - ladataan Workbenchin ER-modelista Exportattu PNG-kuva GitHubiin documents-kansioon
+  - Ilmoitus Pekalle, että tarkista 
+  - Workbenchillä synkronoidaan modelista tietokanta
+- Sovelluksen tekemistä : aloittaakaa backendistä
+  - kukin opiskelija valitsee tietokannasta yhden taulun, jolle alkaa tekemään CRUD-operaatioita
 - Tämän viikon aikana pitää olla tehtynä:
-  - Ohjelmistokehityksen perusteet ja UML-mallinnus videot katsottuna: [Soittolista luentotallenteista](https://www.youtube.com/playlist?list=PLWl0bS7jZq99iOUNmMyuT9EgU6YfxP_en)
-  - Projektisuunnitelma valmis.
-  - Tekninen määrittely osin tehtynä: Järjestelmäarkkitehtuuri, Käyttötapaukset, Tietosisältö 
-  - ER-kaavio hyväksytty
+  - MySQL tietokanta tehtynä ja Workbenchin ER-modelin kuva GitHubissa
+  - Tekninen määrittely pääosin valmis
+  - Backendissä koodia
 
 # Viikko 3
 
 - Viikkopalaveri
-  - Projektisuunnitelma kokonaan valmis
-  - Tekninen määrittely: Järjestelmäarkkitehtuuri, Käyttötapaukset, Tietosisältö valmiina
-  - Esitellään dokumentit
   - CRUD-operaatioista demo (Pitää olla jotain endpointteja backendissä)
 
 - Kirjoita Github-projektille kuvaus markdownilla (readme.md-tiedosto). Github osaa prosessoida markdown-kieltä suoraan readme.md:stä HTML:ksi
@@ -327,7 +331,7 @@ Katso näistä Teams-kanavan dokumenteista mallia teknisen määrittelydokumenti
 - Sovelluksen tekemistä
 - Tämän viikon aikana pitää olla tehtynä:
   - Readme.md:n ensimmäinen versio repositorylle Githubissa
-  - Backendissä endpointteja
+  - Backendissä endpointeilla jotakin toimintaa
   - Tehtyjen endpointtien testausta [Postmanilla](https://www.postman.com/) 
 
 # Viikko 4
@@ -335,7 +339,6 @@ Katso näistä Teams-kanavan dokumenteista mallia teknisen määrittelydokumenti
 - Viikkopalaveri
   - Versiohallinnan esittely
 - Sovelluksen tekemistä
-- Teknisen määrittelydokumentin tekemistä
 - Tämän viikon aikana pitää olla tehtynä:
   - Login endpoint backendissä (kortin numerolla ja oikealla PIN koodilla saadaan webtoken)
   - Vähintään pankkiautomaatin tarvitsemat endpointit backendissä 
@@ -347,19 +350,17 @@ Katso näistä Teams-kanavan dokumenteista mallia teknisen määrittelydokumenti
   - Nyt pitää olla jo Qt-sovelluksessa jotain omaa koodia
 - Sovelluksen tekemistä
 - Tämän viikon aikana pitää olla tehtynä:
-  - Tekninen määrittelydokumentti kokonaan valmiiksi 
-  - Kirjautuminen onnistuu Qt-sovelluksesta (ainakin kovakoodatulla kortin numerolla eli sarjaportinlukijan ei tarvitse olla valmis)
+  - Kirjautuminen onnistuu Qt-sovelluksesta 
  
   
 # Viikko 6
 
 - Viikkopalaveri
-  - Esitellään valmis tekninen määrittelydokumentti
   - Versiohallinnan esittely
-  - Sovelluksen tekemistä
+  - Sovelluksen esittely
 
 - Tämän viikon aikana pitää olla tehtynä:
-  - Projektille kirjoitettu markdown-muotoinen Readme-tiedosto Githubiin
+  - Qt sovelluksessa kirjautumisen jälkeen jotain toimivaa
 
 
 # Viikko 7
@@ -421,6 +422,8 @@ git clone <repository-url>
 
 cd groupx  # jossa groupx on kloonattu kansio ja x oman ryhmän numero
 git checkout -b initialize
+
+mkdir documents
 ```
 
 ---
@@ -429,7 +432,6 @@ git checkout -b initialize
 
 Anna groupx kansiossa seuraavat komennot
 ```bash
-mkdir documents
 mkdir backend
 cd backend
 npx express-generator --no-view
