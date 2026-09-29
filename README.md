@@ -179,7 +179,7 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 
 - Pekka Alaluukkaan [ohjeet ja tallenteet videosoittolistana](https://www.youtube.com/playlist?list=PLWl0bS7jZq99iOUNmMyuT9EgU6YfxP_en)
 - Git perusteita [Peatutor.com/git_tutor/](https://peatutor.com/git_tutor/)
-- Ohjelmistotuotanto [Peatutor.com/swengineering/] (https://peatutor.com/swengineering/)
+- Ohjelmistotuotanto [Peatutor.com/swengineering/](https://peatutor.com/swengineering/)
 - Muita Pekan tekemiä ohjeita (Qt yms.): [Peatutor.com/](https://peatutor.com/)
 
 ### Teemaluentoja: AI, IaC, CI/CD, reverse proxy, ohjelmistiolisensseistä (Teemu Korpela)
