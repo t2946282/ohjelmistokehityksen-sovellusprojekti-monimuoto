@@ -288,7 +288,7 @@ Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineeri
 - Github käyttöön (Pekan tekemän organisaation alle): [Pekan ohje](#initialize)
 - Ryhmän jäsenet sopii alustavasti kuka tekee mitäkin toiminnallisuuksia (mutta ei niin, että vain yksi tekee koko Qt-työpöytäsovelluksen, että vain yksi tekee koko tietokannan jne.)
 - Ryhmä sopii käytetäänko Qt sovelluksessa build järjestelmänä **qmake**:a vai **cmake**:a (on parasta että koko ryhmä käyttää samaa)
-- Aloittakaa tekemään vaatimusmäärittelydokumenttia (pitää tehdä yhdessä). Dokumentti tehdään GitRepon documents kansioon nimellä toiminnallinen.MD. 
+- Aloittakaa tekemään vaatimusmäärittelydokumenttia (pitää tehdä yhdessä). Dokumentti tehdään GitRepon documents kansioon nimellä toiminnallinen.MD. Huomiokaa valitsemanne arvosanatavoite kirjatessanne vaatimuksia.
 - Aloittakaa tekemään teknistä määrittelydokumenttia (pitää tehdä yhdessä). Dokumentti tehdään GitRepon documents kansioon nimellä tekninen.MD. 
 - Katsokaa yhdessä valmiiksi viikon 2+ tavoitteet
 
