@@ -403,7 +403,6 @@ Alla kunkin viikon kohdalla on tarkistuslista. Ryhmän tulisi tehdä vähintää
 # Viikko 8
 
 - Laadi vastaava taulukko kuin kohdassa [**Tiivistelmä arvosanoille**](#arvosana_tiiviste) ja rastita siihen oman toteutuksen suoritetut tehtävät.
-  
   - Voit ladata tiedoston txt-muodossa [tästä linkistä](taskit.txt)
   - Copy-pastetan se oman projektin README tiedoston loppuun ja laita otsikoksi "Suoritetut tehtävät". Poista sitten ne rastit joita ette toteuttaneet
   - Päivitä GitRepo ja tarkista, että taulukko näkyy main-branchin README:ssä 
