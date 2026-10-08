@@ -106,7 +106,6 @@ Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy,
 - Kirjautuessa valinta: debit vai credit: 
   - Valinta tehdään vain jos kyseessä kaksoiskortti
   - Jos kyseessä debit-kortti tai credit-kortti, valinta ohitetaan
-- Tilakaavio luotu
 - **Lisäominaisuus** sovittava ohjaajan kanssa
 
 
