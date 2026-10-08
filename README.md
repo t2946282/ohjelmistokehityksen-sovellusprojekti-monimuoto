@@ -1,21 +1,20 @@
 # Ohjelmistokehityksen sovellusprojekti (TVT Monimuoto)
 
-- Opiskelijoiden tehtävä on suunnitella ja toteuttaa pankkiautomaattijärjestelmä: [**Yleisohje ja arviointi**](#pr_ohje)
+Projektissa opiskelijat työskentelevät 4 hengen ryhmissä ja rakentavat tässä dokumentissa kuvatun sovelluksen.
+
+Projektissa opiskelijat syventävät ohjelmointitaitojaan ja perehtyvät ohjelmistokehitysprojektin käytännön toteuttamiseen.
+
 - 4 opiskelijan ryhmät määritellään [Excel-dokumentissa](<https://unioulu-my.sharepoint.com/:x:/g/personal/tk_oamk_fi/ETmu1ZUhPdpLuY_QVFEC5gkBYR6tp3Ftdc4HKKpviBAkoA?e=dDAaA4>)
-- [**Projektin alustaminen**](#initialize)
+
 
 - Viikko-ohjelmat: 
 |[Viikko 1](./#viikko-1) | [Viikko 2](./#viikko-2) |[Viikko 3](./#viikko-3) | [Viikko 4](./#viikko-4) | [Viikko 5](./#viikko-5) | [Viikko 6](./#viikko-6) | [Viikko 7](./#viikko-7) | [Viikko 8](./#viikko-8) |
 
-
-
-
+- [**Projektin alustaminen**](#initialize)
 
 # Projektityön kuvaus
 
-Työn aihe on pankkiautomaatti
-
-## Ohjelmiston rakenne on seuraava
+Opiskelijoiden tehtävä on suunnitella ja toteuttaa **pankkiautomaattijärjestelmä**, jonka ohjelmiston rakenne on seuraava:
 
 ![Projektikuva](./project.png)
 Huom! Monimuotoryhmissä ei käytetä kortinlukijaa, vaan kortinnumero annetaan Qt-sovellukseen manuaalisesti.
@@ -27,11 +26,11 @@ Huom! Monimuotoryhmissä ei käytetä kortinlukijaa, vaan kortinnumero annetaan 
   - Käytettävä MVC-mallia
   - Käytettävä callbackejä (ei Promisea, eikä async-await rakennetta)
   - Ei saa käyttää mitään ORM:ia
-- Pankkiautomaattisovelluksen (Qt työpöytäsovellus, jossa käytetään Qt Network moduulia)
+- Pankkiautomaattisovelluksen (C++ kielellä ohjelmoitu Qt-Widget sovellus, jossa käytetään Qt Network moduulia)
 - Sovelluksen koodin GitHubissa
 - Vaaditut dokumentit GitHubissa
 
-**Huom!** Edellä mainitut kuuluvat kurssin sisältöön ja arviointi perustuu niiden osaamiseen, joten millään muilla tekniikoilla noita ei saa korvata.
+**Huom!** Edellä mainitut kuuluvat kurssin sisältöön ja arviointi perustuu niiden osaamiseen, joten siksi millään muilla tekniikoilla noita ei saa korvata.
 
 
 # Oppimistavoitteet
@@ -263,7 +262,6 @@ Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineeri
 
 Alla kunkin viikon kohdalla on tarkistuslista. Ryhmän tulisi tehdä vähintään listan mukaiset tehtävät. Jos etenette nopeammin, esittäkää palaverissa myös ylimääräiset tehtävät.
 
- <span id="pr_ohje"></span>
 
 # Viikko 1
 
