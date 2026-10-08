@@ -526,6 +526,7 @@ Varmista, että GitHubissa näkyy seuraavat kansiot:
 - backend  
 - bank-automat
 - documents
+- database
 
 Ja että seuraavat **eivät ole GitHubissa**:
 
