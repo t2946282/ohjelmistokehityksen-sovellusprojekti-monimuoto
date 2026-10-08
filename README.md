@@ -296,10 +296,10 @@ Alla kunkin viikon kohdalla on tarkistuslista. Ryhmän tulisi tehdä vähintää
 - Katsokaa yhdessä valmiiksi viikon 2+ tavoitteet
 
 - Vk1 Tarkistuslista:
-  - [ ] Github repository alustettu ohjeiden mukaan
-  - [ ] Toiminnallinen määrittely-dokumentti valmis
-  - [ ] Tekninen määrittely-dokumentti alulle
-  - [ ] README:ssä lyhyt kuvaus projektista
+  - Github repository alustettu ohjeiden mukaan
+  - Toiminnallinen määrittely-dokumentti valmis
+  - Tekninen määrittely-dokumentti alulle
+  - README:ssä lyhyt kuvaus projektista
 
 # Viikko 2
 
@@ -320,31 +320,29 @@ Alla kunkin viikon kohdalla on tarkistuslista. Ryhmän tulisi tehdä vähintää
   - kukin opiskelija valitsee tietokannasta yhden taulun, jolle alkaa tekemään CRUD-operaatioita (luo taululle router- ja model-tiedosto)
 
 - Vk2 Tarkistuslista:
-  - [ ] Tekninen määrittely pääosin valmis
-  - [ ] Workbenchin ER-modelin kuva GitHubissa database-kansiossa
-  - [ ] tietokannan dump-file GitHubissa
-  - [ ] jokaisella opiskelijalla tietokanta omassa MySQL:ssä
-  - [ ] Backendissä koodia
+  - Tekninen määrittely pääosin valmis
+  - Workbenchin ER-modelin kuva GitHubissa database-kansiossa
+  - Ttietokannan dump-file GitHubissa
+  - Jokaisella opiskelijalla tietokanta omassa MySQL:ssä
+  - Backendissä koodia
 
 # Viikko 3
 
 - Viikkopalaveri (Vk2 tarkistuslista)
-
-- README tiedostoa päivitetään
-
+- README tiedostoa päivitetään (kts. [Teemun esimerkki](https://github.com/t2946282/demoproject))
 - Sovelluksen tekemistä
   - Backendissä endpointeilla vähintään tietojen haku tietokannasta
   - Tehtyjen endpointtien testausta [Postmanilla](https://www.postman.com/) 
 
 - Vk3 Tarkistuslista:
-  - [ ] README:ssä kuvattu projektia 
-  - [ ] Jokaisesta tietokannan taulusta saadaan data haettua backendin kautta
-  - [ ] Backendiin toteutettu endpoint testattu Postmanilla
+  - README:ssä kuvattu projektia
+  - Jokaisesta tietokannan taulusta saadaan data haettua backendin kautta
+  - Backendiin toteutettu endpoint testattu Postmanilla
 
 # Viikko 4
 
 - Viikkopalaveri (Vk3 tarkistuslista)
-
+- README tiedostoa päivitetään 
 - Sovelluksen tekemistä
 - Tämän viikon aikana pitää olla tehtynä:
   - Login endpoint backendissä (kortin numerolla ja oikealla PIN koodilla saadaan webtoken)
@@ -352,10 +350,11 @@ Alla kunkin viikon kohdalla on tarkistuslista. Ryhmän tulisi tehdä vähintää
   - Toteuteaan endpointille virheilmoitus, jos tietokanta ei toimi
 
 - Vk4 Tarkistuslista:
-  - [ ] Login endpoint toteutettu ja testattu
-  - [ ] Jokaisesta tietokannan taulusta saadaan data haettua backendin kautta
-  - [ ] Backendiin toteutettu endpoint testattu Postmanilla
-  - [ ] Testataan endpointit, kun tietokanta on sammutettu
+  - Login endpoint toteutettu ja testattu
+  - Jokaisesta tietokannan taulusta saadaan data haettua backendin kautta
+  - Backendiin toteutettu endpoint testattu Postmanilla
+  - Testataan endpointit, kun tietokanta on sammutettu
+  - README-tiedostoa päivitetty
 
 # Viikko 5
 
@@ -365,21 +364,25 @@ Alla kunkin viikon kohdalla on tarkistuslista. Ryhmän tulisi tehdä vähintää
   - Päivitetään main, niin että jokaisella opiskelijalla on kaikki formit omassa sovelluksessaan
   - Joku opiskelija tekee Qt-sovellukseen loginin, joka hakee webtokenin 
   - Muut voivat tehdä Qt:ssa muita toimintoja, jotka eivät tässä vaiheessa vaadi webtokenia (jos ei ole jo toteutettu) 
+  - README tiedostoa päivitetään 
 
 - Vk5 Tarkistuslista:
-  - [ ] Qt-sovelluksessa  kaikki omissa dokumenteissa mainitut formit
-  - [ ] Qt-sovelluksesta onnistuu kirjautuminen ja saadaan webtoken 
-  - [ ] Qt-sovelluksessa onnistuu tietojen haku backendistä
+  - Qt-sovelluksessa  kaikki omissa dokumenteissa mainitut formit
+  - Qt-sovelluksesta onnistuu kirjautuminen ja saadaan webtoken 
+  - Qt-sovelluksessa onnistuu tietojen haku backendistä
+  - README-tiedostoa päivitetty
 
 # Viikko 6
 
 - Viikkopalaveri (Vk5 tarkistuslista)
 - Qt sovelluksessa toiminnat edellyttävät web-tokenia
 - Navigointi formeista toiseen 
+- README tiedostoa päivitetään 
+- README-tiedostoa päivitetty
 
 - Vk6 Tarkistuslista:
-  - [ ] Qt sovelluksessa toiminnat edellyttävät web-tokenia
-  - [ ] Navigointi formeista toiseen onnistuu 
+  - Qt sovelluksessa toiminnat edellyttävät web-tokenia
+  - Navigointi formeista toiseen onnistuu 
 
 
 # Viikko 7
@@ -392,10 +395,10 @@ Alla kunkin viikon kohdalla on tarkistuslista. Ryhmän tulisi tehdä vähintää
 - Lisätehtävän tekeminen aloitetaan (ne ryhmät jotka sen tekevät)
 
 -  Vk7 Tarkistuslista:
-  - [ ] Posteri valmiis ja ladattu Teamssiin
-  - [ ] Posteri Githubissa kuvana ja linkitetty readme.md:ssä repositoryn etusivulle 
-  - [ ] Sovellus pääosin valmis
-  - [ ] Lisäominaisuus toteutetty
+  - Posteri valmiis ja ladattu Teamssiin
+  - Posteri Githubissa kuvana ja linkitetty readme.md:ssä repositoryn etusivulle 
+  - Sovellus pääosin valmis
+  - Lisäominaisuus toteutetty
 
 # Viikko 8
 
