@@ -33,10 +33,6 @@ Huom! Monimuotoryhmissä ei käytetä kortinlukijaa, vaan kortinnumero annetaan 
 
 **Huom!** Edellä mainitut kuuluvat kurssin sisältöön ja arviointi perustuu niiden osaamiseen, joten millään muilla tekniikoilla noita ei saa korvata.
 
-## Sovelluksen toiminta
-
-- Qt-sovellus kommunikoi REST APIn kanssa http-protokollan avulla.
-- REST API hoitaa kommunikoinnin tietokannan kanssa.
 
 # Oppimistavoitteet
 
@@ -47,6 +43,7 @@ Huom! Monimuotoryhmissä ei käytetä kortinlukijaa, vaan kortinnumero annetaan 
 - Opiskelija osaa suunnitella ja toteuttaa oliopohjaisen sovelluksen luokkakirjaston mukaisesti
 - Opiskelija osaa suunnitella ja toteuttaa sovellukseen tietokanta-arkkitehtuurin
 - Opiskelija osaa laatia ohjelmistoprojektin dokumentaation ja pystyy viestimään suullisesti ja kirjallisesti, myös englanniksi
+- Opiskelija osaa käyttää versionhallintaa
 
 
 # Opiskelijan arviointi
@@ -76,15 +73,14 @@ Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy,
 
 - Debit kortti toteutettava: 
   - Debit-kortti kytketään tiliin, jolla ei ole luottoa eli tilin saldo ei saa mennä miinukselle
-- Qt-sovelluksen aloituskäyttöliittymä
-- Oikealla PIN-koodilla avautuu pääkäyttöliittymä, väärällä uudelleenkysely
+- Qt-sovelluksessa aloituskäyttöliittymä, josta oikealla PIN-koodilla avautuu pääkäyttöliittymä, väärällä uudelleenkysely
 - Saldon tarkastelu
 - Rahan nosto: 20, 40, 50 tai 100 €
 - Näytetään 10 viimeisintä tilitapahtumaa
 
 ### Vähimmäisvaatimukset (arvosana 2)
 
-- Webtoken autentikointi toteutettu
+- JWT-autentikointi toteutettu
 - PIN-koodin syötön aikaraja 10 sekuntia (jos koodia ei anneta 10 sekunnin aikana palataan aloituskäyttöliittymään)
 - REST API:in on toteutettu kaikkien tietokanta-taulujen CRUD-operaatiot (vaikkei niitä tarvita pankkiautomaatissa)
 
@@ -93,7 +89,7 @@ Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy,
 - Debit-kortin lisäksi on toteutettava credit-kortti:
   - Credit-kortti liitetään credit tiliin eli tilillä on luottoraja ja saldo saa mennä miinukselle luottorajan verran
 - Vapaavalintaisen summan nosto (automaatissa vain 20 ja 50 € seteleitä)
-- Kolme väärää PIN-koodia lukitsee kortin (ei vaadita tallentamista tietokantaan)
+- Kolme väärää PIN-koodia lukitsee kortin (lukituksen ei tarvitse säilyä, kun sovellus käynnistetään uudelleen)
 
 ### Hyvän arvosanan vaatimukset (arvosana 4)
 
@@ -124,8 +120,7 @@ Nämä ovat ohjelmistokokonaisuutta projektihallinnallisesta näkökulmasta kosk
 | Viikkopalaverit            | x  | x  | x  | x  | x  |
 | Toiminnallinen määrittelydokum.  | x  | x  | x  | x  | x  |
 | Tekninen määrittelydokum.        | x  | x  | x  | x  | x  |
-| ER-kaavio                  | x  | x  | x  | x  | x  |
-| Readme.md                  | x  | x  | x  | x  | x  |
+| Projektin kuvaus (README)                  | x  | x  | x  | x  | x  |
 
 Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 
@@ -145,7 +140,6 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 | PIN-lukitus tietokantaan   |    |    |    | x  | x  |
 | 30 s timerit               |    |    |    | x  | x  |
 | Tilitapahtumien selaus     |    |    |    | x  | x  |
-| Tilakaavio                 |    |    |    |    | x  |
 | Kaksoiskortti              |    |    |    |    | x  |
 | Lisäominaisuus             |    |    |    |    | x  |
 
@@ -250,11 +244,16 @@ Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineeri
     - yhdelle tilille voi olla pääsy monella kortilla: vaikkapa koko perheellä 
 -yksi kortti on kytketty moneen eri tiliin (vaikka se on käytännössä korkeintaan kahteen tiliin(debit ja credit).
 ->Tästä seuraa hyvin tavanomainen RELAATIOTIETOKANNAN "pulma" joka  ratkaistaan välitystaulun avulla
-  
+
+**Vinkkejä tietokannan suunnitteluun**
+  - Lukekaa [https://peatutor.com/databases/db.php#design](https://peatutor.com/databases/db.php#design) ja miettikää erityisesti **monen-suhde-moneen yhteydet**
+  - Miettikää tietotyyppejä ja tässä apuna [https://peatutor.com/databases/mysql.php#types](https://peatutor.com/databases/mysql.php#types)
+
 
 # Viikkopalavereiden yleinen agenda
 
 - Pääsääntöisesti kaikkien pitää olla paikalla
+- Katsotaan edellisen viikon tarkistuslistasta että tehtävät on suoritettu
 - Yleistä keskustelua, että miten projekti on edennyt
 - Kukin opiskelija kertoo (ja näyttää) mitä on tehnyt kuluneen viikon aikana
 - Versiohallinnan esittely
@@ -286,20 +285,16 @@ Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineeri
 - Tarkista että olet kurssin Teams-kanavalla (pyydä opettajalta pääsy jos et ole). Käytä students.oamk.fi-sähköpostiosoitetta kun kirjaudut Teamssiin
 
 - Github käyttöön (Pekan tekemän organisaation alle): [Pekan ohje](#initialize)
-- Ryhmän jäsenet sopii alustavasti kuka tekee mitäkin toiminnallisuuksia (mutta ei niin, että vain yksi tekee koko Qt-työpöytäsovelluksen, että vain yksi tekee koko tietokannan jne.)
+- Ryhmän jäsenet sopii alustavasti kuka tekee mitäkin toiminnallisuuksia (mutta jokaisen opiskelijan tulee tehdä koodia sekä backendiin, että Qt-sovellukseen)
 - Ryhmä sopii käytetäänko Qt sovelluksessa build järjestelmänä **qmake**:a vai **cmake**:a (on parasta että koko ryhmä käyttää samaa)
 - Aloittakaa tekemään vaatimusmäärittelydokumenttia (pitää tehdä yhdessä). Dokumentti tehdään GitRepon documents kansioon nimellä toiminnallinen.MD. Huomiokaa valitsemanne arvosanatavoite kirjatessanne vaatimuksia.
 - Aloittakaa tekemään teknistä määrittelydokumenttia (pitää tehdä yhdessä). Dokumentti tehdään GitRepon documents kansioon nimellä tekninen.MD. 
 - Katsokaa yhdessä valmiiksi viikon 2+ tavoitteet
 
-- Tämän viikon aikana pitää olla tehtynä:
-  - Github repository käyttöön
-  - Toiminnallinen määrittely-dokumentti valmis
-  - Tekninen määrittely-dokumentti alulle
-
-**Vinkkejä tietokannan suunnitteluun**
-  - Lukekaa [https://peatutor.com/databases/db.php#design](https://peatutor.com/databases/db.php#design) ja miettikää erityisesti **monen-suhde-moneen yhteydet**
-  - Miettikää tietotyyppejä ja tässä apuna [https://peatutor.com/databases/mysql.php#types](https://peatutor.com/databases/mysql.php#types)
+- Vk1 Tarkistuslista:
+  - [] Github repository alustettu ohjeiden mukaan
+  - [] Toiminnallinen määrittely-dokumentti valmis
+  - [] Tekninen määrittely-dokumentti alulle
 
 # Viikko 2
 
