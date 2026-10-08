@@ -198,7 +198,7 @@ Esimerkiksi näillä työkaluilla:
 - Lucidchart: [https://www.lucidchart.com](https://www.lucidchart.com)
 - Diagrameditor: [https://www.diagrameditor.com/](https://www.diagrameditor.com/)
 - PlantUML: [https://plantuml.com/](https://plantuml.com/)
-- Mermaid: [https://mermaid.js.org/](https://mermaid.js.org/)
+- Mermaid: [https://mermaid.ai/](https://mermaid.ai/)
 
 Suosittelemme Mermaidia.
 Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineering/mermaid_example.php](https://peatutor.com/swengineering/mermaid_example.php)
