@@ -292,9 +292,9 @@ Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineeri
 - Katsokaa yhdessä valmiiksi viikon 2+ tavoitteet
 
 - Vk1 Tarkistuslista:
-  - [] Github repository alustettu ohjeiden mukaan
-  - [] Toiminnallinen määrittely-dokumentti valmis
-  - [] Tekninen määrittely-dokumentti alulle
+  - [ ] Github repository alustettu ohjeiden mukaan
+  - [ ] Toiminnallinen määrittely-dokumentti valmis
+  - [ ] Tekninen määrittely-dokumentti alulle
 
 # Viikko 2
 
