@@ -17,7 +17,10 @@ Projektissa opiskelijat syventävät ohjelmointitaitojaan ja perehtyvät ohjelmi
 Opiskelijoiden tehtävä on suunnitella ja toteuttaa **pankkiautomaattijärjestelmä**, jonka ohjelmiston rakenne on seuraava:
 
 ![Projektikuva](./project.png)
-Huom! Monimuotoryhmissä ei käytetä kortinlukijaa, vaan kortinnumero annetaan Qt-sovellukseen manuaalisesti.
+
+Qt-sovellus toimii, niin että kun sovellus käynnistyy avautuu **aloitusikkuna** ja kun kortinlukijaan laitetaan kortti, avautuu **PIN-koodin kyselyikkuna**. Jos annetaan oikea PIN-koodi avautuu sovelluksen **päävalikko**, josta voidaan valita myöhemmin kerrotut toimenpiteet.
+
+Huom! Monimuotoryhmissä ei käytetä kortinlukijaa, joten he lisäävät aloitusikkunaan painikkee, joka avaa PIN-koodin kyselyikkunan ja siihen kirjoitetaan kortinnumero ja PIN-koodi.
 
 ### Työ sisältää
 
