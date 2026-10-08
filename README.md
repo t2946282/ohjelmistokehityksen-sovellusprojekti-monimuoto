@@ -208,6 +208,8 @@ Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineeri
 - Kirjoitettu Markdownilla
 - Kaaviot lisättynä dokumentteihin (suositellaan Mermaidia)
 - Lisäksi README.MD tiedostossa vapaamuotoinen  kuvaus sovelluksesta
+  - Esimerkkejä [hyvistä readme-projektitiedostoista](https://github.com/matiassingers/awesome-readme)
+  - Teemun tekemä yksinkertainen esimerkki: [https://github.com/t2946282/demoproject](https://github.com/t2946282/demoproject)
 
 # Vaatimukset tietokannalle
 
@@ -259,6 +261,8 @@ Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineeri
 - Versiohallinnan esittely
 - Muutoksia arvosanatavoitteeseen tai tavoitteisiin ylipäätänsä
 
+Alla kunkin viikon kohdalla on tarkistuslista. Ryhmän tulisi tehdä vähintään listan mukaiset tehtävät. Jos etenette nopeammin, esittäkää palaverissa myös ylimääräiset tehtävät.
+
  <span id="pr_ohje"></span>
 
 # Viikko 1
@@ -295,89 +299,111 @@ Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineeri
   - [ ] Github repository alustettu ohjeiden mukaan
   - [ ] Toiminnallinen määrittely-dokumentti valmis
   - [ ] Tekninen määrittely-dokumentti alulle
+  - [ ] README:ssä lyhyt kuvaus projektista
 
 # Viikko 2
 
-- Viikkopalaveri opettajan kanssa
-  - Versiohallinnan esittely (Tarkistetaan että repository on alustettu ja vaatimusmäärittely valmis)
+- Viikkopalaveri opettajan kanssa (Vk1 tarkistuslista)
 - Tekninen määrittely valmiiksi
-- Luodaan MySQL-tietokanta
-  - generoidaan model MySQL Workenchillä
+- Luodaan MySQL-tietokanta (yhden opiskelijan koneella)
+  - luodaan model MySQL Workenchillä ja generoidan ER-model
   - tarkistetaan että Workbenchillä saatu ER-model vastaa toiminnallisen määrittelyn diagrammia
-  - ladataan Workbenchin ER-modelista Exportattu PNG-kuva GitHubiin documents-kansioon
-  - Teamsissa oman kanavan kautta ilmoitus Pekalle, että tarkista (viestin alkuun @Pekka Alaluukas) 
-  - Workbenchillä synkronoidaan modelista tietokanta
+  - laitetaan Teamsissa oman kanavan kautta ilmoitus Pekalle, että tarkista malli, viestiin liitetään Workbenchin ER-modelista Exportattu PNG-kuva  (viestin alkuun @Pekka Alaluukas) 
+  - Kun Pekka on hyväksynyt mallin: 
+    - tallennetaan ER-model projektin database-kansioon
+    - Workbenchillä synkronoidaan modelista tietokanta
+    - tietokannasta luodaan dump-file ja tallennetaan se projektin database-kansioon
+    - pusketaan GitHubiin ja mergetään mainiin
+    - muut opiskelijat hakevat uuden mainin
+    - muut opiskelijat ajavat dump-filen MySQL:ssä
 - Sovelluksen tekemistä : aloittaakaa backendistä
-  - kukin opiskelija valitsee tietokannasta yhden taulun, jolle alkaa tekemään CRUD-operaatioita
-- Tämän viikon aikana pitää olla tehtynä:
-  - MySQL tietokanta tehtynä ja Workbenchin ER-modelin kuva GitHubissa
-  - Tekninen määrittely pääosin valmis
-  - Backendissä koodia
+  - kukin opiskelija valitsee tietokannasta yhden taulun, jolle alkaa tekemään CRUD-operaatioita (luo taululle router- ja model-tiedosto)
+
+- Vk2 Tarkistuslista:
+  - [ ] Workbenchin ER-modelin kuva GitHubissa database-kansiossa
+  - [ ] tietokannan dump-file GitHubissa
+  - [ ] jokaisella opiskelijalla tietokanta omassa MySQL:ssä
+  - [ ] Tekninen määrittely pääosin valmis
+  - [ ] Backendissä koodia
 
 # Viikko 3
 
-- Viikkopalaveri
-  - CRUD-operaatioista demo (Pitää olla jotain endpointteja backendissä)
+- Viikkopalaveri (Vk2 tarkistuslista)
 
-- Kirjoita Github-projektille kuvaus markdownilla (readme.md-tiedosto). Github osaa prosessoida markdown-kieltä suoraan readme.md:stä HTML:ksi
-  - Muista päivittää omaa projektikuvausta Githubissa (readme.md) myös myöhemmin!
-  - Esimerkkejä [hyvistä readme-projektitiedostoista](https://github.com/matiassingers/awesome-readme)
-  - Teemun tekemä yksinkertainen esimerkki: [https://github.com/t2946282/demoproject](https://github.com/t2946282/demoproject)
+- README tiedostoa päivitetään
+
 - Sovelluksen tekemistä
-- Tämän viikon aikana pitää olla tehtynä:
-  - Readme.md:n ensimmäinen versio repositorylle Githubissa
-  - Backendissä endpointeilla jotakin toimintaa
+  - Backendissä endpointeilla vähintään tietojen haku tietokannasta
   - Tehtyjen endpointtien testausta [Postmanilla](https://www.postman.com/) 
+
+- Vk3 Tarkistuslista:
+  - [ ] README:ssä kuvattu projektia 
+  - [ ] Jokaisesta tietokannan taulusta saadaan data haettua backendin kautta
+  - [ ] Backendiin toteutettu endpoint testattu Postmanilla
 
 # Viikko 4
 
-- Viikkopalaveri
-  - Versiohallinnan esittely
+- Viikkopalaveri (Vk3 tarkistuslista)
+
 - Sovelluksen tekemistä
 - Tämän viikon aikana pitää olla tehtynä:
   - Login endpoint backendissä (kortin numerolla ja oikealla PIN koodilla saadaan webtoken)
-  - Vähintään pankkiautomaatin tarvitsemat endpointit backendissä 
+  - Backendiin tehtyihin endpointteihin lisätty kaikki CRUD-operaatiot
+  - Toteuteaan endpointille virheilmoitus, jos tietokanta ei toimi
+
+- Vk4 Tarkistuslista:
+  - [ ] Login endpoint toteutettu ja testattu
+  - [ ] Jokaisesta tietokannan taulusta saadaan data haettua backendin kautta
+  - [ ] Backendiin toteutettu endpoint testattu Postmanilla
+  - [ ] Testataan endpointit, kun tietokanta on sammutettu
 
 # Viikko 5
 
-- Viikkopalaveri
-  - Versiohallinnan esittely
-  - Nyt pitää olla jo Qt-sovelluksessa jotain omaa koodia
-- Sovelluksen tekemistä
-- Tämän viikon aikana pitää olla tehtynä:
-  - Kirjautuminen onnistuu Qt-sovelluksesta 
- 
-  
+- Viikkopalaveri (Vk4 tarkistuslista)
+- Qt-sovelluksen teko aloitetaan 
+  - Luodaan kaikki omissa dokumenteissa mainitut formit (niihin ei tarvitse aluksi tehdä toimintaa)
+  - Päivitetään main, niin että jokaisella opiskelijalla on kaikki formit omassa sovelluksessaan
+  - Joku opiskelija tekee Qt-sovellukseen loginin, joka hakee webtokenin 
+  - Muut voivat tehdä Qt:ssa muita toimintoja, jotka eivät tässä vaiheessa vaadi webtokenia (jos ei ole jo toteutettu) 
+
+- Vk5 Tarkistuslista:
+  - [ ] Qt-sovelluksessa  kaikki omissa dokumenteissa mainitut formit
+  - [ ] Qt-sovelluksesta onnistuu kirjautuminen ja saadaan webtoken 
+  - [ ] Qt-sovelluksessa onnistuu tietojen haku backendistä
+
 # Viikko 6
 
-- Viikkopalaveri
-  - Versiohallinnan esittely
-  - Sovelluksen esittely
+- Viikkopalaveri (Vk5 tarkistuslista)
+- Qt sovelluksessa toiminnat edellyttävät web-tokenia
+- Navigointi formeista toiseen 
 
-- Tämän viikon aikana pitää olla tehtynä:
-  - Qt sovelluksessa kirjautumisen jälkeen jotain toimivaa
+- Vk6 Tarkistuslista:
+  - [ ] Qt sovelluksessa toiminnat edellyttävät web-tokenia
+  - [ ] Navigointi formeista toiseen onnistuu 
 
 
 # Viikko 7
 
-- Viikkopalaveri
-  - Versiohallinnan esittely
-- Sovelluksen tekemistä
+- Viikkopalaveri (Vk6 tarkistuslista)
+- Sovelluksen viimeistely
 - Demovideon valmistelu
 - Ryhmä tekee yhdessä posterin englanniksi. Posteripohja löytyy Teamssista
 - Ota posterista hyvälaatuinen kuvaruutukaappaus, lisää se kuvana Github-repositoryyn ja linkitä näkyväksi readme.md tiedostossa repositoryn etusivulla
-- Tämän viikon aikana pitää olla tehtynä:
-  - Posteri valmiiksi ja Teamssiin
-  - Posteri Githubissa kuvana ja linkitetty readme.md:ssä repositoryn etusivulle
+- Lisätehtävän tekeminen aloitetaan (ne ryhmät jotka sen tekevät)
+
+-  Vk7 Tarkistuslista:
+  - [ ] Posteri valmiis ja ladattu Teamssiin
+  - [ ] Posteri Githubissa kuvana ja linkitetty readme.md:ssä repositoryn etusivulle 
+  - [ ] Sovellus pääosin valmis
+  - [ ] Lisäominaisuus toteutetty
 
 # Viikko 8
 
 - Laadi vastaava taulukko kuin kohdassa [**Tiivistelmä arvosanoille**](#arvosana_tiiviste) ja rastita siihen oman toteutuksen suoritetut tehtävät.
   
-  - Voit ladata excel-tiedoston (taskit.xlsx) Teamsin kanavalta **Tiedostot ja yhteiset oppimateriaalit**
-  - Rastita tehdyt tehtävät
-  - Lataa tiedosto GitRepon juureen (jos et käytä exceliä laita kuitenkin nimen alkuosaksi taskit)
-  
+  - Voit ladata tiedoston txt-muodossa [tästä linkistä](taskit.txt)
+  - Copy-pastetan se oman projektin README tiedoston loppuun ja laita otsikoksi "Suoritetut tehtävät". Poista sitten ne rastit joita ette toteuttaneet
+  - Päivitä GitRepo ja tarkista, että taulukko näkyy main-branchin README:ssä 
 - Demovideo projektista:
   - Videon pituuden tulisi olla noin 5 minuuttia, missä ehtii yleensä näyttämään keskeiset osat applikaatiosta ja posterista.
   - Videon on oltava julkisesti saatavilla ilman kirjautumista
@@ -419,6 +445,7 @@ cd groupx  # jossa groupx on kloonattu kansio ja x oman ryhmän numero
 git checkout -b initialize
 
 mkdir documents
+mkdir database
 ```
 
 ---

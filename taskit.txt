@@ -1,0 +1,28 @@
+|                            | 1  | 2  | 3  | 4  | 5  |
+|----------------------------|----|----|----|----|----|
+| Versionhallinnan käyttö    | x  | x  | x  | x  | x  |
+| Viikkopalaverit            | x  | x  | x  | x  | x  |
+| Toiminnallinen määrittelydokum.  | x  | x  | x  | x  | x  |
+| Tekninen määrittelydokum.        | x  | x  | x  | x  | x  |
+| Projektin kuvaus (README)                  | x  | x  | x  | x  | x  |
+
+Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
+
+|                            | 1  | 2  | 3  | 4  | 5  |
+|----------------------------|----|----|----|----|----|
+| Kirjautuminen PIN-koodilla | x  | x  | x  | x  | x  |
+| Saldon näyttö              | x  | x  | x  | x  | x  |
+| Rahan nosto (20,40,50,100) | x  | x  | x  | x  | x  |
+| Tilitapahtumien näyttö     | x  | x  | x  | x  | x  |
+| Debit kortti               | x  | x  | x  | x  | x  |
+| Webtoken autentikointi     |    | x  | x  | x  | x  |
+| PIN-koodille 10 s timer    |    | x  | x  | x  | x  |
+| Kaikki CRUD-operaatiot     |    | x  | x  | x  | x  |
+| Credit kortti              |    |    | x  | x  | x  |
+| Rahan nosto (muu summa)    |    |    | x  | x  | x  |
+| PIN-lukitus istunnolle     |    |    | x  | x  | x  |
+| PIN-lukitus tietokantaan   |    |    |    | x  | x  |
+| 30 s timerit               |    |    |    | x  | x  |
+| Tilitapahtumien selaus     |    |    |    | x  | x  |
+| Kaksoiskortti              |    |    |    |    | x  |
+| Lisäominaisuus             |    |    |    |    | x  |
