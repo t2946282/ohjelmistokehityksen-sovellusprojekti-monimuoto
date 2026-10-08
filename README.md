@@ -320,10 +320,10 @@ Alla kunkin viikon kohdalla on tarkistuslista. Ryhmän tulisi tehdä vähintää
   - kukin opiskelija valitsee tietokannasta yhden taulun, jolle alkaa tekemään CRUD-operaatioita (luo taululle router- ja model-tiedosto)
 
 - Vk2 Tarkistuslista:
+  - [ ] Tekninen määrittely pääosin valmis
   - [ ] Workbenchin ER-modelin kuva GitHubissa database-kansiossa
   - [ ] tietokannan dump-file GitHubissa
   - [ ] jokaisella opiskelijalla tietokanta omassa MySQL:ssä
-  - [ ] Tekninen määrittely pääosin valmis
   - [ ] Backendissä koodia
 
 # Viikko 3
