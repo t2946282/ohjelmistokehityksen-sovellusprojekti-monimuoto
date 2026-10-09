@@ -163,20 +163,6 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 - Englanninkielinen posteri (hyväksytty/hylätty, pitää päästä läpi)
 - Loppuesitys vaikuttaa arvosanaan
 
-
-### Kaaviot dokumentointiin
-
-Esimerkiksi näillä työkaluilla:
-
-- Drawio: [https://www.drawio.com/](https://www.drawio.com/). Suora linkki: [https://app.diagrams.net/](https://app.diagrams.net/)
-- Lucidchart: [https://www.lucidchart.com](https://www.lucidchart.com)
-- Diagrameditor: [https://www.diagrameditor.com/](https://www.diagrameditor.com/)
-- PlantUML: [https://plantuml.com/](https://plantuml.com/)
-- Mermaid: [https://mermaid.ai/](https://mermaid.ai/)
-
-Suosittelemme Mermaidia.
-Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineering/mermaid_example.php](https://peatutor.com/swengineering/mermaid_example.php)
-
 # Vaatimukset dokumenteille
 - Vaadittavat dokumentit: toiminnallinen määrittely ja tekninen määrittely
 - Luettavissa GitRepon documents-kansiosta
@@ -185,6 +171,18 @@ Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineeri
 - Lisäksi README.MD tiedostossa vapaamuotoinen  kuvaus sovelluksesta
   - Esimerkkejä [hyvistä readme-projektitiedostoista](https://github.com/matiassingers/awesome-readme)
   - Teemun tekemä yksinkertainen esimerkki: [https://github.com/t2946282/demoproject](https://github.com/t2946282/demoproject)
+
+  ### Kaaviot dokumentointiin
+
+Esimerkiksi näillä työkaluilla:
+- Drawio: [https://www.drawio.com/](https://www.drawio.com/). Suora linkki: [https://app.diagrams.net/](https://app.diagrams.net/)
+- Lucidchart: [https://www.lucidchart.com](https://www.lucidchart.com)
+- Diagrameditor: [https://www.diagrameditor.com/](https://www.diagrameditor.com/)
+- PlantUML: [https://plantuml.com/](https://plantuml.com/)
+- Mermaid: [https://mermaid.ai/](https://mermaid.ai/)
+
+Suosittelemme Mermaidia.
+Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineering/mermaid_example.php](https://peatutor.com/swengineering/mermaid_example.php)
 
 # Vaatimukset tietokannalle
 
