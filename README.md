@@ -10,7 +10,7 @@ Projektissa opiskelijat työskentelevät neljän hengen ryhmissä ja toteuttavat
 
 - Kullekin ryhmälle luodaan valmis Git-repositio, joka tulee alustaa tämän ohjeen mukaisesti: [**Projektin alustaminen**](#initialize)
 
-# Projektityön kuvaus
+## Projektityön kuvaus
 
 Opiskelijoiden tehtävä on suunnitella ja toteuttaa **pankkiautomaattijärjestelmä**, jonka ohjelmiston rakenne on seuraava:
 
@@ -34,7 +34,7 @@ Huom! Monimuotoryhmissä ei käytetä kortinlukijaa, joten he lisäävät aloitu
 **Huom!** Edellä mainitut kuuluvat kurssin sisältöön ja arviointi perustuu niiden osaamiseen, joten siksi millään muilla tekniikoilla noita ei saa korvata.
 
 
-# Oppimistavoitteet
+## Oppimistavoitteet
 
 - Opiskelija tunnistaa ja ymmärtää ohjelmistokehityksen vaihejakomallin perusvaiheet. Hän tietää eri vaiheiden merkitykset, vaihetuotteet ja vaiheiden erot
 - Itsenäisen ja ryhmätyöskentelyn avulla opiskelija oppii suunnittelemaan ja toteuttamaan vaatimusmäärittelyn mukaisen järjestelmän käyttäen moderneja kehitystyökaluja
@@ -46,7 +46,7 @@ Huom! Monimuotoryhmissä ei käytetä kortinlukijaa, joten he lisäävät aloitu
 - Opiskelija osaa käyttää versionhallintaa
 
 
-# Arviointi
+## Arviointi
 
 Ryhmän luoma sovellus arvioidaan tässä dokumentissa esitettyjen kriteerien mukaisesti. Kuitenkin **jokainen opiskelija arvioidaan yksilöllisesti** ja arvioinnissa huomioidaan seuraavat asiat:
 
@@ -58,7 +58,7 @@ Ryhmän luoma sovellus arvioidaan tässä dokumentissa esitettyjen kriteerien mu
 
 Arvosanaa ei voi korottaa myöhemmin.
 
-## Vertais- ja itsearvioinnin kohteet
+### Vertais- ja itsearvioinnin kohteet
 
 - Ryhmätyöskentely
 - Itsenäinen työ
@@ -68,11 +68,11 @@ Arvosanaa ei voi korottaa myöhemmin.
 - Tehtävien vaikeustaso
 - Gitin käyttö
 
-## Sovelluksen arviointi
+### Sovelluksen arviointi
 
 Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy, niin tämä dokumentti on se, jota noudatetaan.
 
-### Vähimmäisvaatimukset sovellukselle (arvosana 1)
+#### Vähimmäisvaatimukset sovellukselle (arvosana 1)
 
 - Debit kortti toteutettava: 
   - Debit-kortti kytketään tiliin, jolla ei ole luottoa eli tilin saldo ei saa mennä miinukselle
@@ -82,26 +82,26 @@ Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy,
   - Rahan nosto: 20, 40, 50 tai 100 €
   - Näytetään 10 viimeisintä tilitapahtumaa
 
-### Vähimmäisvaatimukset (arvosana 2)
+#### Vähimmäisvaatimukset (arvosana 2)
 
 - JWT-autentikointi toteutettu
 - PIN-koodin syötön aikaraja 10 sekuntia (jos koodia ei anneta 10 sekunnin aikana palataan aloituskäyttöliittymään)
 - REST API:in on toteutettu kaikkien tietokanta-taulujen CRUD-operaatiot (vaikkei niitä tarvita pankkiautomaatissa)
 
-### Hyvän arvosanan vaatimukset (arvosana 3)
+#### Hyvän arvosanan vaatimukset (arvosana 3)
 
 - Debit-kortin lisäksi on toteutettava credit-kortti:
   - Credit-kortti liitetään credit tiliin eli tilillä on luottoraja ja saldo saa mennä miinukselle luottorajan verran
 - Vapaavalintaisen summan nosto, jossa huomioidaan, että automaatissa on vain 20 ja 50 € seteleitä
 - Kolme väärää PIN-koodia lukitsee kortin (lukituksen ei tarvitse säilyä, kun sovellus käynnistetään uudelleen)
 
-### Hyvän arvosanan vaatimukset (arvosana 4)
+#### Hyvän arvosanan vaatimukset (arvosana 4)
 
 - Korttilukitus tallennetaan tietokantaan (eli lukitus säilyy vaikka sovellus käynnistetään uudelleen)
 - 30 sekunnin inaktiivisuus palauttaa alkutilaan (jos käyttäjä ei tee mitään 30 sekunnin aikana, palataan aloituskäyttöliittymään ja kaikki muut ikkunat suljetaan)
 - Tilitapahtumien selaus (eteen/taakse, 10 tapahtumaa kerrallaan)
 
-### Kiitettävän arvosanan vaatimukset (arvosana 5)
+#### Kiitettävän arvosanan vaatimukset (arvosana 5)
 
 - Toteutetaan kaksioiskortti: 
   - Kortilla on debit ja credit ominaisuus eli se on kytketty yhteen credit-tiliin ja yhteen debit-tiliin
@@ -113,7 +113,7 @@ Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy,
 
 <span id="arvosana_tiiviste"></span>
 
-### Tiivistelmä sovelluksen arviointikriteereistä
+#### Tiivistelmä sovelluksen arviointikriteereistä
 
 Nämä ovat ohjelmistokokonaisuutta projektihallinnallisesta näkökulmasta koskevat minimit (arviointi):
 
@@ -153,7 +153,7 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 - Sovelluksen rakenne ei ole annettujen määritysten mukainen
 
 
-## Oppilaskohtaisessa arvioinnissa huomioidaan
+### Oppilaskohtaisessa arvioinnissa huomioidaan
 
 - Opiskelija ei ole poissa palavereista ilmoittamatta
 - Opiskelija osaa kertoa omasta tekemisestä viikkopalaverissa
@@ -163,7 +163,7 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 - Englanninkielinen posteri (hyväksytty/hylätty, pitää päästä läpi)
 - Loppuesitys vaikuttaa arvosanaan
 
-# Vaatimukset dokumenteille
+## Vaatimukset dokumenteille
   - Vaadittavat dokumentit: toiminnallinen määrittely ja tekninen määrittely
   - Luettavissa GitRepon documents-kansiosta
   - Kirjoitettu Markdownilla
@@ -184,7 +184,7 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 Suosittelemme Mermaidia.
 Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineering/mermaid_example.php](https://peatutor.com/swengineering/mermaid_example.php)
 
-# Vaatimukset tietokannalle
+## Vaatimukset tietokannalle
 
 ### Ilman credit-kortti ominaisuutta
 
@@ -222,7 +222,7 @@ Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineeri
   - Lukekaa [https://peatutor.com/databases/db.php#design](https://peatutor.com/databases/db.php#design) ja miettikää erityisesti **monen-suhde-moneen yhteydet**
   - Miettikää tietotyyppejä ja tässä apuna [https://peatutor.com/databases/mysql.php#types](https://peatutor.com/databases/mysql.php#types)
 
-# Oppimateriaalit
+## Oppimateriaalit
 
 ### Pekka Alaluukas kurssimateriaalit
 
@@ -246,7 +246,7 @@ Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineeri
 - Teemu Leppäsen luentotallenteet [videosoittolista \(kevät 2025\)](https://oulu.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx#folderID=%2221064f4a-0801-451c-8e5c-b29d00e337be%22)
 
 
-# Viikkopalavereiden yleinen agenda
+## Viikkopalavereiden yleinen agenda
 
 - Pääsääntöisesti kaikkien pitää olla paikalla. Poissaolosta pitää ilmoittaa etukäteen. Useita poissaoloja ei sallita
 - Katsotaan edellisen viikon tarkistuslistasta että tehtävät on suoritettu
@@ -259,9 +259,9 @@ Alla kunkin viikon kohdalla on tarkistuslista, jonka ideana on varmistaa, että 
 Jos jotain listassa mainittuja asioita jää tekemättä, esittäkää kuinka saatte ne tehtyä seuraavan viikon aikana, niin että aikataulussa pysytään.
 
 
-# Viikko 1
+## Viikko 1
 
-## 1. Päivän / TEHTÄVÄT 
+### 1. Päivän / TEHTÄVÄT 
 
 1. Luodaan neljän hengen ryhmät [Excel-dokumentissa](<https://unioulu-my.sharepoint.com/:x:/g/personal/alaluuk_oamk_fi/IQBgHAzlTg22TYgV7PycCmFeAbtyxjCUqFPvKd9RjO1HQjc?e=hFPzhm>)
 
@@ -277,7 +277,7 @@ Jos jotain listassa mainittuja asioita jää tekemättä, esittäkää kuinka sa
 
 3. Jokaisesta ryhmästä yksi luo kurssin Teams-kanavan **ALAISUUTEEN** (ei siis kokonaan uutta Teams-kanavaa) uuden PRIVAATIN alikanavan, jolla on sama nimi kuin ryhmällä Excelissä eli group_1, group_2, .... 
 
-## Loppuviikon / TEHTÄVÄT
+### Loppuviikon / TEHTÄVÄT
 
 - Tutustukaa arviointikriteereihin ja päättäkää mihin arvosanaan pyritään
 - Tarkista että olet kurssin Teams-kanavalla (pyydä opettajalta pääsy jos et ole). Käytä students.oamk.fi-sähköpostiosoitetta kun kirjaudut Teamssiin
@@ -295,7 +295,7 @@ Jos jotain listassa mainittuja asioita jää tekemättä, esittäkää kuinka sa
   >- Tekninen määrittely-dokumentti alulle
   >- README:ssä lyhyt kuvaus projektista
 
-# Viikko 2
+### Viikko 2
 
 - Viikkopalaveri opettajan kanssa (Vk1 tarkistuslista)
 - Tekninen määrittely valmiiksi
@@ -320,7 +320,7 @@ Jos jotain listassa mainittuja asioita jää tekemättä, esittäkää kuinka sa
   >- Jokaisella opiskelijalla tietokanta omassa MySQL:ssä
   >- Backendissä koodia
 
-# Viikko 3
+### Viikko 3
 
 - Viikkopalaveri (Vk2 tarkistuslista)
 - README tiedostoa päivitetään (kts. [Teemun esimerkki](https://github.com/t2946282/demoproject))
@@ -333,7 +333,7 @@ Jos jotain listassa mainittuja asioita jää tekemättä, esittäkää kuinka sa
   >- Jokaisesta tietokannan taulusta saadaan data haettua backendin kautta
   >- Backendiin toteutettu endpoint testattu Postmanilla
 
-# Viikko 4
+### Viikko 4
 
 - Viikkopalaveri (Vk3 tarkistuslista)
 - README tiedostoa päivitetään 
@@ -350,7 +350,7 @@ Jos jotain listassa mainittuja asioita jää tekemättä, esittäkää kuinka sa
   >- Testataan endpointit, kun tietokanta on sammutettu
   >- README-tiedostoa päivitetty
 
-# Viikko 5
+### Viikko 5
 
 - Viikkopalaveri (Vk4 tarkistuslista)
 - Qt-sovelluksen teko aloitetaan 
@@ -366,7 +366,7 @@ Jos jotain listassa mainittuja asioita jää tekemättä, esittäkää kuinka sa
   >- Qt-sovelluksessa onnistuu tietojen haku backendistä
   >- README-tiedostoa päivitetty
 
-# Viikko 6
+### Viikko 6
 
 - Viikkopalaveri (Vk5 tarkistuslista)
 - Qt sovelluksessa toiminnat edellyttävät web-tokenia
@@ -378,7 +378,7 @@ Jos jotain listassa mainittuja asioita jää tekemättä, esittäkää kuinka sa
   >- Qt sovelluksessa toiminnat edellyttävät web-tokenia
   >- Navigointi formeista toiseen onnistuu 
 
-# Viikko 7
+### Viikko 7
 
 - Viikkopalaveri (Vk6 tarkistuslista)
 - Sovelluksen viimeistely
@@ -393,7 +393,7 @@ Jos jotain listassa mainittuja asioita jää tekemättä, esittäkää kuinka sa
   >- Sovellus pääosin valmis
   >- Lisäominaisuus toteutetty
 
-# Viikko 8
+### Viikko 8
 
 - Laadi vastaava taulukko kuin kohdassa [**Tiivistelmä arvosanoille**](#arvosana_tiiviste) ja rastita siihen oman toteutuksen suoritetut tehtävät:
   - Voit ladata tiedoston txt-muodossa [tästä linkistä](taskit.txt)
@@ -426,14 +426,15 @@ Jos jotain listassa mainittuja asioita jää tekemättä, esittäkää kuinka sa
   - Posterin esittely
 
  <span id="initialize"></span>
-# Projektin alustaminen
+
+## Projektin alustaminen
 
 📺 Voit katsoa ohjevideon osoitteesta:  
 [https://www.youtube.com/watch?v=_lfn6vsrOJY](https://www.youtube.com/watch?v=_lfn6vsrOJY)
 
 ---
 
-## 1. Repositoryn alustaminen
+### 1. Repositoryn alustaminen
 
 Yksi ryhmän opiskelijoista alustaa GitHub-repositoryn seuraavasti:
 
@@ -450,7 +451,7 @@ mkdir database
 
 ---
 
-## 2. Backendin alustaminen
+### 2. Backendin alustaminen
 
 Anna groupx kansiossa seuraavat komennot
 ```bash
@@ -472,7 +473,7 @@ Ja sitten app.js rakennetaan kuten luennoilla on opastettu.
 
 ---
 
-## 3. Qt-sovelluksen alustaminen
+### 3. Qt-sovelluksen alustaminen
 
 1. Käynnistä **Qt Creator**
 2. Luo **Qt Widget** -tyyppinen sovellus, jonka nimeksi `bank-automat`
@@ -487,7 +488,7 @@ Ja sitten app.js rakennetaan kuten luennoilla on opastettu.
 
 ---
 
-## 4. `.gitignore`-tiedoston luominen
+### 4. `.gitignore`-tiedoston luominen
 
 Luo tiedosto projektikansion `groupx` juureen ja kirjoita siihen seuraavat rivit:
 
@@ -500,7 +501,7 @@ bank-automat/*.user
 
 ---
 
-## 5. Muutosten lisääminen ja pushaaminen
+### 5. Muutosten lisääminen ja pushaaminen
 
 Suorita komennot kansion `groupx` juuressa:
 
@@ -512,7 +513,7 @@ git push origin initialize
 
 ---
 
-## 6. Tarkistukset GitHubissa
+### 6. Tarkistukset GitHubissa
 
 Varmista, että GitHubissa näkyy seuraavat kansiot:
 
@@ -530,14 +531,14 @@ Ja että seuraavat **eivät ole GitHubissa**:
 
 ---
 
-## 7. Pull Request
+### 7. Pull Request
 
 - Jos kaikki edellä meni oikein, tee **Pull Request**
 - Pyydä jotain muuta ryhmän jäsentä hyväksymään PR ja yhdistämään `initialize` branchin `mainiin`
 
 ---
 
-## 8. Branchin yhdistämisen jälkeen
+### 8. Branchin yhdistämisen jälkeen
 
 ### Henkilö, joka teki alustusvaiheet
 - suorittaa komennot:
@@ -555,16 +556,16 @@ git pull origin main
 - luovat oman branchin
 
 
-# Lisäominaisuusideoita 
+## Lisäominaisuusideoita 
 (arvosanan 5 tarvitaan vähintään yksi tällainen lisäominaisuus)
 
-## Kuvan lataus ja näyttäminen
+### Kuvan lataus ja näyttäminen
 
 - Kuvan lataaminen backendiin ja näyttäminen Qt-sovelluksessa (vaikutus arvosanaan 1)
 
 Idean esittelyvideo: [https://www.youtube.com/watch?v=DlKRlZTNYl8](https://www.youtube.com/watch?v=DlKRlZTNYl8)
 
-### Toimintaperiaate:
+#### Toimintaperiaate:
 
 - Tietokanta taulussa on tekstikenttä, johon tulee kuvan nimi (esim. `aku.jpg`).
 - Kuva ladataan REST APIn kansioon (yleensä `public`-kansioon).
@@ -573,18 +574,18 @@ Idean esittelyvideo: [https://www.youtube.com/watch?v=DlKRlZTNYl8](https://www.y
 
 REST APIssa voi käyttää [Multer-moduulia](https://www.npmjs.com/package/multer).
 
-## Swagger dokumentointi
+### Swagger dokumentointi
 
 - Lisätään sovellukseen swagger-sivu (vaikutus arvosanaan 1)
 
 Idean esittelyvideo: [https://www.youtube.com/watch?v=M6Fj5Y2K24w](https://www.youtube.com/watch?v=M6Fj5Y2K24w)  
 [https://www.npmjs.com/package/swagger-ui-express](https://www.npmjs.com/package/swagger-ui-express)
 
-## Logitus
+### Logitus
 
 - Tapahtumien logittaminen backendissä ja niiden näyttäminen jollakin tavalla (`morgan`-moduuli). Pelkkä logitus on aika helppo, joten sen vaikutus n. 0,5. Mutta jos keksitte siihen jotain lisää, niin sitten isompi vaikutus.
 
-## WebSocket
+### WebSocket
 
 Toteutetaan WebSocketeilla jokin toiminto sovellukseen (vaikutus arvosanaan 1).
 
@@ -593,13 +594,13 @@ Toteutetaan WebSocketeilla jokin toiminto sovellukseen (vaikutus arvosanaan 1).
 
 Idean esittely: [https://youtu.be/QGnv7s0JIIo](https://youtu.be/QGnv7s0JIIo)
 
-## Docker
+### Docker
 
 Sovelluksen ajaminen Dockerissa (vaikutus arvosanaan 1).
 
 - [https://youtu.be/DseMnAW0OTk](https://youtu.be/DseMnAW0OTk)
 
-## Testien lisääminen backendiin
+### Testien lisääminen backendiin
 
 Esimerkiksi `jest` ja `supertest` (vaikutus arvosanaan 1)
 
@@ -609,13 +610,13 @@ Tai Newman
 
 Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
 
-## CI/CD
+### CI/CD
 
 - Jonkinlainen yksinkertainen CI/CD tai ainakin CD (
   esim. backendin julkaisu jossain pilvipalvelussa ja qt-sovelluksen "releasen" automatisointi Githubiin tai toiselle palvelimelle ladattavaksi vaikka Github actioneilla)
 (vaikutus arvosanaan 1)
 
-## Kafka 
+### Kafka 
 
 -Apache Kafkan käyttö järjestelmien väliseen viestinvälitykseen. Kafka voidaan ottaa käyttöön esimerkiksi Aivenin pilvipalvelussa.
 
@@ -623,15 +624,15 @@ Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
 
 -Pekan esimerkkivideo: [https://youtu.be/Cf4B9XYzq7k](https://youtu.be/Cf4B9XYzq7k)
 
-## Verkkopankin toteuttaminen
+### Verkkopankin toteuttaminen
 
 - Verkkopankin toteuttaminen (vaikutus arvosanaan 1)
 
-## Ylimääräinen Qt-sovellus
+### Ylimääräinen Qt-sovellus
 
 - Qt-sovellus pankin henkilökunnalle. Sovelluksella voidaan esimerkiksi luoda uusia asiakkaita, tilejä ja kortteja jne. 
 
-# Generatiiviset tekoälyt (AI-koodaus) ja vastaavat apuvälineet. Ohjaajien (ja yleisestikin IT-opettajien) ajatuksia aiheesta:
+## Generatiiviset tekoälyt (AI-koodaus) ja vastaavat apuvälineet. Ohjaajien (ja yleisestikin IT-opettajien) ajatuksia aiheesta:
 
 - Tekoäly on hyvä renki, mutta huono isäntä. Varsinkin oppimisessa.
 - Tekoälyäkin pitää oppia hyödyntämään, mutta vähän myöhemmin
@@ -644,12 +645,12 @@ Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
 
 
 
-# Softalisensseistä
+## Softalisensseistä
 
 - Choose a license: [https://choosealicense.com/](https://choosealicense.com/)
 - Public license selector:  [https://ufal.github.io/public-license-selector/](https://ufal.github.io/public-license-selector/)
 
-# Kirjat ja kurssit taustatiedoksi ja malliksi
+## Kirjat ja kurssit taustatiedoksi ja malliksi
 
 Tee tunnus O\'Reillyn verkkokirjastoon students.oamk.fi:n sähköpostilla: [https://libguides.oulu.fi/oreilly](https://libguides.oulu.fi/oreilly) ja valitse institution not listed. Tuo on kaupallinen palvelu, mihin Oamkin kirjasto on ostanut pääsyn. Kannattaa käydä selailemassa tuota online-kirjastoa muutenkin.
 
@@ -702,6 +703,6 @@ MySQL (ei tietoa laadusta):
 - MySQL 5: [https://learning.oreilly.com/course/mysql-5/9781926873961/](https://learning.oreilly.com/course/mysql-5/9781926873961/)
 
 
-# Ohjaajien kommentteja ja vinkkejä
+## Ohjaajien kommentteja ja vinkkejä
 
 - Tänne on kasattu aikaisempien projektien [ohjaajien kommentteja ja vinkkejä](./dl/kommentit.md)
