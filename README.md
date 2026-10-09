@@ -1,8 +1,6 @@
 # Ohjelmistokehityksen sovellusprojekti (TVT Monimuoto)
 
-Projektissa opiskelijat työskentelevät 4 hengen ryhmissä ja rakentavat tässä dokumentissa kuvatun sovelluksen.
-
-Projektissa opiskelijat syventävät ohjelmointitaitojaan ja perehtyvät ohjelmistokehitysprojektin käytännön toteuttamiseen.
+Projektissa opiskelijat työskentelevät neljän hengen ryhmissä ja toteuttavat tässä dokumentissa kuvatun sovelluksen. Tavoitteena on, että opiskelijat syventävät aiemmilla kursseilla hankkimiaan ohjelmointitaitoja, perehtyvät ohjelmistokehitysprojektin käytännön toteuttamiseen ja oppivat käyttämään versionhallintaa (Git) tehokkaasti.
 
 - 4 opiskelijan ryhmät määritellään [Excel-dokumentissa](<https://unioulu-my.sharepoint.com/:x:/g/personal/tk_oamk_fi/ETmu1ZUhPdpLuY_QVFEC5gkBYR6tp3Ftdc4HKKpviBAkoA?e=dDAaA4>)
 
@@ -10,7 +8,7 @@ Projektissa opiskelijat syventävät ohjelmointitaitojaan ja perehtyvät ohjelmi
 - Viikko-ohjelmat: 
 |[Viikko 1](./#viikko-1) | [Viikko 2](./#viikko-2) |[Viikko 3](./#viikko-3) | [Viikko 4](./#viikko-4) | [Viikko 5](./#viikko-5) | [Viikko 6](./#viikko-6) | [Viikko 7](./#viikko-7) | [Viikko 8](./#viikko-8) |
 
-- [**Projektin alustaminen**](#initialize)
+- Kullekin ryhmälle luodaan valmis Git-repositio, joka tulee alustaa tämän ohjeen mukaisesti: [**Projektin alustaminen**](#initialize)
 
 # Projektityön kuvaus
 
@@ -48,16 +46,19 @@ Huom! Monimuotoryhmissä ei käytetä kortinlukijaa, joten he lisäävät aloitu
 - Opiskelija osaa käyttää versionhallintaa
 
 
-# Opiskelijan arviointi
+# Arviointi
 
-Kukin opiskelija arvioidaan yksilöllisesti ja arvioinnissa huomioidaan seuraavat asiat:
+Ryhmän luoma sovellus arvioidaan tässä dokumentissa esitettyjen kriteerien mukaisesti. Kuitenkin **jokainen opiskelija arvioidaan yksilöllisesti** ja arvioinnissa huomioidaan seuraavat asiat:
 
 - Sovelluksen arvosana
 - Vertais- ja itsearviointi
 - Ohjaajien näkemys
 - Githubin informaatio
+- Dokumenttien taso
 
-## Vertaisarvioinnin kohteet
+Arvosanaa ei voi korottaa myöhemmin.
+
+## Vertais- ja itsearvioinnin kohteet
 
 - Ryhmätyöskentely
 - Itsenäinen työ
@@ -111,7 +112,7 @@ Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy,
 
 <span id="arvosana_tiiviste"></span>
 
-### Tiivistelmä arvosanoille
+### Tiivistelmä sovelluksen arviointikriteereistä
 
 Nämä ovat ohjelmistokokonaisuutta projektihallinnallisesta näkökulmasta koskevat minimit (arviointi):
 
@@ -149,24 +150,17 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 
 - Dokumentoinnin puutteet
 - Sovelluksen rakenne ei ole annettujen määritysten mukainen
-- Poissaolo palavereista
 
 
+## Oppilaskohtaisessa arvioinnissa huomioidaan
 
-## Tiivistelmä arvioinnissa huomioitavista asioista:
-
-- Aikataulussa pysyminen. Työtä pitää tehdä järjestelmällisesti. Viikkoraportointi vaaditaan!
-- Jokaisen ryhmän jäsenen pitää osata kertoa omasta tekemisestä viikkopalaverissa
-- Opiskelijan tulee osata selittää kirjoittamansa koodi
-- Ohjaajan arvio perustuu palavereissa saatuihin kokemuksiin ja GitHubin näkymiin
-- Ryhmän tuottaman sovellukseen tasoon (kts. Sovelluksen arviointi)
-- Toveriarvio tehdään web-sovelluksella (vertaisarviointi)
-- Itsearvio tehdään web-sovelluksella (itsearviointi)
-- Vaaditut dokumentit (heikko dokumentointi voi alentaa arvosanaa)
+- Opiskelija ei ole poissa palavereista ilmoittamatta
+- Opiskelija osaa kertoa omasta tekemisestä viikkopalaverissa
+- Opiskelijan osaa selittää kirjoittamansa koodin
+- Toveriarvio (vertaisarviointi)
+- Itsearviointi
 - Englanninkielinen posteri (hyväksytty/hylätty, pitää päästä läpi)
 - Loppuesitys vaikuttaa arvosanaan
-- Arvosanaa ei voi korottaa myöhemmin
-
 
 # Oppimateriaalit
 
