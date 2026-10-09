@@ -162,27 +162,6 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 - Englanninkielinen posteri (hyväksytty/hylätty, pitää päästä läpi)
 - Loppuesitys vaikuttaa arvosanaan
 
-# Oppimateriaalit
-
-### Qt/Express-materiaalit (Pekka Alaluukas)
-
-- Pekka Alaluukkaan [ohjeet ja tallenteet videosoittolistana](https://www.youtube.com/playlist?list=PLWl0bS7jZq99iOUNmMyuT9EgU6YfxP_en)
-- Git perusteita [Peatutor.com/git_tutor/](https://peatutor.com/git_tutor/)
-- Ohjelmistotuotanto [Peatutor.com/swengineering/](https://peatutor.com/swengineering/)
-- Muita Pekan tekemiä ohjeita (Qt yms.): [Peatutor.com/](https://peatutor.com/)
-
-### Teemaluentoja: AI, IaC, CI/CD, reverse proxy, ohjelmistiolisensseistä (Teemu Korpela)
-
-- [7.1.2026 - Tiedonhausta, IT-uutisista, alan seuraamisesta ja Kanban-taulut](https://youtube.com/live/laNmAles5go)
-- [15.1.2026 - Verkkopalveluista, IaC, CI/CD, rajapinnoista, reverse proxyt](https://youtube.com/live/iEa4woguddM)
-- [21.4.2021 - Ohjelmistolisensseistä \(aikaisempi tallenne, ei tarvetta uudelle\)](https://www.youtube.com/watch?v=57m6hktjfeg&t=225s)
-- [29.1.2026 - AI-\(vibe\)koodaus](https://youtube.com/live/X-KdliMD4-8)
-
-### Ohjelmistokehityksen perusteet ja UML-mallinnus videot Yujassa (Teemu Leppänen)
-
-- Teemu Leppäsen luentotallenteet [videosoittolista \(kevät 2025\)](https://oulu.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx#folderID=%2221064f4a-0801-451c-8e5c-b29d00e337be%22)
-
-
 
 ### Kaaviot dokumentointiin
 
@@ -245,6 +224,27 @@ Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineeri
 **Vinkkejä tietokannan suunnitteluun**
   - Lukekaa [https://peatutor.com/databases/db.php#design](https://peatutor.com/databases/db.php#design) ja miettikää erityisesti **monen-suhde-moneen yhteydet**
   - Miettikää tietotyyppejä ja tässä apuna [https://peatutor.com/databases/mysql.php#types](https://peatutor.com/databases/mysql.php#types)
+
+# Oppimateriaalit
+
+### Qt/Express-materiaalit (Pekka Alaluukas)
+
+- Pekka Alaluukkaan [ohjeet ja tallenteet videosoittolistana](https://www.youtube.com/playlist?list=PLWl0bS7jZq99iOUNmMyuT9EgU6YfxP_en)
+- Git perusteita [Peatutor.com/git_tutor/](https://peatutor.com/git_tutor/)
+- Ohjelmistotuotanto [Peatutor.com/swengineering/](https://peatutor.com/swengineering/)
+- Muita Pekan tekemiä ohjeita (Qt yms.): [Peatutor.com/](https://peatutor.com/)
+
+### Teemaluentoja: AI, IaC, CI/CD, reverse proxy, ohjelmistiolisensseistä (Teemu Korpela)
+
+- [7.1.2026 - Tiedonhausta, IT-uutisista, alan seuraamisesta ja Kanban-taulut](https://youtube.com/live/laNmAles5go)
+- [15.1.2026 - Verkkopalveluista, IaC, CI/CD, rajapinnoista, reverse proxyt](https://youtube.com/live/iEa4woguddM)
+- [21.4.2021 - Ohjelmistolisensseistä \(aikaisempi tallenne, ei tarvetta uudelle\)](https://www.youtube.com/watch?v=57m6hktjfeg&t=225s)
+- [29.1.2026 - AI-\(vibe\)koodaus](https://youtube.com/live/X-KdliMD4-8)
+
+### Ohjelmistokehityksen perusteet ja UML-mallinnus videot Yujassa (Teemu Leppänen)
+
+- Teemu Leppäsen luentotallenteet [videosoittolista \(kevät 2025\)](https://oulu.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx#folderID=%2221064f4a-0801-451c-8e5c-b29d00e337be%22)
+
 
 
 # Viikkopalavereiden yleinen agenda
