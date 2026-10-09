@@ -206,7 +206,7 @@ Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineeri
 
 ### Tileistä ja korteista
 
-  - Vaikka tässä tehdään pankkiautomaatti, niin tehdään tietokannasta kuitenkin oikeaa pankintietokantaa muistuttava. Pankeilla ole erikseen tietokantaa pankkiautomaattien tileille, joten pitää voida luoda myös tilejä joihin ei liitetä korttiai.
+  - Vaikka tässä tehdään pankkiautomaatti, niin tehdään tietokannasta kuitenkin oikeaa pankintietokantaa muistuttava. Pankeilla ole erikseen tietokantaa pankkiautomaattien tileille, joten pitää voida luoda myös tilejä joihin ei liitetä korttia.
   
   - Kortti, jossa on sekä debit, että credit ominaisuus toimii niin, että se on kytketty kahteen tiliin:
       - toinen on debit-tili 
