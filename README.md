@@ -174,12 +174,12 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 
   ### Kaaviot dokumentointiin
 
-Esimerkiksi näillä työkaluilla:
-- Drawio: [https://www.drawio.com/](https://www.drawio.com/). Suora linkki: [https://app.diagrams.net/](https://app.diagrams.net/)
-- Lucidchart: [https://www.lucidchart.com](https://www.lucidchart.com)
-- Diagrameditor: [https://www.diagrameditor.com/](https://www.diagrameditor.com/)
-- PlantUML: [https://plantuml.com/](https://plantuml.com/)
-- Mermaid: [https://mermaid.ai/](https://mermaid.ai/)
+  Esimerkiksi näillä työkaluilla:
+  - Drawio: [https://www.drawio.com/](https://www.drawio.com/). Suora linkki: [https://app.diagrams.net/](https://app.diagrams.net/)
+  - Lucidchart: [https://www.lucidchart.com](https://www.lucidchart.com)
+  - Diagrameditor: [https://www.diagrameditor.com/](https://www.diagrameditor.com/)
+  - PlantUML: [https://plantuml.com/](https://plantuml.com/)
+  - Mermaid: [https://mermaid.ai/](https://mermaid.ai/)
 
 Suosittelemme Mermaidia.
 Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineering/mermaid_example.php](https://peatutor.com/swengineering/mermaid_example.php)
