@@ -205,21 +205,19 @@ Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineeri
 
 - Kortilla pääsy useaan tiliin (debit ja credit)
 
-### Lisäominaisuuksia tietokannalle
-
-- Asiakkaalla käyttöoikeus toisen omistajan tilille
 
 ### Tileistä ja korteista
 
-- Vaikka tässä tehdään pankkiautomaatti, niin tehdään tietokannasta kuitenkin oikeaa pankintietokantaa muistuttava. Eihän pankeilla ole erikseen tietokantaa pankkiautomaattien tileille. Siksi siis pitää voida luoda tilejä ja osalle niistä annetaan kortti osalle ei.
+- Vaikka tässä tehdään pankkiautomaatti, niin tehdään tietokannasta kuitenkin oikeaa pankintietokantaa muistuttava. Pankeilla ole erikseen tietokantaa pankkiautomaattien tileille, joten pitää voida luoda myös tilejä joihin ei liitetä korttiai.
  
-- Sellainen kortti, jossa on sekä debit, että credit ominaisuus toimii niin, että se on kytketty kahteen tiliin:
+- Kortti, jossa on sekä debit, että credit ominaisuus toimii niin, että se on kytketty kahteen tiliin:
   - toinen on debit tili (se on asiakkaan oma tili)
   - toinen tili on credit tili (sen omistaa pankki ja asiakas ei näe sitä tiliä verkkopankissa)
   - tässä on siis kyseessä **monen-suhde-moneen yhteys**: 
     - yhdelle tilille voi olla pääsy monella kortilla: vaikkapa koko perheellä 
 -yksi kortti on kytketty moneen eri tiliin (vaikka se on käytännössä korkeintaan kahteen tiliin(debit ja credit).
-->Tästä seuraa hyvin tavanomainen RELAATIOTIETOKANNAN "pulma" joka  ratkaistaan välitystaulun avulla
+->Tästä seuraa hyvin tavanomainen RELAATIOTIETOKANNAN "pulma" joka  ratkaistaan välitystaulun avulla 
+- Oikeassa pankissa on myös mahdollista, että käyttäjille voidaan antaa käyttöoikeus myös toisen asiakkaan tilille.
 
 **Vinkkejä tietokannan suunnitteluun**
   - Lukekaa [https://peatutor.com/databases/db.php#design](https://peatutor.com/databases/db.php#design) ja miettikää erityisesti **monen-suhde-moneen yhteydet**
@@ -273,7 +271,7 @@ Alla kunkin viikon kohdalla on tarkistuslista. Ryhmän tulisi tehdä vähintää
     - Rekisteröityä voi vain oamk.fi ja oulu.fi sähköposteilla
     - Luotuasi tunnuksen, saat sähköpostin, jossa on tunnuksesi ja salasanasi. Pidä ne tallessa.
 
-    **Huom!** Tarkista ennen rekisteröitymistä, tarkista mikä on sinun GitHub-tunnus, koska se on annettava rekisteröityessä.
+    **Huom!** Tarkista ennen rekisteröitymistä, mikä on sinun GitHub-tunnus, koska se on annettava rekisteröityessä.
 
 3. Jokaisesta ryhmästä yksi luo kurssin Teams-kanavan **ALAISUUTEEN** (ei siis kokonaan uutta Teams-kanavaa) uuden PRIVAATIN alikanavan, jolla on sama nimi kuin ryhmällä Excelissä eli group_1, group_2, .... 
 
@@ -285,7 +283,7 @@ Alla kunkin viikon kohdalla on tarkistuslista. Ryhmän tulisi tehdä vähintää
 - Github käyttöön (Pekan tekemän organisaation alle): [Pekan ohje](#initialize)
 - Ryhmän jäsenet sopii alustavasti kuka tekee mitäkin toiminnallisuuksia (mutta jokaisen opiskelijan tulee tehdä koodia sekä backendiin, että Qt-sovellukseen)
 - Ryhmä sopii käytetäänko Qt sovelluksessa build järjestelmänä **qmake**:a vai **cmake**:a (on parasta että koko ryhmä käyttää samaa)
-- Aloittakaa tekemään vaatimusmäärittelydokumenttia (pitää tehdä yhdessä). Dokumentti tehdään GitRepon documents kansioon nimellä toiminnallinen.MD. Huomiokaa valitsemanne arvosanatavoite kirjatessanne vaatimuksia.
+- Aloittakaa tekemään vaatimusmäärittelydokumenttia (pitää tehdä yhdessä). Dokumentti tehdään GitRepon documents kansioon nimellä toiminnallinen.MD. Huomiokaa valitsemanne arvosanatavoite kirjatessanne vaatimuksia. Käyttäkää apuna esimerkkiä: [peatutor.com/swengineering/mermaid_example.php](https://peatutor.com/swengineering/mermaid_example.php)
 - Aloittakaa tekemään teknistä määrittelydokumenttia (pitää tehdä yhdessä). Dokumentti tehdään GitRepon documents kansioon nimellä tekninen.MD. 
 - Katsokaa yhdessä valmiiksi viikon 2+ tavoitteet
 
