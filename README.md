@@ -172,7 +172,7 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
     - Esimerkkejä [hyvistä readme-projektitiedostoista](https://github.com/matiassingers/awesome-readme)
     - Teemun tekemä yksinkertainen esimerkki: [https://github.com/t2946282/demoproject](https://github.com/t2946282/demoproject)
 
-  ### Kaaviot dokumentointiin
+### Kaaviot dokumentointiin
 
   Esimerkiksi näillä työkaluilla:
   - Drawio: [https://www.drawio.com/](https://www.drawio.com/). Suora linkki: [https://app.diagrams.net/](https://app.diagrams.net/)
