@@ -247,14 +247,15 @@ Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineeri
 
 # Viikkopalavereiden yleinen agenda
 
-- Pääsääntöisesti kaikkien pitää olla paikalla
+- Pääsääntöisesti kaikkien pitää olla paikalla. Poissaolosta pitää ilmoittaa etukäteen. Useita poissaoloja ei sallita
 - Katsotaan edellisen viikon tarkistuslistasta että tehtävät on suoritettu
 - Yleistä keskustelua, että miten projekti on edennyt
 - Kukin opiskelija kertoo (ja näyttää) mitä on tehnyt kuluneen viikon aikana
 - Versiohallinnan esittely
 - Muutoksia arvosanatavoitteeseen tai tavoitteisiin ylipäätänsä
 
-Alla kunkin viikon kohdalla on tarkistuslista. Ryhmän tulisi tehdä vähintään listan mukaiset tehtävät. Jos etenette nopeammin, esittäkää palaverissa myös ylimääräiset tehtävät.
+Alla kunkin viikon kohdalla on tarkistuslista, jonka ideana on varmistaa, että sovellus valmistuu ajoissa. Ryhmän tulisi tehdä vähintään listan mukaiset tehtävät. Jos etenette nopeammin, esittäkää palaverissa myös ylimääräiset tehtävät.
+Jos jotain listassa mainittuja asioita jää tekemättä, esittäkää kuinka saatte ne tehtyä seuraavan viikon aikana, niin että aikataulussa pysytään.
 
 
 # Viikko 1
@@ -288,10 +289,10 @@ Alla kunkin viikon kohdalla on tarkistuslista. Ryhmän tulisi tehdä vähintää
 - Katsokaa yhdessä valmiiksi viikon 2+ tavoitteet
 
 - Vk1 Tarkistuslista:
-  - Github repository alustettu ohjeiden mukaan
-  - Toiminnallinen määrittely-dokumentti valmis
-  - Tekninen määrittely-dokumentti alulle
-  - README:ssä lyhyt kuvaus projektista
+  >- Github repository alustettu ohjeiden mukaan
+  >- Toiminnallinen määrittely-dokumentti valmis
+  >- Tekninen määrittely-dokumentti alulle
+  >- README:ssä lyhyt kuvaus projektista
 
 # Viikko 2
 
@@ -312,11 +313,11 @@ Alla kunkin viikon kohdalla on tarkistuslista. Ryhmän tulisi tehdä vähintää
   - kukin opiskelija valitsee tietokannasta yhden taulun, jolle alkaa tekemään CRUD-operaatioita (luo taululle router- ja model-tiedosto)
 
 - Vk2 Tarkistuslista:
-  - Tekninen määrittely pääosin valmis
-  - Workbenchin ER-modelin kuva GitHubissa database-kansiossa
-  - Ttietokannan dump-file GitHubissa
-  - Jokaisella opiskelijalla tietokanta omassa MySQL:ssä
-  - Backendissä koodia
+  >- Tekninen määrittely pääosin valmis
+  >- Workbenchin ER-modelin kuva GitHubissa database-kansiossa
+  >- Ttietokannan dump-file GitHubissa
+  >- Jokaisella opiskelijalla tietokanta omassa MySQL:ssä
+  >- Backendissä koodia
 
 # Viikko 3
 
@@ -327,9 +328,9 @@ Alla kunkin viikon kohdalla on tarkistuslista. Ryhmän tulisi tehdä vähintää
   - Tehtyjen endpointtien testausta [Postmanilla](https://www.postman.com/) 
 
 - Vk3 Tarkistuslista:
-  - README:ssä kuvattu projektia
-  - Jokaisesta tietokannan taulusta saadaan data haettua backendin kautta
-  - Backendiin toteutettu endpoint testattu Postmanilla
+  >- README:ssä kuvattu projektia
+  >- Jokaisesta tietokannan taulusta saadaan data haettua backendin kautta
+  >- Backendiin toteutettu endpoint testattu Postmanilla
 
 # Viikko 4
 
@@ -337,16 +338,16 @@ Alla kunkin viikon kohdalla on tarkistuslista. Ryhmän tulisi tehdä vähintää
 - README tiedostoa päivitetään 
 - Sovelluksen tekemistä
 - Tämän viikon aikana pitää olla tehtynä:
-  - Login endpoint backendissä (kortin numerolla ja oikealla PIN koodilla saadaan webtoken)
-  - Backendiin tehtyihin endpointteihin lisätty kaikki CRUD-operaatiot
-  - Toteuteaan endpointille virheilmoitus, jos tietokanta ei toimi
+  >- Login endpoint backendissä (kortin numerolla ja oikealla PIN koodilla saadaan webtoken)
+  >- Backendiin tehtyihin endpointteihin lisätty kaikki CRUD-operaatiot
+  >- Toteuteaan endpointille virheilmoitus, jos tietokanta ei toimi
 
 - Vk4 Tarkistuslista:
-  - Login endpoint toteutettu ja testattu
-  - Jokaisesta tietokannan taulusta saadaan data haettua backendin kautta
-  - Backendiin toteutettu endpoint testattu Postmanilla
-  - Testataan endpointit, kun tietokanta on sammutettu
-  - README-tiedostoa päivitetty
+  >- Login endpoint toteutettu ja testattu
+  >- Jokaisesta tietokannan taulusta saadaan data haettua backendin kautta
+  >- Backendiin toteutettu endpoint testattu Postmanilla
+  >- Testataan endpointit, kun tietokanta on sammutettu
+  >- README-tiedostoa päivitetty
 
 # Viikko 5
 
@@ -359,10 +360,10 @@ Alla kunkin viikon kohdalla on tarkistuslista. Ryhmän tulisi tehdä vähintää
   - README tiedostoa päivitetään 
 
 - Vk5 Tarkistuslista:
-  - Qt-sovelluksessa  kaikki omissa dokumenteissa mainitut formit
-  - Qt-sovelluksesta onnistuu kirjautuminen ja saadaan webtoken 
-  - Qt-sovelluksessa onnistuu tietojen haku backendistä
-  - README-tiedostoa päivitetty
+  >- Qt-sovelluksessa  kaikki omissa dokumenteissa mainitut formit
+  >- Qt-sovelluksesta onnistuu kirjautuminen ja saadaan webtoken 
+  >- Qt-sovelluksessa onnistuu tietojen haku backendistä
+  >- README-tiedostoa päivitetty
 
 # Viikko 6
 
@@ -373,9 +374,8 @@ Alla kunkin viikon kohdalla on tarkistuslista. Ryhmän tulisi tehdä vähintää
 - README-tiedostoa päivitetty
 
 - Vk6 Tarkistuslista:
-  - Qt sovelluksessa toiminnat edellyttävät web-tokenia
-  - Navigointi formeista toiseen onnistuu 
-
+  >- Qt sovelluksessa toiminnat edellyttävät web-tokenia
+  >- Navigointi formeista toiseen onnistuu 
 
 # Viikko 7
 
@@ -387,10 +387,10 @@ Alla kunkin viikon kohdalla on tarkistuslista. Ryhmän tulisi tehdä vähintää
 - Lisätehtävän tekeminen aloitetaan (ne ryhmät jotka sen tekevät)
 
 -  Vk7 Tarkistuslista:
-  - Posteri valmiis ja ladattu Teamssiin
-  - Posteri Githubissa kuvana ja linkitetty readme.md:ssä repositoryn etusivulle 
-  - Sovellus pääosin valmis
-  - Lisäominaisuus toteutetty
+  >- Posteri valmiis ja ladattu Teamssiin
+  >- Posteri Githubissa kuvana ja linkitetty readme.md:ssä repositoryn etusivulle 
+  >- Sovellus pääosin valmis
+  >- Lisäominaisuus toteutetty
 
 # Viikko 8
 
