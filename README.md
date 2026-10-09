@@ -77,9 +77,10 @@ Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy,
 - Debit kortti toteutettava: 
   - Debit-kortti kytketään tiliin, jolla ei ole luottoa eli tilin saldo ei saa mennä miinukselle
 - Qt-sovelluksessa aloituskäyttöliittymä, josta oikealla PIN-koodilla avautuu pääkäyttöliittymä, väärällä uudelleenkysely
-- Saldon tarkastelu
-- Rahan nosto: 20, 40, 50 tai 100 €
-- Näytetään 10 viimeisintä tilitapahtumaa
+- Pääkäyttöliittymästä voidaan valita seuraavat toimenpiteet
+  - Saldon tarkastelu
+  - Rahan nosto: 20, 40, 50 tai 100 €
+  - Näytetään 10 viimeisintä tilitapahtumaa
 
 ### Vähimmäisvaatimukset (arvosana 2)
 
@@ -91,7 +92,7 @@ Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy,
 
 - Debit-kortin lisäksi on toteutettava credit-kortti:
   - Credit-kortti liitetään credit tiliin eli tilillä on luottoraja ja saldo saa mennä miinukselle luottorajan verran
-- Vapaavalintaisen summan nosto (automaatissa vain 20 ja 50 € seteleitä)
+- Vapaavalintaisen summan nosto, jossa huomioidaan, että automaatissa on vain 20 ja 50 € seteleitä
 - Kolme väärää PIN-koodia lukitsee kortin (lukituksen ei tarvitse säilyä, kun sovellus käynnistetään uudelleen)
 
 ### Hyvän arvosanan vaatimukset (arvosana 4)
@@ -148,7 +149,7 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 
 #### Arvosanaa alentavia seikkoja
 
-- Dokumentoinnin puutteet
+- Dokumentoinnin puutteet (dokumentit puuttuvat kokonaan tai eivät kuvaa ryhmän tekemää sovellusta)
 - Sovelluksen rakenne ei ole annettujen määritysten mukainen
 
 
