@@ -164,13 +164,13 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 - Loppuesitys vaikuttaa arvosanaan
 
 # Vaatimukset dokumenteille
-- Vaadittavat dokumentit: toiminnallinen määrittely ja tekninen määrittely
-- Luettavissa GitRepon documents-kansiosta
-- Kirjoitettu Markdownilla
-- Kaaviot lisättynä dokumentteihin (suositellaan Mermaidia)
-- Lisäksi README.MD tiedostossa vapaamuotoinen  kuvaus sovelluksesta
-  - Esimerkkejä [hyvistä readme-projektitiedostoista](https://github.com/matiassingers/awesome-readme)
-  - Teemun tekemä yksinkertainen esimerkki: [https://github.com/t2946282/demoproject](https://github.com/t2946282/demoproject)
+  - Vaadittavat dokumentit: toiminnallinen määrittely ja tekninen määrittely
+  - Luettavissa GitRepon documents-kansiosta
+  - Kirjoitettu Markdownilla
+  - Kaaviot lisättynä dokumentteihin (suositellaan Mermaidia)
+  - Lisäksi README.MD tiedostossa vapaamuotoinen  kuvaus sovelluksesta
+    - Esimerkkejä [hyvistä readme-projektitiedostoista](https://github.com/matiassingers/awesome-readme)
+    - Teemun tekemä yksinkertainen esimerkki: [https://github.com/t2946282/demoproject](https://github.com/t2946282/demoproject)
 
   ### Kaaviot dokumentointiin
 
