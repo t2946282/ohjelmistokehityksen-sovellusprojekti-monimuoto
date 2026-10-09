@@ -207,16 +207,16 @@ Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineeri
 
 ### Tileistä ja korteista
 
-- Vaikka tässä tehdään pankkiautomaatti, niin tehdään tietokannasta kuitenkin oikeaa pankintietokantaa muistuttava. Pankeilla ole erikseen tietokantaa pankkiautomaattien tileille, joten pitää voida luoda myös tilejä joihin ei liitetä korttiai.
- 
-- Kortti, jossa on sekä debit, että credit ominaisuus toimii niin, että se on kytketty kahteen tiliin:
-  - toinen on debit tili (se on asiakkaan oma tili)
-  - toinen tili on credit tili (sen omistaa pankki ja asiakas ei näe sitä tiliä verkkopankissa)
-  - tässä on siis kyseessä **monen-suhde-moneen yhteys**: 
-    - yhdelle tilille voi olla pääsy monella kortilla: vaikkapa koko perheellä 
--yksi kortti on kytketty moneen eri tiliin (vaikka se on käytännössä korkeintaan kahteen tiliin(debit ja credit).
-->Tästä seuraa hyvin tavanomainen RELAATIOTIETOKANNAN "pulma" joka  ratkaistaan välitystaulun avulla 
-- Oikeassa pankissa on myös mahdollista, että käyttäjille voidaan antaa käyttöoikeus myös toisen asiakkaan tilille.
+  - Vaikka tässä tehdään pankkiautomaatti, niin tehdään tietokannasta kuitenkin oikeaa pankintietokantaa muistuttava. Pankeilla ole erikseen tietokantaa pankkiautomaattien tileille, joten pitää voida luoda myös tilejä joihin ei liitetä korttiai.
+  
+  - Kortti, jossa on sekä debit, että credit ominaisuus toimii niin, että se on kytketty kahteen tiliin:
+      - toinen on debit-tili 
+      - toinen tili on credit-tili 
+      - tässä on siis kyseessä **monen-suhde-moneen yhteys**: 
+        - yhdelle tilille voi olla pääsy monella kortilla: vaikkapa koko perheellä 
+        - yksi kortti on kytketty moneen eri tiliin (vaikka se on käytännössä korkeintaan kahteen tiliin(debit ja credit).
+      ->Tästä seuraa hyvin tavanomainen RELAATIOTIETOKANNAN "pulma" joka  ratkaistaan välitystaulun avulla 
+  - Oikeassa pankissa on myös mahdollista, että käyttäjille voidaan antaa käyttöoikeus myös toisen asiakkaan tilille. Tätä ei tarvitse huomioida tässä sovelluksessa.
 
 **Vinkkejä tietokannan suunnitteluun**
   - Lukekaa [https://peatutor.com/databases/db.php#design](https://peatutor.com/databases/db.php#design) ja miettikää erityisesti **monen-suhde-moneen yhteydet**
