@@ -224,12 +224,15 @@ Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineeri
 
 # Oppimateriaalit
 
-### Qt/Express-materiaalit (Pekka Alaluukas)
+### Pekka Alaluukas kurssimateriaalit
 
 - Pekka Alaluukkaan [ohjeet ja tallenteet videosoittolistana](https://www.youtube.com/playlist?list=PLWl0bS7jZq99iOUNmMyuT9EgU6YfxP_en)
 - Git perusteita [Peatutor.com/git_tutor/](https://peatutor.com/git_tutor/)
 - Ohjelmistotuotanto [Peatutor.com/swengineering/](https://peatutor.com/swengineering/)
-- Muita Pekan tekemiä ohjeita (Qt yms.): [Peatutor.com/](https://peatutor.com/)
+- Tietokannat [Peatutor.com/databases](https://peatutor.com/databases/)
+- Express.js [Peatutor.com/express](https://peatutor.com/express/)
+- Qt-ohjelmointi [Peatutor.com/qt/](https://peatutor.com/qt/)
+
 
 ### Teemaluentoja: AI, IaC, CI/CD, reverse proxy, ohjelmistiolisensseistä (Teemu Korpela)
 
@@ -241,7 +244,6 @@ Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineeri
 ### Ohjelmistokehityksen perusteet ja UML-mallinnus videot Yujassa (Teemu Leppänen)
 
 - Teemu Leppäsen luentotallenteet [videosoittolista \(kevät 2025\)](https://oulu.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx#folderID=%2221064f4a-0801-451c-8e5c-b29d00e337be%22)
-
 
 
 # Viikkopalavereiden yleinen agenda
