@@ -52,8 +52,7 @@ Ryhmän luoma sovellus arvioidaan tässä dokumentissa esitettyjen kriteerien mu
 
 - Sovelluksen arvosana
 - Vertais- ja itsearviointi
-- Ohjaajien näkemys
-- Githubin informaatio
+- Ohjaajien näkemys (palaverit ja Githubin informaatio)
 - Dokumenttien taso
 
 Arvosanaa ei voi korottaa myöhemmin.
