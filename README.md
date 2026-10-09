@@ -416,9 +416,9 @@ Alla kunkin viikon kohdalla on tarkistuslista. Ryhmän tulisi tehdä vähintää
   - Esittele pankkiautomaattiprojekti
  
 -  Vk8 Tarkistuslista:
-  - Arvosanataulukko README:ssä
-  - Demovideo tehty
-  - Powerpoint tai PDF
+    >- Arvosanataulukko README:ssä
+    >- Demovideo tehty
+    >- Powerpoint tai PDF
 
 - Loppuesitykset koko luokalle (osallistumispakko)
   - Ohjelman demonstrointi ja vapaata keskustelua
