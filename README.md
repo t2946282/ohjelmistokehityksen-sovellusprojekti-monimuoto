@@ -163,23 +163,27 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 - Englanninkielinen posteri (hyväksytty/hylätty, pitää päästä läpi)
 - Loppuesitys vaikuttaa arvosanaan
 
-## Vaatimukset dokumenteille
+## Dokumentit
+
+  Tässä ohjeessa on määritelty, mitä teknologioita projektissa tulee käyttää. Dokumentit laaditaan kuitenkin siten, että te valitsette käytettävät teknologiat itse suunnitteluvaiheessa. Siksi vaatimusmäärittelyssä ei oteta kantaa teknologioihin eikä esimerkiksi edellytetä tietyn tietokantajärjestelmän, kuten MySQL:n, käyttöä.
+
   - Vaadittavat dokumentit: toiminnallinen määrittely ja tekninen määrittely
   - Luettavissa GitRepon documents-kansiosta
   - Kirjoitettu Markdownilla
-  - Kaaviot lisättynä dokumentteihin (suositellaan Mermaidia)
-  - Lisäksi README.MD tiedostossa vapaamuotoinen  kuvaus sovelluksesta
+  - Kaaviot lisätään dokumentteihin. Kaavioiden laatimiseen suositellaan Mermaidia, jonka avulla kaaviot on helppo sisällyttää Markdown-dokumentteihin
+  - Lisäksi README.md-tiedostoon kirjoitetaan vapaamuotoinen kuvaus projektista.
     - Esimerkkejä [hyvistä readme-projektitiedostoista](https://github.com/matiassingers/awesome-readme)
     - Teemun tekemä yksinkertainen esimerkki: [https://github.com/t2946282/demoproject](https://github.com/t2946282/demoproject)
 
-### Kaaviot dokumentointiin
-
-  Esimerkiksi näillä työkaluilla:
+### Työkaluja kaavioiden luontiin
+  Suosittelemme käytettäväksi Mermaidia: [https://mermaid.ai/](https://mermaid.ai/)
+  
+  Muita yleisesti käytettyjä:
   - Drawio: [https://www.drawio.com/](https://www.drawio.com/). Suora linkki: [https://app.diagrams.net/](https://app.diagrams.net/)
   - Lucidchart: [https://www.lucidchart.com](https://www.lucidchart.com)
   - Diagrameditor: [https://www.diagrameditor.com/](https://www.diagrameditor.com/)
   - PlantUML: [https://plantuml.com/](https://plantuml.com/)
-  - Mermaid: [https://mermaid.ai/](https://mermaid.ai/)
+  
 
 Suosittelemme Mermaidia.
 Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineering/mermaid_example.php](https://peatutor.com/swengineering/mermaid_example.php)
@@ -285,8 +289,11 @@ Jos jotain listassa mainittuja asioita jää tekemättä, esittäkää kuinka sa
 - Github käyttöön (Pekan tekemän organisaation alle): [Pekan ohje](#initialize)
 - Ryhmän jäsenet sopii alustavasti kuka tekee mitäkin toiminnallisuuksia (mutta jokaisen opiskelijan tulee tehdä koodia sekä backendiin, että Qt-sovellukseen)
 - Ryhmä sopii käytetäänko Qt sovelluksessa build järjestelmänä **qmake**:a vai **cmake**:a (on parasta että koko ryhmä käyttää samaa)
-- Aloittakaa tekemään vaatimusmäärittelydokumenttia (pitää tehdä yhdessä). Dokumentti tehdään GitRepon documents kansioon nimellä toiminnallinen.MD. Huomiokaa valitsemanne arvosanatavoite kirjatessanne vaatimuksia. Käyttäkää apuna esimerkkiä: [peatutor.com/swengineering/mermaid_example.php](https://peatutor.com/swengineering/mermaid_example.php)
-- Aloittakaa tekemään teknistä määrittelydokumenttia (pitää tehdä yhdessä). Dokumentti tehdään GitRepon documents kansioon nimellä tekninen.MD. 
+- Kirjoittakaa vaatimusmäärittelydokumentti (pitää tehdä yhdessä). Dokumentti tehdään GitRepon documents kansioon nimellä toiminnallinen.md. 
+  - Huomiokaa valitsemanne arvosanatavoite kirjatessanne vaatimuksia. 
+  - Käyttäkää apuna esimerkkiä: [peatutor.com/swengineering/mermaid_example.php](https://peatutor.com/swengineering/mermaid_example.php)
+  - Muistakaa, että tässä dokumentissa ei vielä mainita käytettäviä teknologioita, kuten Qt:tä, Expressiä tai MySQL:ää.
+- Aloittakaa tekemään teknistä määrittelydokumenttia (pitää tehdä yhdessä). Dokumentti tehdään GitRepon documents kansioon nimellä tekninen.md. 
 - Katsokaa yhdessä valmiiksi viikon 2+ tavoitteet
 
 - Vk1 Tarkistuslista:
