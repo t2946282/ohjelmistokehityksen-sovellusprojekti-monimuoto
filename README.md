@@ -91,7 +91,7 @@ Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy,
 #### Hyvän arvosanan vaatimukset (arvosana 3)
 
 - Debit-kortin lisäksi on toteutettava credit-kortti:
-  - Credit-kortti liitetään credit tiliin eli tilillä on luottoraja ja saldo saa mennä miinukselle luottorajan verran
+  - Credit-kortti liitetään credit-tiliin eli tilillä on luottoraja ja saldo saa mennä miinukselle luottorajan verran
 - Vapaavalintaisen summan nosto, jossa huomioidaan, että automaatissa on vain 20 ja 50 € seteleitä
 - Kolme väärää PIN-koodia lukitsee kortin (lukituksen ei tarvitse säilyä, kun sovellus käynnistetään uudelleen)
 
@@ -188,7 +188,7 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 ## Vaatimukset tietokannalle
 
 - Asiakkaalla voi olla monta tiliä
-- Yhdellä tilillä yksi omistaja
+- Yhdellä tilillä yksi omistaja (asiakas)
 - Asiakkaalla voi olla tili ilman korttia
 - Asiakkaalla voi olla useita kortteja
 - Yksi kortti voi olla kytkettynä vain yhteen tiliin (jos ei toteuteta kaksoiskortteja)
