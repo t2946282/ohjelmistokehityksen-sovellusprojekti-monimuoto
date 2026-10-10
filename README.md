@@ -208,15 +208,15 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 
 ### Tileistä ja korteista
 
-  - Vaikka tässä tehdään pankkiautomaatti, niin tehdään tietokannasta kuitenkin oikeaa pankintietokantaa muistuttava. Pankeilla ole erikseen tietokantaa pankkiautomaattien tileille, joten pitää voida luoda myös tilejä joihin ei liitetä korttia.
+  - Vaikka tässä tehdään pankkiautomaatti, niin tehdään tietokannasta kuitenkin oikeaa pankintietokantaa muistuttava. Pankeilla ei ole erikseen tietokantaa pankkiautomaattien tileille, joten pitää voida luoda myös tilejä joihin ei liitetä korttia.
   
   - Kortti, jossa on sekä debit, että credit ominaisuus toimii niin, että se on kytketty kahteen tiliin:
       - toinen on debit-tili 
       - toinen tili on credit-tili 
       - tässä on siis kyseessä **monen-suhde-moneen yhteys**: 
         - yhdelle tilille voi olla pääsy monella kortilla: vaikkapa koko perheellä 
-        - yksi kortti on kytketty moneen eri tiliin (vaikka se on käytännössä korkeintaan kahteen tiliin(debit ja credit).
-      ->Tästä seuraa hyvin tavanomainen RELAATIOTIETOKANNAN "pulma" joka  ratkaistaan välitystaulun avulla 
+        - yksi kortti voi olla kytketty moneen eri tiliin (vaikka se on käytännössä korkeintaan kahteen tiliin(debit ja credit).
+      ->kyseessä on siis monen-suhde-moneen-yhteys, joka relaatiotietokannassa  ratkaistaan välitystaulun avulla 
   - Oikeassa pankissa on myös mahdollista, että käyttäjille voidaan antaa käyttöoikeus myös toisen asiakkaan tilille. Tätä ei tarvitse huomioida tässä sovelluksessa, muuten kuin että kortin voi liittää toisen asiakkaan omistamaan tiliin.
 
 **Vinkkejä tietokannan suunnitteluun**
