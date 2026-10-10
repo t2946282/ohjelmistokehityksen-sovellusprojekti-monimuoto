@@ -187,12 +187,12 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 
 ## Vaatimukset tietokannalle
 
-### Ilman credit-kortti ominaisuutta
-
-- Useita tilejä asiakkaalla
+- Asiakkaalla voi olla monta tiliä
 - Yhdellä tilillä yksi omistaja
 - Asiakkaalla voi olla tili ilman korttia
-- Useita kortteja asiakkaalla, mutta yksi kortti → yksi tili
+- Asiakkaalla voi olla useita kortteja
+- Yksi kortti voi olla kytkettynä vain yhteen tiliin (jos ei toteuteta kaksoiskortteja)
+- Yhdelle tilille voi olla kytkettynä useita kortteja
 - Asiakastiedoissa: etunimi, sukunimi, osoite
 - PIN-koodi hashattuna (bcrypt)
 
@@ -200,11 +200,9 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 
 - Credit-korteilla pitää olla luottoraja (credit-korteille ei tarvita erillistä taulua, jos debit-korteille laitetaan luottorajaksi nolla)
 
-
 ### Kun toteutetaan kaksoiskortti
 
-- Kortilla pääsy useaan tiliin (debit ja credit)
-
+- Yksi kortti voi olla kytkettynä useaan tiliin (debit ja credit)
 
 ### Tileistä ja korteista
 
