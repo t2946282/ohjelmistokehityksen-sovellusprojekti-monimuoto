@@ -215,7 +215,7 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
         - yhdelle tilille voi olla pääsy monella kortilla: vaikkapa koko perheellä 
         - yksi kortti on kytketty moneen eri tiliin (vaikka se on käytännössä korkeintaan kahteen tiliin(debit ja credit).
       ->Tästä seuraa hyvin tavanomainen RELAATIOTIETOKANNAN "pulma" joka  ratkaistaan välitystaulun avulla 
-  - Oikeassa pankissa on myös mahdollista, että käyttäjille voidaan antaa käyttöoikeus myös toisen asiakkaan tilille. Tätä ei tarvitse huomioida tässä sovelluksessa.
+  - Oikeassa pankissa on myös mahdollista, että käyttäjille voidaan antaa käyttöoikeus myös toisen asiakkaan tilille. Tätä ei tarvitse huomioida tässä sovelluksessa, muuten kuin että kortin voi liittää toisen asiakkaan omistamaan tiliin.
 
 **Vinkkejä tietokannan suunnitteluun**
   - Lukekaa [https://peatutor.com/databases/db.php#design](https://peatutor.com/databases/db.php#design) ja miettikää erityisesti **monen-suhde-moneen yhteydet**
