@@ -197,12 +197,12 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 - PIN-koodi hashattuna (bcrypt)
 
 ### Kun toteutetaan credit-kortti ominaisuus
-
-- Credit-korteilla pitää olla luottoraja (credit-korteille ei tarvita erillistä taulua, jos debit-korteille laitetaan luottorajaksi nolla)
+  Edellisten vaatimusten lisäksi:
+  - Credit-korteilla pitää olla luottoraja (credit-korteille ei tarvita erillistä taulua, jos debit-korteille laitetaan luottorajaksi nolla)
 
 ### Kun toteutetaan kaksoiskortti
-
-- Yksi kortti voi olla kytkettynä useaan tiliin (debit ja credit)
+  Edellisten vaatimusten lisäksi:
+  - Yksi kortti voi olla kytkettynä useaan tiliin (debit ja credit)
 
 ### Tileistä ja korteista
 
