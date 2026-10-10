@@ -200,7 +200,7 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
     - Credit-kortti tarkoittaa korttia, joka on kytketty Credit-tiliin ja tällaisella tilillä pitää olla luottoraja (credit-tileille ei tarvita erillistä taulua, jos debit-tileille laitetaan luottorajaksi nolla)
     - Nostotapahtumissa on huomioitava, että 
       - Debit-tilin saldo ei saa mennä miinukselle
-      - Credit-tilin saldo saa menne miinukselle korkeintaan luottorajan verran
+      - Credit-tilin saldo saa mennä miinukselle korkeintaan luottorajan verran
 
 ### Kun toteutetaan kaksoiskortti
   Edellisten vaatimusten lisäksi:
