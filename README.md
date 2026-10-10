@@ -70,8 +70,6 @@ Arvosanaa ei voi korottaa myöhemmin.
 
 ### Sovelluksen arviointi
 
-Arviointi perustuu tähän dokumenttiin. Mikäli ristiriitaista tietoa esiintyy, niin tämä dokumentti on se, jota noudatetaan.
-
 #### Vähimmäisvaatimukset sovellukselle (arvosana 1)
 
 - Debit kortti toteutettava: 
