@@ -4,6 +4,7 @@ Projektissa opiskelijat työskentelevät neljän hengen ryhmissä ja toteuttavat
 
 - 4 opiskelijan ryhmät määritellään [Excel-dokumentissa](<https://unioulu-my.sharepoint.com/:x:/g/personal/tk_oamk_fi/ETmu1ZUhPdpLuY_QVFEC5gkBYR6tp3Ftdc4HKKpviBAkoA?e=dDAaA4>)
 
+- Palaverit pidetään Teams-alustalla kunkin ryhmän omalla kanavalla. Ryhmät luovat itse nuo kanavat viikko 1:n kohdalla annetun ohjeen mukaan.
 
 - Viikko-ohjelmat: 
 |[Viikko 1](./#viikko-1) | [Viikko 2](./#viikko-2) |[Viikko 3](./#viikko-3) | [Viikko 4](./#viikko-4) | [Viikko 5](./#viikko-5) | [Viikko 6](./#viikko-6) | [Viikko 7](./#viikko-7) | [Viikko 8](./#viikko-8) |
@@ -274,7 +275,7 @@ Jos jotain listassa mainittuja asioita jää tekemättä, esittäkää kuinka sa
 
     **Huom!** Tarkista ennen rekisteröitymistä, mikä on sinun GitHub-tunnus, koska se on annettava rekisteröityessä.
 
-3. Jokaisesta ryhmästä yksi luo kurssin Teams-kanavan **ALAISUUTEEN** (ei siis kokonaan uutta Teams-kanavaa) uuden PRIVAATIN alikanavan, jolla on sama nimi kuin ryhmällä Excelissä eli group_1, group_2, .... 
+3. Jokaisesta ryhmästä yksi luo [kurssin Teams-kanavan](https://teams.microsoft.com/l/team/19%3AdVL79ENz3ons89igSnMEesZr4LrKSr8QvKqeMJHVFsQ1%40thread.tacv2/conversations?groupId=1757646c-958c-4ac9-8c24-ee6e24c78e57&tenantId=9f9ce49a-5101-4aa3-8c75-0d5935ad6525)  **ALAISUUTEEN** (ei siis kokonaan uutta Teams-kanavaa) uuden PRIVAATIN alikanavan, jolla on sama nimi kuin ryhmällä Excelissä eli group_1, group_2, ....   
 
 ### Loppuviikon / TEHTÄVÄT
 
@@ -428,9 +429,9 @@ Jos jotain listassa mainittuja asioita jää tekemättä, esittäkää kuinka sa
 
 ## Projektin alustaminen
 
-📺 Voit katsoa ohjevideon osoitteesta:  
+Noudata tarkasti alla olevia ohjeita ja lisäksi voit katsoa ohjevideon osoitteesta:  
 [https://www.youtube.com/watch?v=_lfn6vsrOJY](https://www.youtube.com/watch?v=_lfn6vsrOJY)
-
+Huomaa kuitenkin, että allaoleva ohje on uudistettu videon luonnin jälkeen.
 ---
 
 ### 1. Repositoryn alustaminen
