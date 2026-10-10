@@ -198,11 +198,15 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 
 ### Kun toteutetaan credit-kortti ominaisuus
   Edellisten vaatimusten lisäksi:
-  - Credit-korteilla pitää olla luottoraja (credit-korteille ei tarvita erillistä taulua, jos debit-korteille laitetaan luottorajaksi nolla)
+  - Credit-kortti toteutettu
+    - Credit-kortti tarkoittaa korttia, joka on kytketty Credit-tiliin ja tällaisella tilillä pitää olla luottoraja (Credit-tileille ei tarvita erillistä taulua, jos Debit-tileille laitetaan luottorajaksi nolla)
+    - Nostotapahtumissa on huomioitava, että 
+      - Debit-tilin saldo ei saa mennä miinukselle
+      - Credit-tilin saldo saa menne miinukselle korkeintaan luottorajan verran
 
 ### Kun toteutetaan kaksoiskortti
   Edellisten vaatimusten lisäksi:
-  - Yksi kortti voi olla kytkettynä useaan tiliin (debit ja credit)
+  - Yksi kortti voi olla kytkettynä useaan tiliin (Debit-tili ja Credit-tili)
 
 ### Tileistä ja korteista
 
