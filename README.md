@@ -165,7 +165,7 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 
 ## Dokumentit
 
-  Tässä ohjeessa on määritelty, mitä teknologioita projektissa tulee käyttää. Dokumentit laaditaan kuitenkin siten, että te valitsette käytettävät teknologiat itse suunnitteluvaiheessa. Siksi vaatimusmäärittelyssä ei oteta kantaa teknologioihin eikä esimerkiksi edellytetä tietyn tietokantajärjestelmän, kuten MySQL:n, käyttöä.
+  Tässä ohjeessa on määritelty, mitä teknologioita projektissa tulee käyttää. Dokumentit laaditaan kuitenkin ikään kuin teknologiat olisi valittu projektin suunnitteluvaiheessa. Teknologiavalintoja perustellaan teknisessä määrittelyssä osana projektin suunnitteluratkaisuja. Vaatimusmäärittelyssä ei oteta kantaa teknologioihin, kuten käytettävään tietokantajärjestelmään.
 
   - Vaadittavat dokumentit: toiminnallinen määrittely ja tekninen määrittely
   - Luettavissa GitRepon documents-kansiosta
