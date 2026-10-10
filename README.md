@@ -210,9 +210,7 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 
   - Vaikka tässä tehdään pankkiautomaatti, niin tehdään tietokannasta kuitenkin oikeaa pankintietokantaa muistuttava. Pankeilla ei ole erikseen tietokantaa pankkiautomaattien tileille, joten pitää voida luoda myös tilejä joihin ei liitetä korttia.
   
-  - Kortti, jossa on sekä debit, että credit ominaisuus toimii niin, että se on kytketty kahteen tiliin:
-      - toinen on debit-tili 
-      - toinen tili on credit-tili 
+  - Kortti, jossa on sekä debit, että credit ominaisuus toimii niin, että se on kytketty kahteen tiliin, joista toinen on debit-tili ja toinen on credit-tili 
       - tässä on siis kyseessä **monen-suhde-moneen yhteys**: 
         - yhdelle tilille voi olla pääsy monella kortilla: vaikkapa koko perheellä 
         - yksi kortti voi olla kytketty moneen eri tiliin (vaikka se on käytännössä korkeintaan kahteen tiliin(debit ja credit).
