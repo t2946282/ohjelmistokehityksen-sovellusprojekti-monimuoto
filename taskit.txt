@@ -15,7 +15,7 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 | Rahan nosto (20,40,50,100) | x  | x  | x  | x  | x  |
 | Tilitapahtumien näyttö     | x  | x  | x  | x  | x  |
 | Debit kortti               | x  | x  | x  | x  | x  |
-| Webtoken autentikointi     |    | x  | x  | x  | x  |
+| Jwt-autentikointi          |    | x  | x  | x  | x  |
 | PIN-koodille 10 s timer    |    | x  | x  | x  | x  |
 | Kaikki CRUD-operaatiot     |    | x  | x  | x  | x  |
 | Credit kortti              |    |    | x  | x  | x  |
