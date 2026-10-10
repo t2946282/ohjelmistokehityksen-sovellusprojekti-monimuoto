@@ -185,9 +185,6 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
   - PlantUML: [https://plantuml.com/](https://plantuml.com/)
   
 
-Suosittelemme Mermaidia.
-Esimerkkejä Mermaidilla tehtyihin kaavioihin: [https://peatutor.com/swengineering/mermaid_example.php](https://peatutor.com/swengineering/mermaid_example.php)
-
 ## Vaatimukset tietokannalle
 
 ### Ilman credit-kortti ominaisuutta
