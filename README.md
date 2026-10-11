@@ -206,16 +206,23 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
   Edellisten vaatimusten lisäksi:
   - Yksi kortti voi olla kytkettynä useaan tiliin (debit-tili ja credit-tili)
 
-### Tileistä ja korteista
+### Pankin tietomallin realistisuus
 
-  - Vaikka tässä tehdään pankkiautomaatti, niin tehdään tietokannasta kuitenkin oikeaa pankintietokantaa muistuttava. Pankeilla ei ole erikseen tietokantaa pankkiautomaattien tileille, joten pitää voida luoda myös tilejä joihin ei liitetä korttia.
-  
-  - Kortti, jossa on sekä debit, että credit ominaisuus toimii niin, että se on kytketty kahteen tiliin, joista toinen on debit-tili ja toinen on credit-tili 
-      - tässä on siis kyseessä **monen-suhde-moneen yhteys**: 
-        - yhdelle tilille voi olla pääsy monella kortilla: vaikkapa koko perheellä 
-        - yksi kortti voi olla kytketty moneen eri tiliin (vaikka se on käytännössä korkeintaan kahteen tiliin(debit ja credit).
-      ->kyseessä on siis monen-suhde-moneen-yhteys, joka relaatiotietokannassa  ratkaistaan välitystaulun avulla 
-  - Oikeassa pankissa on myös mahdollista, että käyttäjille voidaan antaa käyttöoikeus myös toisen asiakkaan tilille. Tätä ei tarvitse huomioida tässä sovelluksessa, muuten kuin että kortin voi liittää toisen asiakkaan omistamaan tiliin.
+- Vaikka tässä tehtävässä toteutetaan pankkiautomaatti, tietokannan tulee muistuttaa rakenteeltaan oikean pankin tietokantaa. Pankeilla ei ole erillistä tietokantaa pankkiautomaateissa käytettäville tileille, joten järjestelmässä pitää voida luoda myös tilejä, joihin ei ole liitetty korttia.
+
+- Kortti, jossa on sekä debit- että credit-ominaisuus, on liitetty kahteen tiliin: toinen on debit-tili ja toinen credit-tili.
+
+  - Tilien ja korttien välillä on monen suhde moneen -yhteys:
+
+    - Yhteen tiliin voi olla liitetty useita kortteja. Esimerkiksi perheenjäsenillä voi olla kortit, joilla he pääsevät käyttämään samaa tiliä.
+
+    - Yksi kortti voi olla liitetty useaan tiliin. Tässä sovelluksessa kortti voi olla liitettynä enintään kahteen tiliin: debit-tiliin ja credit-tiliin.
+
+  - Relaatiotietokannassa monen suhde moneen -yhteys toteutetaan välitystaulun avulla.
+
+- Oikeassa pankissa asiakkaalle voidaan antaa käyttöoikeus myös toisen asiakkaan omistamaan tiliin. Tätä ei tarvitse toteuttaa tässä sovelluksessa erillisenä käyttöoikeuksien hallintana. Tietomallin tulee kuitenkin mahdollistaa se, että kortti voidaan liittää myös toisen asiakkaan omistamaan tiliin.
+
+- Oikeassa järjestelmässä kussakin pankkiautomaatissa on rajallinen määrä seteleitä. Tätä ei kuitenkaan tarvitse huomioida tässä tehtävässä. Ryhmä voi halutessaan lisätä ominaisuuden, jolla automaateille voidaan lisätä seteleitä ja jonka avulla voidaan seurata, milloin setelit loppuvat.
 
 **Vinkkejä tietokannan suunnitteluun**
   - Lukekaa [https://peatutor.com/databases/db.php#design](https://peatutor.com/databases/db.php#design) ja miettikää erityisesti **monen-suhde-moneen yhteydet**
