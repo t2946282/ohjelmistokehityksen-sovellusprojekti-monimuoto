@@ -9,7 +9,8 @@ Projektissa opiskelijat työskentelevät neljän hengen ryhmissä ja toteuttavat
 - Viikko-ohjelmat: 
 |[Viikko 1](./#viikko-1) | [Viikko 2](./#viikko-2) |[Viikko 3](./#viikko-3) | [Viikko 4](./#viikko-4) | [Viikko 5](./#viikko-5) | [Viikko 6](./#viikko-6) | [Viikko 7](./#viikko-7) | [Viikko 8](./#viikko-8) |
 
-- Kullekin ryhmälle luodaan valmis Git-repositio, joka tulee alustaa tämän ohjeen mukaisesti: [**Projektin alustaminen**](#initialize)
+- Kullekin ryhmälle luodaan valmis Git-repositio, joka tulee alustaa tämän ohjeen mukaisesti: [**Projektin alustaminen**](#initialize). 
+Repositoryyn on yhdistetty GitHub Project, jonka Kanban-taulua ryhmän tulee ylläpitää projektin edetessä.
 
 ## Projektityön kuvaus
 
@@ -159,6 +160,7 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 - Toveriarvio (vertaisarviointi)
 - Itsearviointi
 - Englanninkielinen posteri (hyväksytty/hylätty, pitää päästä läpi)
+- Opiskelija on ylläpitänyt Kanban taulua oman tekemisensä osalta
 - Loppuesitys vaikuttaa arvosanaan
 
 ## Dokumentit
@@ -257,7 +259,7 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
 - Pääsääntöisesti kaikkien pitää olla paikalla. Poissaolosta pitää ilmoittaa etukäteen. Useita poissaoloja ei sallita
 - Katsotaan edellisen viikon tarkistuslistasta että tehtävät on suoritettu
 - Yleistä keskustelua, että miten projekti on edennyt
-- Kukin opiskelija kertoo (ja näyttää) mitä on tehnyt kuluneen viikon aikana
+- Kukin opiskelija kertoo (ja näyttää) mitä on tehnyt kuluneen viikon aikana (tehtävät tulee olla merkittynä Kanban-tauluun)
 - Versiohallinnan esittely
 - Muutoksia arvosanatavoitteeseen tai tavoitteisiin ylipäätänsä
 
