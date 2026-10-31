@@ -171,13 +171,13 @@ Nämä ovat itse ohjelmistokokonaisuutta koskevat minimit (arviointi):
   - Luettavissa GitRepon documents-kansiosta
   - Kirjoitettu Markdownilla
   - Kaaviot lisätään dokumentteihin. Kaavioiden laatimiseen suositellaan Mermaidia, jonka avulla kaaviot on helppo sisällyttää Markdown-dokumentteihin
-  - Lisäksi README.md-tiedostoon kirjoitetaan kuvaus projektista. Tässä voidaan kuvata esimerkiksi:
-    - Projektin tavoite ja ratkaistava ongelma.
-    - Kohderyhmä ja tärkeimmät toiminnallisuudet.
-    - Rajaus: mitä projektiin kuuluu ja mitä jätetään sen ulkopuolelle.
-    - Teknologiat ja toteutuksen pääpiirteet.
-    - Aikataulu ja välitavoitteet.
-    - Työnjako ja keskeiset riskit.
+  - Lisäksi README.md-tiedostoon kirjoitetaan kuvaus projektista. Tässä projektissa README toimii myös projektisuunnitelmana ja siinä voidaan kuvata esimerkiksi:
+    - Projektin tavoite ja ratkaistava ongelma
+    - Kohderyhmä ja tärkeimmät toiminnallisuudet
+    - Rajaus: mitä projektiin kuuluu ja mitä jätetään sen ulkopuolelle
+    - Teknologiat ja toteutuksen pääpiirteet
+    - Aikataulu ja välitavoitteet
+    - Työnjako ja keskeiset riskit
     
   Esimerkkejä README-tiedostoista:
   - Teemun tekemä yksinkertainen esimerkki: [https://github.com/t2946282/demoproject](https://github.com/t2946282/demoproject)
