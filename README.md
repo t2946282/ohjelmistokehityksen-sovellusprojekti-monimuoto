@@ -621,7 +621,7 @@ Sovelluksen ajaminen Dockerissa (vaikutus arvosanaan 1).
 
 Esimerkiksi `jest` ja `supertest` (vaikutus arvosanaan 1)
 
-Esittelyvideo: [https://youtu.be/HEZufcp2umI](https://youtu.be/HEZufcp2umI)
+Esittelyvideo: [https://youtu.be/3grg6_fPAsA](https://youtu.be/3grg6_fPAsA)
 
 Tai Newman
 
