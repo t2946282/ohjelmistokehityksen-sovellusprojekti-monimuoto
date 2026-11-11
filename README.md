@@ -322,7 +322,7 @@ Jos jotain listassa mainittuja asioita jää tekemättä, esittäkää kuinka sa
   - kirjoitetaan oman ryhmän ER-kaavion perusteella SQL-koodit joilla luodaan taulut
   - tarkistetaan, että kaikki taulut saatiin luotua ja tutkitaan, että kenttien tyypit vastaavat ER-kaaviota
   - lisätään ainakin yksi tietue kuhunkin tauluun
-  - tässä vaiheessa olisi hyvä generoida luodusta tietokannasta ER-kaavio jollain työkalulla (esim. VsCoden DataNest tai DBeaver) ja verrata sitä oman ryhmän ER-kaavioon
+  - tässä vaiheessa olisi hyvä generoida luodusta tietokannasta ER-kaavio jollain työkalulla (esim. VsCoden DataNest tai DBeaver) ja verrata sitä oman ryhmän teknisen määrittelyn ER-kaavioon
   - tietokannasta luodaan dump-file ja tallennetaan se projektin database-kansioon
     - pusketaan GitHubiin ja mergetään mainiin
     - muut opiskelijat hakevat uuden mainin
