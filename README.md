@@ -623,9 +623,10 @@ Esimerkiksi `jest` ja `supertest` (vaikutus arvosanaan 1)
 
 Esittelyvideo: [https://youtu.be/3grg6_fPAsA](https://youtu.be/3grg6_fPAsA)
 
-Tai Newman
+Tai Postman CLI
 
 Esittelyvideo: [https://youtu.be/Wvv8GWQdvKU](https://youtu.be/Wvv8GWQdvKU)
+Huomaa, että videolla esittelen collectionin ajamista Newman nimisellä työkalulla. Se kannattaa nykyään korvata Postman CLI:llä.
 
 ### CI/CD
 
