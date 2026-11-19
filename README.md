@@ -68,6 +68,7 @@ Arvosanaa ei voi korottaa myöhemmin.
 - REST API -ohjelmointi
 - Tehtävien vaikeustaso
 - Gitin käyttö
+- Osallistuminen dokumentointiin
 
 ### Sovelluksen arviointi
 
